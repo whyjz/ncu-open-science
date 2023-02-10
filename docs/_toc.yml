@@ -3,5 +3,5 @@ root: index
 # parts:
 # - caption: Syllabus
 #   numbered: true
-  chapters:
-  - file: syllabus
+chapters:
+- file: syllabus
