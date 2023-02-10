@@ -1,0 +1,7 @@
+format: jb-book
+root: index
+# parts:
+# - caption: Syllabus
+#   numbered: true
+  chapters:
+  - file: syllabus

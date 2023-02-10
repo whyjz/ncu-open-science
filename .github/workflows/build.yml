@@ -1,0 +1,42 @@
+name: build-docs
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+    
+jobs:
+  build-docs:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8 and conda/mamba
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        python-version: 3.8
+        mamba-version: "*"
+        channels: conda-forge
+        activate-environment: ncu-os
+        environment-file: environment.yml
+        use-mamba: true
+    - name: Test environment
+      shell: bash -l {0}
+      run: |
+        conda info
+        conda list
+    - name: Build book
+      shell: bash -l {0}
+      run: |
+        jupyter book build ./jupyter-book
+        
+    - name: Deploy to gh-pages
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3.8.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./jupyter-book/_build/html
