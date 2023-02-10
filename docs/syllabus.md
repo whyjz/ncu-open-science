@@ -1,3 +1,56 @@
 # Syllabus
 
-Something is going to happen here.
+- Week 1
+  - 2/14: Checking in | course introduction
+  - 2/16: What is open science?
+- Week 2
+  - 2/21: Hands on practice: knowing the environment for open science
+  - 2/23: Open vs proprietary; license
+- Week 3
+  - 2/28: NO CLASS
+  - 3/2: The FAIR policy
+- Week 4
+  - 3/7: Hands on practice: open your data and code using FAIR (1)
+  - 3/9: Open access journals and preprints
+- Week 5
+  - 3/14: Hands on practice: open your data and code using FAIR (2)
+  - 3/16: Reproducibility
+- Week 6
+  - 3/21: Hands on practice: ensuring 100% reproducibility (1)
+  - 3/23: Journal metrics and indexing
+- Week 7
+  - 3/28: Hands on practice: ensuring 100% reproducibility (2)
+  - 3/30: DEI and open science 
+- Week 8
+  - 4/4: NO CLASS
+  - 4/6: NO CLASS
+- Week 9 (midterm week)
+  - 4/11: Q&A | Project progress report (1-page writeup due)
+  - 4/13: Project progress presentation
+- Week 10
+  - 4/18: Hands on practice: writing narrative science
+  - 4/20: Tools for scientific writing
+- Week 11
+  - 4/25: Hands on practice: writing documentation
+  - 4/27: Best practices for scientific data visualization
+- Week 12
+  - 5/2: Hands on practice: data visualization (1)
+  - 5/4: Science communication: Outreach vs civil science
+- Week 13
+  - 5/9: Hands on practice: data visualization (2)
+  - 5/11: Science communication within the academic community
+- Week 14
+  - 5/16: Hands on practice: getting and analyzing open data in remote sensing (1)
+  - 5/18: Open data sets in remote sensing / Earth & Environmental sciences
+- Week 15
+  - 5/23: Hands on practice: getting and analyzing open data in remote sensing (2)
+  - 5/25: Financial support and career plans
+- Week 16 (final week)
+  - 5/30: Q&A
+  - 6/1: Project final presentation
+- Week 17
+  - 6/6: course wrap-up: the future belongs to open science
+  - 6/8: NO CLASS | Project report due (writeup)
+- Week 18
+  - 6/13: NO CLASS
+  - 6/15: NO CLASS
