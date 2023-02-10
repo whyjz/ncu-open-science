@@ -4,9 +4,6 @@ on:
   push:
     branches:
     - main
-  pull_request:
-    branches:
-    - main
     
 jobs:
   build-docs:
@@ -15,28 +12,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8 and conda/mamba
-      uses: conda-incubator/setup-miniconda@v2
+    
+    
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v1
       with:
-        python-version: 3.8
-        mamba-version: "*"
-        channels: conda-forge
-        activate-environment: ncu-os
-        environment-file: environment.yml
-        use-mamba: true
-    - name: Test environment
-      shell: bash -l {0}
-      run: |
-        conda info
-        conda list
-    - name: Build book
-      shell: bash -l {0}
-      run: |
-        jupyter book build ./jupyter-book
+        python-version: 3.10
         
-    - name: Deploy to gh-pages
-      if: github.ref == 'refs/heads/main'
+    - name: Install dependencies
+      run: |
+        pip install jupyter-book
+
+    - name: Build book
+      run: |
+        jupyter book build ./docs
+        
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./jupyter-book/_build/html
+        publish_dir: ./docs/_build/html
