@@ -5,3 +5,4 @@ root: index
 #   numbered: true
 chapters:
 - file: syllabus
+- file: project
