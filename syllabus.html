@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Syllabus &#8212; NCU Open Science</title>
+    <title>Syllabus &#8212; Open Science Practices in Remote Sensing</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="RS6026: Open Science Practices in Remote Sensing" href="index.html" />
+    <link rel="next" title="Class project" href="project.html" />
+    <link rel="prev" title="RS6026: Open Science Practices in Remote Sensing (遙測開放科學實踐)" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -89,9 +90,14 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
       
       
-      <h1 class="site-logo" id="site-title">NCU Open Science</h1>
+      <img src="_static/csrsr_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open Science Practices in Remote Sensing</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -99,18 +105,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="index.html">
-                    RS6026: Open Science Practices in Remote Sensing
-                </a>
-            </li>
-        </ul>
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project.html">
+   Class project
   </a>
  </li>
 </ul>
@@ -223,12 +226,92 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#course-objectives">
+   Course objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#format">
+   Format
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-of-conduct">
+     Code of conduct
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#weekly-topics">
+   Weekly topics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grading">
+   Grading
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#write-up-requirements">
+     write-up requirements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#late-work-policy">
+     Late work policy
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#office-hours">
+     Office hours
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#textbooks">
+     Textbooks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-resources">
+     Other resources
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -240,6 +323,75 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#course-objectives">
+   Course objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#format">
+   Format
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-of-conduct">
+     Code of conduct
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#weekly-topics">
+   Weekly topics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grading">
+   Grading
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#write-up-requirements">
+     write-up requirements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#late-work-policy">
+     Late work policy
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#office-hours">
+     Office hours
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#textbooks">
+     Textbooks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-resources">
+     Other resources
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -249,10 +401,32 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="syllabus">
 <h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline">#</a></h1>
+<p>RS6026: Open Science Practices in Remote Sensing (遙測開放科學實踐)</p>
+<p>Whyjay Zheng (鄭懷傑), <a class="reference external" href="mailto:whyjz&#37;&#52;&#48;csrsr&#46;ncu&#46;edu&#46;tw">whyjz<span>&#64;</span>csrsr<span>&#46;</span>ncu<span>&#46;</span>edu<span>&#46;</span>tw</a></p>
+<section id="course-objectives">
+<h2>Course objectives<a class="headerlink" href="#course-objectives" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="format">
+<h2>Format<a class="headerlink" href="#format" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>Tuesday 12:00 pm - 12:50 pm at R2-115 (mostly hands-on sessions)</p></li>
+<li><p>Thursday 1:00 pm - 2:50 pm at R3-114 (lectures and discussion)</p></li>
+</ol>
+<section id="code-of-conduct">
+<h3>Code of conduct<a class="headerlink" href="#code-of-conduct" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>DEI</p></li>
+<li><p>Attribution of work</p></li>
+</ul>
+</section>
+</section>
+<section id="weekly-topics">
+<h2>Weekly topics<a class="headerlink" href="#weekly-topics" title="Permalink to this headline">#</a></h2>
+<p>This is a tentative schedule; the actual content is subject to change depending on our progress and participants’ needs.</p>
 <ul class="simple">
 <li><p>Week 1</p>
 <ul>
-<li><p>2/14: Checking in | course introduction</p></li>
+<li><p>2/14: Checking in &amp; course introduction</p></li>
 <li><p>2/16: What is open science?</p></li>
 </ul>
 </li>
@@ -298,10 +472,10 @@ title="Print to PDF"
 <li><p>4/6: NO CLASS</p></li>
 </ul>
 </li>
-<li><p>Week 9 (midterm week)</p>
+<li><p>Week 9</p>
 <ul>
-<li><p>4/11: Q&amp;A | Project progress report (1-page writeup due)</p></li>
-<li><p>4/13: Project progress presentation</p></li>
+<li><p>4/11: Q&amp;A; <strong>Project progress report writeup due</strong></p></li>
+<li><p>4/13: <strong>Project progress presentation</strong></p></li>
 </ul>
 </li>
 <li><p>Week 10</p>
@@ -340,16 +514,16 @@ title="Print to PDF"
 <li><p>5/25: Financial support and career plans</p></li>
 </ul>
 </li>
-<li><p>Week 16 (final week)</p>
+<li><p>Week 16</p>
 <ul>
 <li><p>5/30: Q&amp;A</p></li>
-<li><p>6/1: Project final presentation</p></li>
+<li><p>6/1: <strong>Project final presentation</strong></p></li>
 </ul>
 </li>
 <li><p>Week 17</p>
 <ul>
 <li><p>6/6: course wrap-up: the future belongs to open science</p></li>
-<li><p>6/8: NO CLASS | Project report due (writeup)</p></li>
+<li><p>6/8: NO CLASS; <strong>Project final report writeup due</strong></p></li>
 </ul>
 </li>
 <li><p>Week 18</p>
@@ -359,6 +533,47 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
+</section>
+<section id="grading">
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
+<p>Class project 100%</p>
+<ul class="simple">
+<li><p>progress report (write-up): 10%</p></li>
+<li><p>progress report (oral presentation): 20%</p></li>
+<li><p>final report (oral presentation): 30%</p></li>
+<li><p>final report (write-up): 40%</p></li>
+</ul>
+<section id="write-up-requirements">
+<h3>write-up requirements<a class="headerlink" href="#write-up-requirements" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>progress report: one page long, single spaced</p></li>
+<li><p>final report: less than ten pages long, single spaced</p></li>
+</ul>
+</section>
+<section id="late-work-policy">
+<h3>Late work policy<a class="headerlink" href="#late-work-policy" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>write-ups: 10% penalty will be applied for each day past the deadline.</p></li>
+<li><p>oral presentations: we accept video recordings as make-ups. However, 20% penalty will be applied for each day past the oral presentation time.</p></li>
+<li><p>The policies above may be exempted under special circumstances, such as family emergency or urgent medical conditions. Please inform me as early as possible should this happens so we can talk about make-up plans accordingly.</p></li>
+</ul>
+</section>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
+<p>No prerequisites</p>
+<section id="office-hours">
+<h3>Office hours<a class="headerlink" href="#office-hours" title="Permalink to this headline">#</a></h3>
+<p>Tuesday 2-3 pm or by appointment, in my office (R3-230)</p>
+</section>
+<section id="textbooks">
+<h3>Textbooks<a class="headerlink" href="#textbooks" title="Permalink to this headline">#</a></h3>
+<p>No textbook is required, but</p>
+</section>
+<section id="other-resources">
+<h3>Other resources<a class="headerlink" href="#other-resources" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -392,8 +607,15 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">RS6026: Open Science Practices in Remote Sensing</p>
+            <p class="prev-next-title">RS6026: Open Science Practices in Remote Sensing (遙測開放科學實踐)</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="project.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Class project</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
