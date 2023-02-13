@@ -1,8 +1,11 @@
 format: jb-book
 root: index
-# parts:
-# - caption: Syllabus
-#   numbered: true
-chapters:
-- file: syllabus
-- file: project
+parts:
+  - caption: Overview
+    chapters:
+    - file: syllabus
+    - file: project
+    
+  # - caption: Lectures
+  #   chapters:
+  #   - file: checkin
