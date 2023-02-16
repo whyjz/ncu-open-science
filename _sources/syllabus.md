@@ -117,13 +117,9 @@ The class attendance won't affect your final grade expect for two oral presentat
 
 Tuesday 2-3 pm or by appointment, in my office (R3-230).
 
-### Textbooks
+### Textbooks and other resources 
 
-No textbook is required. Additional textbooks TBD. 
-
-### Other resources
-
-TBD.
+No textbook is required. Reference and other reading/technical resources will be available in the corresponding lecture pages. 
 
 ## Survey
 
