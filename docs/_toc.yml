@@ -6,6 +6,7 @@ parts:
     - file: syllabus
     - file: project
     
-  # - caption: Lectures
-  #   chapters:
-  #   - file: checkin
+parts:
+  - caption: Lectures
+    chapters:
+    - file: lectures/L1-intro
