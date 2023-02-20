@@ -9,3 +9,7 @@ parts:
   - caption: Lectures
     chapters:
     - file: lectures/L1-intro
+    
+  - caption: ⌨️ Hands-on sessions
+    chapters:
+    - file: handson/H1-Jupyter
