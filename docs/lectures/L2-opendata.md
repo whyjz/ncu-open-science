@@ -1,10 +1,10 @@
 # Open data and beyond
 
-**2023.02.23**
+**2023.02.23, 2023.03.02**
 
 ## Slides
 
-TBD
+[Lecture slides - 1](https://docs.google.com/presentation/d/1Mh2WYh_GNBAiqmDvcRcRvQ7xphawVWTNtZ-_8CumzkY/edit?usp=sharing)
 
 ## Reference and further readings
 
