@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Our working environment: Jupyter &#8212; Open Science Practices in Remote Sensing</title>
+    <title>Open data and beyond &#8212; Open Science Practices in Remote Sensing</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Open data and beyond" href="../lectures/L2-opendata.html" />
+    <link rel="next" title="Our working environment: Jupyter" href="../handson/H1-Jupyter.html" />
+    <link rel="prev" title="What is open science?" href="L1-intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -126,14 +127,14 @@ const thebe_selector_output = ".output, .cell_output"
   Lectures
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/L1-intro.html">
+  <a class="reference internal" href="L1-intro.html">
    What is open science?
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../lectures/L2-opendata.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Open data and beyond
   </a>
  </li>
@@ -143,9 +144,9 @@ const thebe_selector_output = ".output, .cell_output"
   ⌨️ Hands-on sessions
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../handson/H1-Jupyter.html">
    Our working environment: Jupyter
   </a>
  </li>
@@ -200,35 +201,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/handson/H1-Jupyter.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -251,7 +223,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/handson/H1-Jupyter.ipynb"
+        <a href="../_sources/lectures/L2-opendata.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -262,7 +234,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="headerbtn__text-container">.md</span>
 </a>
 
       </li>
@@ -311,35 +283,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#callysto">
-   Callysto
+  <a class="reference internal nav-link" href="#slides">
+   Slides
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#once-you-log-in">
-   Once you log in…
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#familarize-yourself-with-jupyter-notebook-juyterlab">
-     Familarize yourself with Jupyter Notebook / JuyterLab
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-the-learning-resources-from-callysto">
-     Get the learning resources from Callysto
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-resources-on-the-hub">
-     Get resources on the Hub
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-resources">
-   More resources
+  <a class="reference internal nav-link" href="#reference-and-further-readings">
+   Reference and further readings
   </a>
  </li>
 </ul>
@@ -351,7 +301,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Our working environment: Jupyter</h1>
+                <h1>Open data and beyond</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -362,35 +312,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#callysto">
-   Callysto
+  <a class="reference internal nav-link" href="#slides">
+   Slides
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#once-you-log-in">
-   Once you log in…
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#familarize-yourself-with-jupyter-notebook-juyterlab">
-     Familarize yourself with Jupyter Notebook / JuyterLab
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-the-learning-resources-from-callysto">
-     Get the learning resources from Callysto
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-resources-on-the-hub">
-     Get resources on the Hub
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-resources">
-   More resources
+  <a class="reference internal nav-link" href="#reference-and-further-readings">
+   Reference and further readings
   </a>
  </li>
 </ul>
@@ -403,70 +331,20 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="our-working-environment-jupyter">
-<h1>Our working environment: Jupyter<a class="headerlink" href="#our-working-environment-jupyter" title="Permalink to this headline">#</a></h1>
-<p><strong>2023.02.21</strong></p>
-<p><img alt="Jupyter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/207px-Jupyter_logo.svg.png" />
-By Project Jupyter, <a class="reference external" href="https://github.com/jupyter/jupyter.github.io/blob/master/LICENSE">BSD-3-Clause license</a></p>
-<p><strong>Jupyter</strong> provides environments and tools designed for performing data science on the cloud. <a class="reference external" href="https://jupyter.org/">Project Jupyter landing page</a></p>
-<section id="callysto">
-<h2><a class="reference external" href="https://www.callysto.ca/">Callysto</a><a class="headerlink" href="#callysto" title="Permalink to this headline">#</a></h2>
-<p><img alt="Callysto" src="https://www.callysto.ca/wp-content/uploads/2020/10/Callysto-Logo_Hor_Colour-768x242.png" />
-By Callysto, <a class="reference external" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
-<p>As a non-profit program aiming for improving teaching data science in Canada, Callysto hosts the Callysto hub, a free online tool with the Jupyter-based interface and computational resources for everyone.</p>
-<p>You’ll need a Google or Microsoft account to sign into the Callysto Hub.</p>
-<p><a class="reference external" href="https://hub.callysto.ca/">Callysto Hub landing page</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="open-data-and-beyond">
+<h1>Open data and beyond<a class="headerlink" href="#open-data-and-beyond" title="Permalink to this headline">#</a></h1>
+<p><strong>2023.02.23</strong></p>
+<section id="slides">
+<h2>Slides<a class="headerlink" href="#slides" title="Permalink to this headline">#</a></h2>
+<p>TBD</p>
 </section>
-<section id="once-you-log-in">
-<h2>Once you log in…<a class="headerlink" href="#once-you-log-in" title="Permalink to this headline">#</a></h2>
-<p>Here are things you can do:</p>
-<section id="familarize-yourself-with-jupyter-notebook-juyterlab">
-<h3>Familarize yourself with Jupyter Notebook / JuyterLab<a class="headerlink" href="#familarize-yourself-with-jupyter-notebook-juyterlab" title="Permalink to this headline">#</a></h3>
-<p>Your first hub landing place should be <code class="docutils literal notranslate"><span class="pre">https://hub-xx.callysto.ca/jupyter/user/xxx..../tree</span></code>, a traditional <strong>Notebook tree view</strong>.</p>
-<p>You can switch to a more advance JupyterLab interface by changing the URL to <code class="docutils literal notranslate"><span class="pre">https://hub-xx.callysto.ca/jupyter/user/xxx..../lab</span></code>. This is the JupyterLab interface (which is like Jupyter Notebook 2.0 for some people).</p>
-</section>
-<section id="get-the-learning-resources-from-callysto">
-<h3>Get the learning resources from Callysto<a class="headerlink" href="#get-the-learning-resources-from-callysto" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>Check out the <a class="reference external" href="https://www.callysto.ca/starter-kit/">Callysto starter kit</a>!</p></li>
-<li><p>Find the <code class="docutils literal notranslate"><span class="pre">getting-started.ipynb</span></code> in the tree view or in the file browser panel. Open it and follow (run) the instruction there.</p></li>
-<li><p>There’s a lot of learning modules and other resources on Callysto for you to try Jupyter itself and learn data science!</p></li>
-</ul>
-</section>
-<section id="get-resources-on-the-hub">
-<h3>Get resources on the Hub<a class="headerlink" href="#get-resources-on-the-hub" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>You can download/import any files on the Callysto Hub, including additional learning resources.</p></li>
-<li><p>The demo examples will be put on Github, and here are an example for downloading (clone) the Github content to your Callysto space:</p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/pangeo-data/jupyter-earth.git</span></code></p>
-<p>Try this command here!</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/pangeo-data/jupyter-earth.git
-</pre></div>
-</div>
-</div>
-</div>
-<p>This Github repository contains raw files presented at <a class="reference external" href="https://jupytearth.org/">here</a>.</p>
-</section>
-</section>
-<section id="more-resources">
-<h2>More resources<a class="headerlink" href="#more-resources" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Shell (bash):</p>
-<ul>
-<li><p><a class="reference external" href="https://linux.vbird.org/linux_basic/centos7/0320bash.php">鳥哥的學習私房手冊 (中文)</a></p></li>
-<li><p><a class="reference external" href="https://ryanstutorials.net/bash-scripting-tutorial/">Ryans Tutorials (English)</a></p></li>
-</ul>
-</li>
-<li><p>Git:</p>
-<ul>
-<li><p><a class="reference external" href="https://backlog.com/git-tutorial/tw/">連猴子都能懂的 Git 入門指南 (中文)</a></p></li>
-<li><p><a class="reference external" href="https://nulab.com/learn/software-development/git-tutorial/git-basics/">Git tutorial: An essential guide to a powerful integration (English)</a></p></li>
-</ul>
-</li>
-</ul>
+<section id="reference-and-further-readings">
+<h2>Reference and further readings<a class="headerlink" href="#reference-and-further-readings" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>Creative Commons. About The Licenses: What our licenses do. <a class="reference external" href="https://creativecommons.org/licenses/?lang=en">https://creativecommons.org/licenses/?lang=en</a> (accessed on February 23, 2023). Versions in other languages also available.</p></li>
+<li><p>Open Definition (2015). Open Definition 2.1. <a class="reference external" href="https://opendefinition.org/od/2.1/en/">https://opendefinition.org/od/2.1/en/</a> (accessed on February 23, 2023). Versions in other languages also available.</p></li>
+<li><p>Wilkinson, M. D., et al. (2016). The FAIR Guiding Principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>(1), 160018. <a class="reference external" href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a> | <a class="reference external" href="https://www.go-fair.org/fair-principles/">Short summary by GO FAIR</a> (accessed on February 23, 2023)</p></li>
+</ol>
 </section>
 </section>
 
@@ -483,7 +361,7 @@ By Callysto, <a class="reference external" href="http://creativecommons.org/lice
         },
         kernelOptions: {
             name: "python3",
-            path: "./handson"
+            path: "./lectures"
         },
         predefinedOutput: true
     }
@@ -497,12 +375,19 @@ By Callysto, <a class="reference external" href="http://creativecommons.org/lice
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../lectures/L2-opendata.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="L1-intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Open data and beyond</p>
+            <p class="prev-next-title">What is open science?</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="../handson/H1-Jupyter.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Our working environment: Jupyter</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
