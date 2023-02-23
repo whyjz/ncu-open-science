@@ -44,10 +44,10 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 2/16: What is open science?
 - Week 2
   - 2/21: ⌨️ Our working environment: Jupyter
-  - 2/23: Open vs proprietary data: which is better?
+  - 2/23: Open data and beyond (1): Licenses
 - Week 3
   - 2/28: NO CLASS
-  - 3/2: The FAIR policy
+  - 3/2: Open data and beyond (2): The FAIR policy
 - Week 4
   - 3/7: ⌨️ Share your data and code under FAIR (1)
   - 3/9: Open access journals and preprints
