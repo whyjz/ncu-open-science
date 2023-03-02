@@ -6,6 +6,8 @@
 
 [Lecture slides - 1](https://docs.google.com/presentation/d/1Mh2WYh_GNBAiqmDvcRcRvQ7xphawVWTNtZ-_8CumzkY/edit?usp=sharing)
 
+[Lecture slides - 2](https://docs.google.com/presentation/d/1i3x-VmxHqbWxo-qFwTOnfwMWRyIi3f5-J8JYZYJnlyg/edit?usp=sharing)
+
 ## Reference and further readings
 
 1. Creative Commons. About The Licenses: What our licenses do. https://creativecommons.org/licenses/?lang=en (accessed on February 23, 2023). Versions in other languages also available.
