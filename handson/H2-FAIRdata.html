@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Our working environment: Jupyter &#8212; Open Science Practices in Remote Sensing</title>
+    <title>FAIRly share your data and code &#8212; Open Science Practices in Remote Sensing</title>
   
   
   
@@ -58,11 +58,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H1-Jupyter';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H2-FAIRdata';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="FAIRly share your data and code" href="H2-FAIRdata.html" />
-    <link rel="prev" title="Open data and beyond" href="../lectures/L2-opendata.html" />
+    <link rel="prev" title="Our working environment: Jupyter" href="H1-Jupyter.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
   </head>
@@ -164,8 +163,8 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="H1-Jupyter.html">
                         Our working environment: Jupyter
                       </a>
                     </li>
@@ -176,8 +175,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </button>
                 <div class="dropdown-menu">
                     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="H2-FAIRdata.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         FAIRly share your data and code
                       </a>
                     </li>
@@ -283,8 +282,8 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="H1-Jupyter.html">
                         Our working environment: Jupyter
                       </a>
                     </li>
@@ -295,8 +294,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </button>
                 <div class="dropdown-menu">
                     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="H2-FAIRdata.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         FAIRly share your data and code
                       </a>
                     </li>
@@ -376,8 +375,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">⌨️ Hands-on sessions</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Our working environment: Jupyter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H2-FAIRdata.html">FAIRly share your data and code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H1-Jupyter.html">Our working environment: Jupyter</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">FAIRly share your data and code</a></li>
 </ul>
 
     </div>
@@ -448,7 +447,7 @@ title="Fullscreen mode"
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
-      <li><a href="../_sources/handson/H1-Jupyter.ipynb" target="_blank"
+      <li><a href="../_sources/handson/H2-FAIRdata.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -491,7 +490,7 @@ title="Print to PDF"
             
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Our working environment: Jupyter</h1>
+    <h1>FAIRly share your data and code</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -502,36 +501,73 @@ title="Print to PDF"
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#callysto">
-   Callysto
+  <a class="reference internal nav-link" href="#goals">
+   Goals
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#once-you-log-in">
-   Once you log in…
+  <a class="reference internal nav-link" href="#zenodo">
+   Zenodo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-1-procedure">
+   Goal 1 procedure
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#familarize-yourself-with-jupyter-notebook-juyterlab">
-     Familarize yourself with Jupyter Notebook / JuyterLab
+    <a class="reference internal nav-link" href="#register-a-zenodo-account">
+     Register a Zenodo account
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-the-learning-resources-from-callysto">
-     Get the learning resources from Callysto
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-resources-on-the-hub">
-     Get resources on the Hub
+    <a class="reference internal nav-link" href="#attempt-to-create-an-upload">
+     Attempt to create an Upload
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-resources">
-   More resources
+  <a class="reference internal nav-link" href="#github">
+   Github
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-2-procedure">
+   Goal 2 procedure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#register-a-github-account">
+     Register a Github account
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-github-repository">
+     Create a Github repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clone-this-github-repository-to-your-local-machine">
+     Clone this Github repository to your local machine
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-commits-and-push-them-to-github">
+     Make commits and push them to Github
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#link-the-github-repository-to-zenodo">
+     Link the Github repository to Zenodo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-release">
+     Create a release
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -542,70 +578,76 @@ title="Print to PDF"
 
             <article class="bd-article" role="main">
               
-  <section class="tex2jax_ignore mathjax_ignore" id="our-working-environment-jupyter">
-<h1>Our working environment: Jupyter<a class="headerlink" href="#our-working-environment-jupyter" title="Permalink to this heading">#</a></h1>
-<p><strong>2023.02.21</strong></p>
-<p><img alt="Jupyter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/207px-Jupyter_logo.svg.png" />
-By Project Jupyter, <a class="reference external" href="https://github.com/jupyter/jupyter.github.io/blob/master/LICENSE">BSD-3-Clause license</a></p>
-<p><strong>Jupyter</strong> provides environments and tools designed for performing data science on the cloud. <a class="reference external" href="https://jupyter.org/">Project Jupyter landing page</a></p>
-<section id="callysto">
-<h2><a class="reference external" href="https://www.callysto.ca/">Callysto</a><a class="headerlink" href="#callysto" title="Permalink to this heading">#</a></h2>
-<p><img alt="Callysto" src="https://www.callysto.ca/wp-content/uploads/2020/10/Callysto-Logo_Hor_Colour-768x242.png" />
-By Callysto, <a class="reference external" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
-<p>As a non-profit program aiming for improving teaching data science in Canada, Callysto hosts the Callysto hub, a free online tool with the Jupyter-based interface and computational resources for everyone.</p>
-<p>You’ll need a Google or Microsoft account to sign into the Callysto Hub.</p>
-<p><a class="reference external" href="https://hub.callysto.ca/">Callysto Hub landing page</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="fairly-share-your-data-and-code">
+<h1>FAIRly share your data and code<a class="headerlink" href="#fairly-share-your-data-and-code" title="Permalink to this heading">#</a></h1>
+<p><strong>2023.03.07</strong></p>
+<section id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Understand how to archive data on Zenodo and make them FAIR-compatible.</p></li>
+<li><p>Create a repository on Github and archive the content (which can be data or code) on Zenodo automatically whenever there is a release.</p></li>
+</ol>
 </section>
-<section id="once-you-log-in">
-<h2>Once you log in…<a class="headerlink" href="#once-you-log-in" title="Permalink to this heading">#</a></h2>
-<p>Here are things you can do:</p>
-<section id="familarize-yourself-with-jupyter-notebook-juyterlab">
-<h3>Familarize yourself with Jupyter Notebook / JuyterLab<a class="headerlink" href="#familarize-yourself-with-jupyter-notebook-juyterlab" title="Permalink to this heading">#</a></h3>
-<p>Your first hub landing place should be <code class="docutils literal notranslate"><span class="pre">https://hub-xx.callysto.ca/jupyter/user/xxx..../tree</span></code>, a traditional <strong>Notebook tree view</strong>.</p>
-<p>You can switch to a more advance JupyterLab interface by changing the URL to <code class="docutils literal notranslate"><span class="pre">https://hub-xx.callysto.ca/jupyter/user/xxx..../lab</span></code>. This is the JupyterLab interface (which is like Jupyter Notebook 2.0 for some people).</p>
+<section id="zenodo">
+<h2><a class="reference external" href="https://zenodo.org/">Zenodo</a><a class="headerlink" href="#zenodo" title="Permalink to this heading">#</a></h2>
+<p><img alt="Zenodo" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Zenodo_logo.jpg" />
+By CERN Data Centre &amp; Invenio, <a class="reference external" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
+<p>Zenodo is an open repository aiming for hosting all kinds of research materials, including but not limited to data, code, images, presentations, papers, and documentation. Zenodo is operated by <a class="reference external" href="https://home.cern/">CERN</a> under the EU/EC <a class="reference external" href="https://www.openaire.eu/">OpenAIRE program</a>.</p>
 </section>
-<section id="get-the-learning-resources-from-callysto">
-<h3>Get the learning resources from Callysto<a class="headerlink" href="#get-the-learning-resources-from-callysto" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Check out the <a class="reference external" href="https://www.callysto.ca/starter-kit/">Callysto starter kit</a>!</p></li>
-<li><p>Find the <code class="docutils literal notranslate"><span class="pre">getting-started.ipynb</span></code> in the tree view or in the file browser panel. Open it and follow (run) the instruction there.</p></li>
-<li><p>There’s a lot of learning modules and other resources on Callysto for you to try Jupyter itself and learn data science!</p></li>
-</ul>
+<section id="goal-1-procedure">
+<h2>Goal 1 procedure<a class="headerlink" href="#goal-1-procedure" title="Permalink to this heading">#</a></h2>
+<section id="register-a-zenodo-account">
+<h3>Register a Zenodo account<a class="headerlink" href="#register-a-zenodo-account" title="Permalink to this heading">#</a></h3>
+<p>You can use your Github/ORCID to register a Zenodo account if you have one or are creating one. <a class="reference external" href="https://www.youtube.com/watch?v=a1Rijk_TMHA">What is ORCID?</a></p>
+<p>(We’ll ask to to create a Github account later during this session.)</p>
 </section>
-<section id="get-resources-on-the-hub">
-<h3>Get resources on the Hub<a class="headerlink" href="#get-resources-on-the-hub" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>You can download/import any files on the Callysto Hub, including additional learning resources.</p></li>
-<li><p>The demo examples will be put on Github, and here are an example for downloading (clone) the Github content to your Callysto space:</p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/pangeo-data/jupyter-earth.git</span></code></p>
-<p>Try this command here!</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/pangeo-data/jupyter-earth.git
+<section id="attempt-to-create-an-upload">
+<h3>Attempt to create an Upload<a class="headerlink" href="#attempt-to-create-an-upload" title="Permalink to this heading">#</a></h3>
+<p>During the upload, you’ll also be asked to provide a license (if for open access) and deal with a DOI.</p>
+<p>A license can be given in two ways:</p>
+<ol class="arabic simple">
+<li><p>By choosing one in the dropdown menu</p></li>
+<li><p>By including a license file in the uploaded zip file.</p></li>
+</ol>
+<p>Typically we want a new DOI to be associated with the new upload unless there has been other DOI issued to you. If you want to get the DOI before finalizing and publishing the upload, you can choose the “reserve DOI” option. <strong>DOI registration is permanent!</strong> You cannot remove/delete a DOI once it is given to your submission. I’ll let you decide whether you try this functionaility or not during this session.</p>
+<p>If you have companian material (such as a journal paper or a conference presentation), you can fill in the related/alternate identifiers to link the upload to the companians.</p>
+<p>Don’t forget to prepare the other metadata as much complete as possible! This determines how easy the upload to be reused by other people.</p>
+</section>
+</section>
+<section id="github">
+<h2><a class="reference external" href="https://github.com/">Github</a><a class="headerlink" href="#github" title="Permalink to this heading">#</a></h2>
+<p><img alt="Github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/232px-Font_Awesome_5_brands_github.svg.png" />
+Github icon By Font Awesome, <a class="reference external" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
+<p>Github is an online hosing service for software, code, and documentation using Git as the tool of version control. You don’t need to install Git to use Github, and vise versa. However, <strong>I recommend that you use Git along with Github</strong> for a good integration of the data science ecosystem.</p>
+</section>
+<section id="goal-2-procedure">
+<h2>Goal 2 procedure<a class="headerlink" href="#goal-2-procedure" title="Permalink to this heading">#</a></h2>
+<section id="register-a-github-account">
+<h3>Register a Github account<a class="headerlink" href="#register-a-github-account" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="create-a-github-repository">
+<h3>Create a Github repository<a class="headerlink" href="#create-a-github-repository" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="clone-this-github-repository-to-your-local-machine">
+<h3>Clone this Github repository to your local machine<a class="headerlink" href="#clone-this-github-repository-to-your-local-machine" title="Permalink to this heading">#</a></h3>
+<p>Remember that we will use the <a class="reference external" href="https://hub.callysto.ca/">Callysto Hub</a> as the local machine, although it’s technically on the cloud.</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/YOUR-ID/YOUR-REPO-NAME.git</span></code></p>
+</section>
+<section id="make-commits-and-push-them-to-github">
+<h3>Make commits and push them to Github<a class="headerlink" href="#make-commits-and-push-them-to-github" title="Permalink to this heading">#</a></h3>
+<p>To use git the first time on a machine, you’ll need to configure it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;YOUR NAME&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;YOUR.EMAIL@some.domain.edu&quot;</span>
 </pre></div>
 </div>
-</div>
-</div>
-<p>This Github repository contains raw files presented at <a class="reference external" href="https://jupytearth.org/">here</a>.</p>
 </section>
+<section id="link-the-github-repository-to-zenodo">
+<h3>Link the Github repository to Zenodo<a class="headerlink" href="#link-the-github-repository-to-zenodo" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="more-resources">
-<h2>More resources<a class="headerlink" href="#more-resources" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Shell (bash):</p>
-<ul>
-<li><p><a class="reference external" href="https://linux.vbird.org/linux_basic/centos7/0320bash.php">鳥哥的學習私房手冊 (中文)</a></p></li>
-<li><p><a class="reference external" href="https://ryanstutorials.net/bash-scripting-tutorial/">Ryans Tutorials (English)</a></p></li>
-</ul>
-</li>
-<li><p>Git:</p>
-<ul>
-<li><p><a class="reference external" href="https://backlog.com/git-tutorial/tw/">連猴子都能懂的 Git 入門指南 (中文)</a></p></li>
-<li><p><a class="reference external" href="https://nulab.com/learn/software-development/git-tutorial/git-basics/">Git tutorial: An essential guide to a powerful integration (English)</a></p></li>
-</ul>
-</li>
-</ul>
+<section id="create-a-release">
+<h3>Create a release<a class="headerlink" href="#create-a-release" title="Permalink to this heading">#</a></h3>
+<p>After you create a release, wait for a while (it could take from a few minutes to a few days) and go to Zenodo. Now you should be able to see your repository appeared as an upload with a DOI issued to it!</p>
+</section>
 </section>
 </section>
 
@@ -637,19 +679,12 @@ By Callysto, <a class="reference external" href="http://creativecommons.org/lice
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../lectures/L2-opendata.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="H1-Jupyter.html" title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Open data and beyond</p>
+          <p class="prev-next-title">Our working environment: Jupyter</p>
       </div>
-  </a>
-  <a class='right-next' id="next-link" href="H2-FAIRdata.html" title="next page">
-  <div class="prev-next-info">
-      <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">FAIRly share your data and code</p>
-  </div>
-  <i class="fa-solid fa-angle-right"></i>
   </a>
 </div>
             </footer>
@@ -668,36 +703,73 @@ By Callysto, <a class="reference external" href="http://creativecommons.org/lice
 <nav id="bd-toc-nav" class="page-toc">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#callysto">
-   Callysto
+  <a class="reference internal nav-link" href="#goals">
+   Goals
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#once-you-log-in">
-   Once you log in…
+  <a class="reference internal nav-link" href="#zenodo">
+   Zenodo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-1-procedure">
+   Goal 1 procedure
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#familarize-yourself-with-jupyter-notebook-juyterlab">
-     Familarize yourself with Jupyter Notebook / JuyterLab
+    <a class="reference internal nav-link" href="#register-a-zenodo-account">
+     Register a Zenodo account
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-the-learning-resources-from-callysto">
-     Get the learning resources from Callysto
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-resources-on-the-hub">
-     Get resources on the Hub
+    <a class="reference internal nav-link" href="#attempt-to-create-an-upload">
+     Attempt to create an Upload
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-resources">
-   More resources
+  <a class="reference internal nav-link" href="#github">
+   Github
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goal-2-procedure">
+   Goal 2 procedure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#register-a-github-account">
+     Register a Github account
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-github-repository">
+     Create a Github repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clone-this-github-repository-to-your-local-machine">
+     Clone this Github repository to your local machine
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-commits-and-push-them-to-github">
+     Make commits and push them to Github
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#link-the-github-repository-to-zenodo">
+     Link the Github repository to Zenodo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-release">
+     Create a release
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
