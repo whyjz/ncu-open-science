@@ -44,15 +44,15 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 2/16: What is open science?
 - Week 2
   - 2/21: ⌨️ Our working environment: Jupyter
-  - 2/23: Open data and beyond (1): Licenses
+  - 2/23: Open data and beyond (1): Background
 - Week 3
   - 2/28: NO CLASS
-  - 3/2: Open data and beyond (2): The FAIR policy
+  - 3/2: Open data and beyond (2): Licenses & The FAIR policy
 - Week 4
-  - 3/7: ⌨️ Share your data and code under FAIR (1)
+  - 3/7: ⌨️ FAIRly share your data and code (1)
   - 3/9: Open access journals and preprints
 - Week 5
-  - 3/14: ⌨️ Share your data and code under FAIR (2)
+  - 3/14: ⌨️ FAIRly share your data and code (2)
   - 3/16: Reproducibility
 - Week 6
   - 3/21: ⌨️ Achieving 100% reproducibility (1)
