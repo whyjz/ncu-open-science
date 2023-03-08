@@ -10,6 +10,7 @@ parts:
     chapters:
     - file: lectures/L1-intro
     - file: lectures/L2-opendata
+    - file: lectures/L3-openaccess
     
   - caption: ⌨️ Hands-on sessions
     chapters:
