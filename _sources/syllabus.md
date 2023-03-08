@@ -50,13 +50,13 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 3/2: Open data and beyond (2): Licenses & The FAIR policy
 - Week 4
   - 3/7: ⌨️ FAIRly share your data and code (1)
-  - 3/9: Open access journals and preprints
+  - 3/9: Path to open academic publishing (1): Open access
 - Week 5
   - 3/14: ⌨️ FAIRly share your data and code (2)
-  - 3/16: Reproducibility
+  - 3/16: Path to open academic publishing (2): Preprints and journal metrics
 - Week 6
   - 3/21: ⌨️ Achieving 100% reproducibility (1)
-  - 3/23: Journal metrics and indexing
+  - 3/23: Reproducibility
 - Week 7
   - 3/28: ⌨️ Achieving 100% reproducibility (2)
   - 3/30: DEI and open science 
