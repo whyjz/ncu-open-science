@@ -8,7 +8,7 @@
 
 [Lecture slides - 2](https://docs.google.com/presentation/d/1Mh2WYh_GNBAiqmDvcRcRvQ7xphawVWTNtZ-_8CumzkY/edit?usp=sharing)
 
-## Reference and further readings
+## References and further readings
 
 1. UNESCO (2021). UNESCO Recommendation on Open Science. https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en | [Short summary by University of Twente](https://www.openscience-twente.com/open-science/) (accessed on February 16, 2023)
 

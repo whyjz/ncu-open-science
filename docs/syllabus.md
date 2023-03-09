@@ -13,7 +13,7 @@ Whyjay Zheng (鄭懷傑), whyjz@csrsr.ncu.edu.tw
 ## Format
 
 1. Tuesday 12:00 pm - 12:50 pm at R2-115 (mostly hands-on sessions)
-2. Thursday 1:00 pm - 2:50 pm at R3-114 (lectures and discussion)
+2. Thursday 1:00 pm - 2:50 pm at **R2-223-2 (Updated!)** for lectures and discussion
 
 The hands-on sessions (labeled ⌨️ in [Weekly topics](syllabus.html#weekly-topics)) are on Tuesday and **require access to a computer**. You are welcome to use the computers available in R2-115 or bring your own.
 

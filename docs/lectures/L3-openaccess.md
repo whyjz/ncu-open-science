@@ -6,7 +6,7 @@
 
 TBD
 
-## Reference and further readings
+## References and further readings
 
 1. Piwowar, H., et al. (2018). The state of OA: a large-scale analysis of the prevalence and impact of Open Access articles. *PeerJ*, *6*, e4375. https://doi.org/10.7717/peerj.4375
 
