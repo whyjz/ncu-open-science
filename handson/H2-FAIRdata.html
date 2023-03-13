@@ -383,27 +383,58 @@ Github icon By Font Awesome, <a class="reference external" href="http://creative
 <section id="create-a-github-repository">
 <h3>Create a Github repository<a class="headerlink" href="#create-a-github-repository" title="Permalink to this heading">#</a></h3>
 <p>On Github, go to “Your repositories” and you’ll see the page as below. Click the green button saying “New.”</p>
-<p><img alt="something" src="../_images/Github-scr1.png" /></p>
+<p><img alt="Github-scr1" src="../_images/Github-scr1.png" /></p>
+<p>If you have decided a license you are going to use for this repository, you can choose it from the drop-down menu here. Otherwise, you can leave it blank and specify the license later. Any material without a given license is completely copyrighted.</p>
+<p>If you are new to Git/Github, you can also skip the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">.gitignore</span></code> section.</p>
+<p>After you create a new repository, you can try to add any content using the interface provided by Github (e.g., the “Add file” button).</p>
 </section>
 <section id="clone-this-github-repository-to-your-local-machine">
 <h3>Clone this Github repository to your local machine<a class="headerlink" href="#clone-this-github-repository-to-your-local-machine" title="Permalink to this heading">#</a></h3>
 <p>Remember that we will use the <a class="reference external" href="https://hub.callysto.ca/">Callysto Hub</a> as the local machine, although it’s technically on the cloud.</p>
+<p>Once you log into the Callysto Hub, change the URL from <a class="reference external" href="https://hub-xx.callysto.ca/jupyter/user/xxx..../tree">https://hub-xx.callysto.ca/jupyter/user/xxx…./tree</a> to <a class="reference external" href="https://hub-xx.callysto.ca/jupyter/user/xxx..../lab">https://hub-xx.callysto.ca/jupyter/user/xxx…./lab</a> for the JupyterLab GUI. Click the blue buttom with a plus sign on it to open the launcher page.</p>
+<p><img alt="CallystoHub-scr1" src="../_images/CallystoHub-scr1.png" /></p>
+<p>Initiate a terminal session by clicking the terminal icon on the launcher page. New you can clone the repository we just created on Callysto using the following command-line prompt:</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/YOUR-ID/YOUR-REPO-NAME.git</span></code></p>
+<p><strong>You have to change</strong> <code class="docutils literal notranslate"><span class="pre">YOUR-ID</span></code> <strong>to your Github user name and</strong> <code class="docutils literal notranslate"><span class="pre">YOUR-REPO-NAME</span></code> <strong>to the repositry name you want to be cloned.</strong> Once done, you should see a new folder in the left sidebar (file browser) that shows the repository name. Now you have copied the content from Github to Callysto and can continue to add new content on Callysto.</p>
 </section>
 <section id="make-commits-and-push-them-to-github">
 <h3>Make commits and push them to Github<a class="headerlink" href="#make-commits-and-push-them-to-github" title="Permalink to this heading">#</a></h3>
-<p>To use git the first time on a machine, you’ll need to configure it.</p>
+<p>Once you have new content in the repository, it is time to tell Git to track the change. This is an action called a “commit.”</p>
+<p>To commit the first time on a machine, you’ll need to configure the following information:</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The third line of the code is actually optional since it just specifies the preferred text editor “nano” for commits. If a text editor is not specified, Git will use the system default (which is <code class="docutils literal notranslate"><span class="pre">vim</span></code> on Callysto).</p>
+</div>
+</aside>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;YOUR NAME&quot;</span>
 <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;YOUR.EMAIL@some.domain.edu&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">core</span><span class="o">.</span><span class="n">editor</span> <span class="s2">&quot;nano&quot;</span>
 </pre></div>
 </div>
+<p>Now you can commit new content by the following commands: (Make sure your terminal is at the right path before doing this!)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+<span class="n">git</span> <span class="n">commit</span>
+</pre></div>
+</div>
+<p>If you want to update the remote repository with the new changes (aka to “Push”), you have to <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic">create a Github personal access token</a> for security purposes. Once you have it, type the command below in the terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span>
+</pre></div>
+</div>
+<p>Enter your Github username and the access token – now the commits have been pushed to Github!</p>
 </section>
 <section id="link-the-github-repository-to-zenodo">
 <h3>Link the Github repository to Zenodo<a class="headerlink" href="#link-the-github-repository-to-zenodo" title="Permalink to this heading">#</a></h3>
+<p>At any time during the developement, you can hook the repository on Zenodo by going to Zenodo’s “Github” settings:</p>
+<p><img alt="Zenodo-scr1" src="../_images/Zenodo-scr1.png" /></p>
+<p>Flip the switch to <code class="docutils literal notranslate"><span class="pre">on</span></code>, and you are done!</p>
 </section>
 <section id="create-a-release">
 <h3>Create a release<a class="headerlink" href="#create-a-release" title="Permalink to this heading">#</a></h3>
-<p>After you create a release, wait for a while (it could take from a few minutes to a few days) and go to Zenodo. Now you should be able to see your repository appeared as an upload with a DOI issued to it!</p>
+<p>When you are ready to publish the repository, create a release on Github:</p>
+<p><img alt="Github-scr2" src="../_images/Github-scr2.png" /></p>
+<p>We need to wait for a while for the release to be registered on Zenodo (which could take from a few minutes to a few days), but once it is done, you should be able to see your repository appeared as an upload with a DOI linked to it!</p>
 </section>
 </section>
 </section>
