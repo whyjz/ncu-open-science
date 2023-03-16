@@ -85,7 +85,7 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 5/23: ⌨️ Getting and analyzing open data in remote sensing (2)
   - 5/25: Financial support and career plans
 - Week 16
-  - 5/30: Q&A
+  - 5/30: NO CLASS
   - 6/1: **Project final presentation**
 - Week 17
   - 6/6: Wrap-up: the future of open science
