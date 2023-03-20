@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Our working environment: Jupyter &#8212; Open Science Practices in Remote Sensing</title>
+    <title>Achieving 100% reproducibility &#8212; Open Science Practices in Remote Sensing</title>
   
   
   
@@ -61,11 +61,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H1-Jupyter';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H3-Reproducibility';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="FAIRly share your data and code" href="H2-FAIRdata.html" />
-    <link rel="prev" title="Path to open academic publishing" href="../lectures/L3-openaccess.html" />
+    <link rel="prev" title="FAIRly share your data and code" href="H2-FAIRdata.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -161,9 +160,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">⌨️ Hands-on sessions</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Our working environment: Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H1-Jupyter.html">Our working environment: Jupyter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="H2-FAIRdata.html">FAIRly share your data and code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H3-Reproducibility.html">Achieving 100% reproducibility</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Achieving 100% reproducibility</a></li>
 </ul>
 
     </div>
@@ -218,7 +217,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/handson/H1-Jupyter.ipynb" target="_blank"
+      <li><a href="../_sources/handson/H3-Reproducibility.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -300,7 +299,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Our working environment: Jupyter</h1>
+    <h1>Achieving 100% reproducibility</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -310,14 +309,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#callysto">Callysto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#once-you-log-in">Once you log in…</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#familarize-yourself-with-jupyter-notebook-juyterlab">Familarize yourself with Jupyter Notebook / JuyterLab</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-the-learning-resources-from-callysto">Get the learning resources from Callysto</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-resources-on-the-hub">Get resources on the Hub</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-resources">More resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mybinder-org">MyBinder.org</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-1-procedure">Goal 1 procedure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-2-procedure">Goal 2 procedure</a></li>
 </ul>
             </nav>
         </div>
@@ -329,70 +324,99 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="our-working-environment-jupyter">
-<h1>Our working environment: Jupyter<a class="headerlink" href="#our-working-environment-jupyter" title="Permalink to this heading">#</a></h1>
-<p><strong>2023.02.21</strong></p>
-<p><img alt="Jupyter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/207px-Jupyter_logo.svg.png" />
-By Project Jupyter, <a class="reference external" href="https://github.com/jupyter/jupyter.github.io/blob/master/LICENSE">BSD-3-Clause license</a></p>
-<p><strong>Jupyter</strong> provides environments and tools designed for performing data science on the cloud. <a class="reference external" href="https://jupyter.org/">Project Jupyter landing page</a></p>
-<section id="callysto">
-<h2><a class="reference external" href="https://www.callysto.ca/">Callysto</a><a class="headerlink" href="#callysto" title="Permalink to this heading">#</a></h2>
-<p><img alt="Callysto" src="https://www.callysto.ca/wp-content/uploads/2020/10/Callysto-Logo_Hor_Colour-768x242.png" />
-By Callysto, <a class="reference external" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
-<p>As a non-profit program aiming for improving teaching data science in Canada, Callysto hosts the Callysto hub, a free online tool with the Jupyter-based interface and computational resources for everyone.</p>
-<p>You’ll need a Google or Microsoft account to sign into the Callysto Hub.</p>
-<p><a class="reference external" href="https://hub.callysto.ca/">Callysto Hub landing page</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="achieving-100-reproducibility">
+<h1>Achieving 100% reproducibility<a class="headerlink" href="#achieving-100-reproducibility" title="Permalink to this heading">#</a></h1>
+<p><strong>2023.03.21</strong></p>
+<p>In this handsd-on session we will continue to use the test repository you just created and make it 100% reproducible with the help of <a class="reference external" href="https://mybinder.org/">mybinder.org</a>.</p>
+<section id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Add some executable code pieces to your test repository, commit those changes, and push the change to Github</p></li>
+<li><p>Binderize the repository (i.e., making it runnable on the cloud)</p></li>
+</ol>
 </section>
-<section id="once-you-log-in">
-<h2>Once you log in…<a class="headerlink" href="#once-you-log-in" title="Permalink to this heading">#</a></h2>
-<p>Here are things you can do:</p>
-<section id="familarize-yourself-with-jupyter-notebook-juyterlab">
-<h3>Familarize yourself with Jupyter Notebook / JuyterLab<a class="headerlink" href="#familarize-yourself-with-jupyter-notebook-juyterlab" title="Permalink to this heading">#</a></h3>
-<p>Your first hub landing place should be <code class="docutils literal notranslate"><span class="pre">https://hub-xx.callysto.ca/jupyter/user/xxx..../tree</span></code>, a traditional <strong>Notebook tree view</strong>.</p>
-<p>You can switch to a more advance JupyterLab interface by changing the URL to <code class="docutils literal notranslate"><span class="pre">https://hub-xx.callysto.ca/jupyter/user/xxx..../lab</span></code>. This is the JupyterLab interface (which is like Jupyter Notebook 2.0 for some people).</p>
+<section id="mybinder-org">
+<h2><a class="reference external" href="https://mybinder.org/">MyBinder.org</a><a class="headerlink" href="#mybinder-org" title="Permalink to this heading">#</a></h2>
+<p><img alt="myBinder" src="https://mybinder.org/static/logo.svg" />
+By Project Jupyter Contributors, <a class="reference external" href="https://github.com/jupyterhub/binderhub/blob/main/LICENSE">BSD-3-Clause license</a></p>
+<p><a class="reference external" href="https://mybinder.org/">MyBinder.org</a> is an online service that allows users to share their code with its computing environment. It reads the content and the information specifying the computing environment from a supported repository (e.g., GitHub), and then MyBinder initializes a server with the necessary pacakges installed. Finally, users can access the fully execuable <em>in-situ</em> content through the Jupyter-based GUI.</p>
+<p>The technology behind <a class="reference external" href="http://MyBinder.org">MyBinder.org</a> is called the <strong>BinderHub</strong>. You can find more details about it <a class="reference external" href="https://mybinder.readthedocs.io/en/latest/introduction.html">here</a>. Using the same technology, it is possible to create many independent online services that are similar to <a class="reference external" href="http://MyBinder.org">MyBinder.org</a>.</p>
+<p>BinderHub (e.g., <a class="reference external" href="http://MyBinder.org">MyBinder.org</a>) itself focuses on building a <a class="reference external" href="https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/">Docker image</a> from a repository. BinderHub relies on JupyterHub (e.g., Callysto Hub) to create the pod instance that serves the Docker image.</p>
+<p><img alt="BinderHub workflow" src="https://binderhub.readthedocs.io/en/latest/_images/architecture.png" />
+By Project Jupyter Contributors, <a class="reference external" href="https://github.com/jupyterhub/binderhub/blob/main/LICENSE">BSD-3-Clause license</a></p>
 </section>
-<section id="get-the-learning-resources-from-callysto">
-<h3>Get the learning resources from Callysto<a class="headerlink" href="#get-the-learning-resources-from-callysto" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Check out the <a class="reference external" href="https://www.callysto.ca/starter-kit/">Callysto starter kit</a>!</p></li>
-<li><p>Find the <code class="docutils literal notranslate"><span class="pre">getting-started.ipynb</span></code> in the tree view or in the file browser panel. Open it and follow (run) the instruction there.</p></li>
-<li><p>There’s a lot of learning modules and other resources on Callysto for you to try Jupyter itself and learn data science!</p></li>
-</ul>
-</section>
-<section id="get-resources-on-the-hub">
-<h3>Get resources on the Hub<a class="headerlink" href="#get-resources-on-the-hub" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>You can download/import any files on the Callysto Hub, including additional learning resources.</p></li>
-<li><p>The demo examples will be put on Github, and here are an example for downloading (clone) the Github content to your Callysto space:</p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/pangeo-data/jupyter-earth.git</span></code></p>
-<p>Try this command here!</p>
+<section id="goal-1-procedure">
+<h2>Goal 1 procedure<a class="headerlink" href="#goal-1-procedure" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://hub.callysto.ca/">Callysto Hub portal</a></p>
+<p>Go to the test repositry you created in the <a class="reference internal" href="H2-FAIRdata.html"><span class="doc std std-doc">previous session</span></a>. Create a new file named <code class="docutils literal notranslate"><span class="pre">scipy_test.py</span></code> with the following content:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/pangeo-data/jupyter-earth.git
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span>
+
+<span class="c1"># Define the function that we want to fit</span>
+<span class="k">def</span> <span class="nf">test_func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Generate some data with noise to fit</span>
+<span class="n">x_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">y_data</span> <span class="o">=</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">1.5</span> <span class="o">*</span> <span class="n">x_data</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Fit the data with the function</span>
+<span class="n">params</span><span class="p">,</span> <span class="n">params_covariance</span> <span class="o">=</span> <span class="n">optimize</span><span class="o">.</span><span class="n">curve_fit</span><span class="p">(</span><span class="n">test_func</span><span class="p">,</span> <span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">,</span> <span class="n">p0</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># Print the results</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>This Github repository contains raw files presented at <a class="reference external" href="https://jupytearth.org/">here</a>.</p>
+<p>You can try to execute the file using the terminal by typing <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">scipt_test.py</span></code> and see how it goes. When this script runs, Python will try to load the numpy and scipy libraries, which are already installed on Callysto. You should see a successful re result printed on the screen.</p>
+<p>Now create a new Jupyter Notebook file named <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code> with the following content:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">basemap_to_tiles</span><span class="p">,</span> <span class="n">Marker</span>
+
+<span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">24.9677</span><span class="p">,</span> <span class="mf">121.1870</span><span class="p">)</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span>
+    <span class="n">basemap</span><span class="o">=</span><span class="n">basemap_to_tiles</span><span class="p">(</span><span class="n">basemaps</span><span class="o">.</span><span class="n">OpenStreetMap</span><span class="o">.</span><span class="n">Mapnik</span><span class="p">),</span>
+    <span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span>
+    <span class="n">zoom</span><span class="o">=</span><span class="mi">15</span>
+    <span class="p">)</span>
+<span class="n">marker</span> <span class="o">=</span> <span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">draggable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">marker</span><span class="p">);</span>
+<span class="n">m</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can try to run this Notebook, but it will most likely report an error because the <code class="docutils literal notranslate"><span class="pre">ipyleaflet</span></code> package is not pre-installed on Callysto. We have to install it manually, and here’s one of the many methods:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>ipyleaflet
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now you can restart the kernel and run the Notebook again to see the correct output.</p>
+<p>When you are done adding these files, you can commit the changes and push them to Github.</p>
 </section>
-</section>
-<section id="more-resources">
-<h2>More resources<a class="headerlink" href="#more-resources" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Shell (bash):</p>
-<ul>
-<li><p><a class="reference external" href="https://linux.vbird.org/linux_basic/centos7/0320bash.php">鳥哥的學習私房手冊 (中文)</a></p></li>
-<li><p><a class="reference external" href="https://ryanstutorials.net/bash-scripting-tutorial/">Ryans Tutorials (English)</a></p></li>
-</ul>
-</li>
-<li><p>Git:</p>
-<ul>
-<li><p><a class="reference external" href="https://backlog.com/git-tutorial/tw/">連猴子都能懂的 Git 入門指南 (中文)</a></p></li>
-<li><p><a class="reference external" href="https://nulab.com/learn/software-development/git-tutorial/git-basics/">Git tutorial: An essential guide to a powerful integration (English)</a></p></li>
-</ul>
-</li>
-</ul>
+<section id="goal-2-procedure">
+<h2>Goal 2 procedure<a class="headerlink" href="#goal-2-procedure" title="Permalink to this heading">#</a></h2>
+<p>To binderize the repository, you need to add another file called <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> with the following content:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="p">:</span> <span class="n">binder</span><span class="o">-</span><span class="n">test</span>
+
+<span class="n">channels</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+  <span class="o">-</span> <span class="n">defaults</span>
+<span class="n">dependencies</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">numpy</span>
+  <span class="o">-</span> <span class="n">scipy</span>
+  <span class="o">-</span> <span class="n">ipyleaflet</span>
+</pre></div>
+</div>
+<p>Commit the change and push them to Github. Now you can go to <a class="reference external" href="https://mybinder.org/">MyBinder.org</a> and enter the repository URL to initialize the serval with all the reproducible content from your repository!</p>
 </section>
 </section>
 
@@ -425,22 +449,13 @@ By Callysto, <a class="reference external" href="http://creativecommons.org/lice
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../lectures/L3-openaccess.html"
+       href="H2-FAIRdata.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Path to open academic publishing</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="H2-FAIRdata.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">FAIRly share your data and code</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -457,14 +472,10 @@ By Callysto, <a class="reference external" href="http://creativecommons.org/lice
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#callysto">Callysto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#once-you-log-in">Once you log in…</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#familarize-yourself-with-jupyter-notebook-juyterlab">Familarize yourself with Jupyter Notebook / JuyterLab</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-the-learning-resources-from-callysto">Get the learning resources from Callysto</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#get-resources-on-the-hub">Get resources on the Hub</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-resources">More resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mybinder-org">MyBinder.org</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-1-procedure">Goal 1 procedure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-2-procedure">Goal 2 procedure</a></li>
 </ul>
   </nav></div>
 
