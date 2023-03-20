@@ -16,3 +16,4 @@ parts:
     chapters:
     - file: handson/H1-Jupyter
     - file: handson/H2-FAIRdata
+    - file: handson/H3-Reproducibility
