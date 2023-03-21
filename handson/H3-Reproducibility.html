@@ -351,7 +351,9 @@ By Project Jupyter Contributors, <a class="reference external" href="https://git
 <p>Go to the test repositry you created in the <a class="reference internal" href="H2-FAIRdata.html"><span class="doc std std-doc">previous session</span></a>. Create a new file named <code class="docutils literal notranslate"><span class="pre">scipy_test.py</span></code> with the following content:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#### This sample code was auto-generated using Bing&#39;s ChatGPT AI (GPT-4).</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span>
 
 <span class="c1"># Define the function that we want to fit</span>
@@ -375,7 +377,8 @@ By Project Jupyter Contributors, <a class="reference external" href="https://git
 <p>Now create a new Jupyter Notebook file named <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code> with the following content:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">basemap_to_tiles</span><span class="p">,</span> <span class="n">Marker</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#### This sample code was modified from ipyleaflet&#39;s demo examples.</span>
+<span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">basemap_to_tiles</span><span class="p">,</span> <span class="n">Marker</span>
 
 <span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">24.9677</span><span class="p">,</span> <span class="mf">121.1870</span><span class="p">)</span>
 
@@ -416,7 +419,8 @@ By Project Jupyter Contributors, <a class="reference external" href="https://git
   <span class="o">-</span> <span class="n">ipyleaflet</span>
 </pre></div>
 </div>
-<p>Commit the change and push them to Github. Now you can go to <a class="reference external" href="https://mybinder.org/">MyBinder.org</a> and enter the repository URL to initialize the serval with all the reproducible content from your repository!</p>
+<p>This file follows the <a class="reference external" href="https://en.wikipedia.org/wiki/YAML"><strong>YAML</strong></a> format and tells <strong>conda</strong> (one of the package managers Binder supports) what packages to be installed. Based on the code we added above, we will need <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy</span></code>, and <code class="docutils literal notranslate"><span class="pre">ipyleaflet</span></code>. We will also need Python to execute the code, but it is optional to list Python here because it will be installed as a dependency of all three packages.</p>
+<p>Commit the change and push them to Github. Now you can go to <a class="reference external" href="https://mybinder.org/">MyBinder.org</a> and enter the repository URL to initialize the server with all the reproducible content from your repository!</p>
 </section>
 </section>
 
