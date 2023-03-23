@@ -1,6 +1,6 @@
 # Path to open academic publishing
 
-**2023.03.09, 2023.03.16**
+**2023.03.09, 2023.03.16, 2023.03.23**
 
 ## Slides
 
