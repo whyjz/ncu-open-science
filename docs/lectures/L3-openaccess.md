@@ -8,6 +8,8 @@
 
 [Lecture slides - 2](https://docs.google.com/presentation/d/1tR6bmN4mswOENwA-tabbSbNtzbytF1AJG_0UvYjKjyc/edit?usp=sharing)
 
+[Lecture slides - 3](https://docs.google.com/presentation/d/12Y2Pp6vv3kzHabgIqEf35dhrKe8Xus0CdHkXUFCaTQY/edit?usp=sharing)
+
 ## References and further readings
 
 1. Piwowar, H., et al. (2018). The state of OA: a large-scale analysis of the prevalence and impact of Open Access articles. *PeerJ*, *6*, e4375. https://doi.org/10.7717/peerj.4375
