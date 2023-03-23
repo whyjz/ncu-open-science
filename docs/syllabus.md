@@ -50,16 +50,16 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 3/2: Open data and beyond (2): Licenses & The FAIR policy
 - Week 4
   - 3/7: ⌨️ FAIRly share your data and code (1)
-  - 3/9: Path to open academic publishing (1): Open access
+  - 3/9: Path to open academic publishing (1): Background
 - Week 5
   - 3/14: ⌨️ FAIRly share your data and code (2)
-  - 3/16: Path to open academic publishing (2): Preprints and journal metrics
+  - 3/16: Path to open academic publishing (2): Open access
 - Week 6
   - 3/21: ⌨️ Achieving 100% reproducibility (1)
-  - 3/23: Reproducibility
+  - 3/23: Path to open academic publishing (3): Predatory journals and preprints
 - Week 7
   - 3/28: ⌨️ Achieving 100% reproducibility (2)
-  - 3/30: DEI and open science 
+  - 3/30: Reproducing and reusing previous work
 - Week 8
   - 4/4: NO CLASS
   - 4/6: NO CLASS
@@ -68,10 +68,10 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 4/13: **Project progress presentation**
 - Week 10
   - 4/18: ⌨️ Writing narrative science
-  - 4/20: Scientific writing
+  - 4/20: Diversity, Equity, Inclusiveness (DEI)-based open science
 - Week 11
   - 4/25: ⌨️ Writing documentation
-  - 4/27: Scientific data visualization
+  - 4/27: Scientific writing and data visualization
 - Week 12
   - 5/2: ⌨️ Data visualization (1)
   - 5/4: Science communication: outreach and civil science
