@@ -402,7 +402,7 @@ By Project Jupyter Contributors, <a class="reference external" href="https://git
 </div>
 </div>
 </div>
-<p>Now you can restart the kernel and run the Notebook again to see the correct output.</p>
+<p>Now you can restart the kernel and run the Notebook again to see the correct output. (<em>Note: you will need to install ipyleaflet every time when you start a Callysto Hub session.</em>)</p>
 <p>When you are done adding these files, you can commit the changes and push them to Github.</p>
 </section>
 <section id="goal-2-procedure">
@@ -420,7 +420,9 @@ By Project Jupyter Contributors, <a class="reference external" href="https://git
 </pre></div>
 </div>
 <p>This file follows the <a class="reference external" href="https://en.wikipedia.org/wiki/YAML"><strong>YAML</strong></a> format and tells <strong>conda</strong> (one of the package managers Binder supports) what packages to be installed. Based on the code we added above, we will need <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy</span></code>, and <code class="docutils literal notranslate"><span class="pre">ipyleaflet</span></code>. We will also need Python to execute the code, but it is optional to list Python here because it will be installed as a dependency of all three packages.</p>
-<p>Commit the change and push them to Github. Now you can go to <a class="reference external" href="https://mybinder.org/">MyBinder.org</a> and enter the repository URL to initialize the server with all the reproducible content from your repository!</p>
+<p>Commit the change and push them to Github. Now you can go to <a class="reference external" href="https://mybinder.org/">MyBinder.org</a> and enter the repository URL to initialize the server with all the reproducible content from your repository:</p>
+<p><img alt="Binder" src="../_images/Binder-scr1.png" /></p>
+<p>MyBinder will take some time building the Docker image based on <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> and the other files in the repository. When it is finished, you should be able to see a JupyterLab (or Jupyter Notebook tree view) GUI with all the content (specifically <code class="docutils literal notranslate"><span class="pre">scipy_test.py</span></code> and <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code>) ready to be executed!</p>
 </section>
 </section>
 

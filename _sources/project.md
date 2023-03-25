@@ -35,27 +35,41 @@ Your class project must contain the following components:
  
 For written reports, You are welcome to use any languages that I understand (中文, English, 台文, & Español). On the other hand, we will stick to English for oral presentations. 
 
-### Progress report requirements
+### Progress report
 
 The progress report serves as a checkpoint for the term project. 
 
-#### Written report (due 4/11)
+#### Write-up (due 4/11 23:59 pm UTC+8)
 
-Ideally less than 500 words describing the research topic and the anticipated open science highlights. Will need to be published online for public access, so please do not include any sensitive information such as your student ID. Showing just your name with the report will do just fine. We will show you how to submit the written report in the next few weeks (forget about your Microsoft Word!)
+A short one-pager describing the research topic and the anticipated open science highlights.
 
-#### Oral presentation (4/13)
+**Format requirements:**
 
-Presentation with slides and/or demos. Detailed format TBD.
+- Ideally less than 500 words, including two highlight items.
+- Showing just your name with the report will do just fine. 
 
-### Final report requirements
+**How to submit the report?**
+
+You need to export the report to PDF and send the file to me (whyjz@csrsr.ncu.edu.tw). The progress report will *not* be published for public access. Check out the [late policy](syllabus.html#late-work-policy) should you find yourself unable to complete the assignment on time. 
+
+#### Oral presentation (4/13 1-2 pm during the class time)
+
+Each person will spend ten minutes talking about the project, followed by a 5-10 minute discussion. We will determine the presentation order when the class starts. 
+
+**Format requirements
+
+- Presentation slides or demos are optional. If you need to present with them, bring your own laptop (with an HDMI output) or send the files or links to me (whyjz@csrsr.ncu.edu.tw) before the class starts so we can show your material on the big screen. 
+- Presentation should include why you choose this topic, what you will achieve, and what the open science highlights are.
+
+### Final report
 
 #### Oral presentation (6/1)
 
 Presentation with slides and/or demos. Detailed format TBD.
 
-#### Written report (due 6/8)
+#### Write-up (due 6/8)
 
-Abstract plus the main text should be ideally less than 3000 words (excluding figures, code, and metadata). Treat it as a mini-paper; it should have a proper structure as a piece of scientific writing. Abstract, introduction and conclusion are mandatory, and other common sections such as methods, data, and results are highly recommended. 
+Abstract plus the main text should be ideally less than 3000 words (excluding figures, code, and metadata). Will need to be published online for public access, so please do not include any sensitive information such as your student ID. Treat it as a mini-paper; it should have a proper structure as a piece of scientific writing. Abstract, introduction and conclusion are mandatory, and other common sections such as methods, data, and results are highly recommended. We will show you how to submit the written report in the next few weeks (forget about your Microsoft Word!)
 
 In addition to the required [components of the class project](project.html#components-of-the-class-project), consider addressing these key questions in the report as well:
 
