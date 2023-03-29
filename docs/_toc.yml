@@ -11,6 +11,7 @@ parts:
     - file: lectures/L1-intro
     - file: lectures/L2-opendata
     - file: lectures/L3-openaccess
+    - file: lectures/L4-reproducibility
     
   - caption: ⌨️ Hands-on sessions
     chapters:
