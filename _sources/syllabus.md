@@ -59,7 +59,7 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 3/23: Path to open academic publishing (3): Predatory journals and preprints
 - Week 7
   - 3/28: ⌨️ Achieving 100% reproducibility (2)
-  - 3/30: Reproducing and reusing previous work
+  - 3/30: Reproducing and reusing academic work
 - Week 8
   - 4/4: NO CLASS
   - 4/6: NO CLASS
