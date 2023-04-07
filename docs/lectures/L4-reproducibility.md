@@ -1,10 +1,10 @@
 # Reproducing and reusing academic work
 
-**2023.03.30**
+**2023.03.30, 2023.04.20**
 
 ## Slides
 
-TBD
+[Lecture slides - 1](https://docs.google.com/presentation/d/17VB5raAQOEs46w3I-xNyoggmROmgDhl0lrD0hHohGvs/edit?usp=sharing)
 
 ## References and further readings
 
