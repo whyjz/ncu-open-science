@@ -80,7 +80,12 @@ html:
 
 # #######################################################################################
 # # Advanced and power-user settings
-# sphinx:
+
+bibtex_bibfiles:
+    - references.bib
+sphinx:
+  config:
+    bibtex_reference_style: author_year
 #   extra_extensions          :   # A list of extra extensions to load by Sphinx (added to those already used by JB).
 #   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
 #   recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)

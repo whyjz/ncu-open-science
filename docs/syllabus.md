@@ -67,10 +67,10 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 4/11: Q&A; **Project progress report write-up due**
   - 4/13: **Project progress presentation**
 - Week 10
-  - 4/18: ⌨️ Writing narrative science
+  - 4/18: ⌨️ Writing narrative science (1)
   - 4/20: Diversity, Equity, Inclusiveness (DEI)-based open science
 - Week 11
-  - 4/25: ⌨️ Writing documentation
+  - 4/25: ⌨️ Writing narrative science (2)
   - 4/27: Scientific writing and data visualization
 - Week 12
   - 5/2: ⌨️ Data visualization (1)
@@ -121,6 +121,4 @@ Tuesday 2-3 pm or by appointment, in my office (R3-230).
 
 No textbook is required. Reference and other reading/technical resources will be available in the corresponding lecture pages. 
 
-## Survey
-
-https://forms.gle/JPCoZdadpUriiKsv7
+- [Dr. Quisheng Wu's Youtube channel for geopstial data science, with a focus on Google Earth Engine](https://www.youtube.com/c/QiushengWu)

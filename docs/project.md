@@ -56,7 +56,7 @@ You need to export the report to PDF and send the file to me (whyjz@csrsr.ncu.ed
 
 Each person will spend ten minutes talking about the project, followed by a 5-10 minute discussion. We will determine the presentation order when the class starts. 
 
-**Format requirements
+**Format requirements**
 
 - Presentation slides or demos are optional. If you need to present with them, bring your own laptop (with an HDMI output) or send the files or links to me (whyjz@csrsr.ncu.edu.tw) before the class starts so we can show your material on the big screen. 
 - Presentation should include why you choose this topic, what you will achieve, and what the open science highlights are.
