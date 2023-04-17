@@ -103,8 +103,9 @@ Your grade is entirely based on the class project and is divided into four compo
 - final report (oral presentation): 30%
 - final report (write-up): 40%
 
-The class attendance won't affect your final grade expect for two oral presentation sessions (**4/13** and **6/1**; see [Late work policy](syllabus.html#late-work-policy)).
+The class attendance won't affect your final grade expect for two oral presentation sessions (**4/13** and **6/1**; see [Late work policy](late-work-policy)).
 
+(late-work-policy)=
 ### Late work policy
 
 - Write-ups: 10% penalty will be applied for each day past the deadline. 
