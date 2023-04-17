@@ -50,7 +50,7 @@ A short one-pager describing the research topic and the anticipated open science
 
 **How to submit the report?**
 
-You need to export the report to PDF and send the file to me (whyjz@csrsr.ncu.edu.tw). The progress report will *not* be published for public access. Check out the [late policy](syllabus.html#late-work-policy) should you find yourself unable to complete the assignment on time. 
+You need to export the report to PDF and send the file to me (whyjz@csrsr.ncu.edu.tw). The progress report will *not* be published for public access. Check out the [late policy](late-work-policy) should you find yourself unable to complete the assignment on time. 
 
 #### Oral presentation (4/13 1-2 pm during the class time)
 
