@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Achieving 100% reproducibility &#8212; Open Science Practices in Remote Sensing</title>
+    <title>Writing narrative science &#8212; Open Science Practices in Remote Sensing</title>
   
   
   
@@ -61,11 +61,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H3-Reproducibility';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H4-Narrative';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Writing narrative science" href="H4-Narrative.html" />
-    <link rel="prev" title="FAIRly share your data and code" href="H2-FAIRdata.html" />
+    <link rel="prev" title="Achieving 100% reproducibility" href="H3-Reproducibility.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,8 +165,8 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="H1-Jupyter.html">Our working environment: Jupyter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="H2-FAIRdata.html">FAIRly share your data and code</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Achieving 100% reproducibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H4-Narrative.html">Writing narrative science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H3-Reproducibility.html">Achieving 100% reproducibility</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Writing narrative science</a></li>
 </ul>
 
     </div>
@@ -220,7 +221,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/handson/H3-Reproducibility.ipynb" target="_blank"
+      <li><a href="../_sources/handson/H4-Narrative.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -302,7 +303,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Achieving 100% reproducibility</h1>
+    <h1>Writing narrative science</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -312,10 +313,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-narrative-science">What is narrative science?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mybinder-org">MyBinder.org</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-1-procedure">Goal 1 procedure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-2-procedure">Goal 2 procedure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book">Jupyter Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-1-procedure">Goal 1 procedure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-2-procedure">Goal 2 procedure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-to-github-pages">Publish to GitHub Pages</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-resources">More resources</a></li>
 </ul>
             </nav>
@@ -328,34 +336,65 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="achieving-100-reproducibility">
-<h1>Achieving 100% reproducibility<a class="headerlink" href="#achieving-100-reproducibility" title="Permalink to this heading">#</a></h1>
-<p><strong>2023.03.21, 2023.03.28</strong></p>
-<p>In this handsd-on session we will continue to use the test repository you just created and make it 100% reproducible with the help of <a class="reference external" href="https://mybinder.org/">mybinder.org</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="writing-narrative-science">
+<h1>Writing narrative science<a class="headerlink" href="#writing-narrative-science" title="Permalink to this heading">#</a></h1>
+<p><strong>2023.04.18, 2023.04.25</strong></p>
+<p>This tutorial will provide introduction to Jupyter Book, a powerful tool for writing narrative science. I also used it to create the course webpages.</p>
+<section id="what-is-narrative-science">
+<span id="narrative-science"></span><h2>What is narrative science?<a class="headerlink" href="#what-is-narrative-science" title="Permalink to this heading">#</a></h2>
+<p>Like other trendy words in data science, we don’t have a common agreement about what it means by narrative science. Here we will use the following definition: narrative science is a concept to write a piece that provides scientific and technical details in a research project with a narrative (i.e., context-based) structure so that readers can digest all the information in the text without cross-referencing. <span id="id1">[<a class="reference internal" href="#id3" title="Michael F Dahlstrom. Using narratives and storytelling to communicate science with nonexpert audiences. Proceedings of the National Academy of Sciences, 111(supplement_4):13614–13620, sep 2014. URL: https://www.pnas.org/doi/abs/10.1073/pnas.1320645111 https://pnas.org/doi/full/10.1073/pnas.1320645111, doi:10.1073/pnas.1320645111.">Dahlstrom, 2014</a>]</span></p>
+<p>We will talk more about this during the lecture discussion.</p>
+</section>
 <section id="goals">
 <h2>Goals<a class="headerlink" href="#goals" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Add some executable code pieces to your test repository, commit those changes, and push the change to Github</p></li>
-<li><p>Binderize the repository (i.e., making it runnable on the cloud)</p></li>
+<li><p>Familiarize yourself with the MyST Markdown through some practices</p></li>
+<li><p>Build and publish a Jupyter Book page on GitHub Pages</p></li>
 </ol>
 </section>
-<section id="mybinder-org">
-<h2><a class="reference external" href="https://mybinder.org/">MyBinder.org</a><a class="headerlink" href="#mybinder-org" title="Permalink to this heading">#</a></h2>
-<p><img alt="myBinder" src="https://mybinder.org/static/logo.svg" />
-By Project Jupyter Contributors, <a class="reference external" href="https://github.com/jupyterhub/binderhub/blob/main/LICENSE">BSD-3-Clause license</a></p>
-<p><a class="reference external" href="https://mybinder.org/">MyBinder.org</a> is an online service that allows users to share their code with its computing environment. It reads the content and the information specifying the computing environment from a supported repository (e.g., GitHub), and then MyBinder initializes a server with the necessary pacakges installed. Finally, users can access the fully execuable <em>in-situ</em> content through the Jupyter-based GUI.</p>
-<p>The technology behind <a class="reference external" href="http://MyBinder.org">MyBinder.org</a> is called the <strong>BinderHub</strong>. You can find more details about it <a class="reference external" href="https://mybinder.readthedocs.io/en/latest/introduction.html">here</a>. Using the same technology, it is possible to create many independent online services that are similar to <a class="reference external" href="http://MyBinder.org">MyBinder.org</a>.</p>
-<p>BinderHub (e.g., <a class="reference external" href="http://MyBinder.org">MyBinder.org</a>) itself focuses on building a <a class="reference external" href="https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/">Docker image</a> from a repository. BinderHub relies on JupyterHub (e.g., Callysto Hub) to create the pod instance that serves the Docker image.</p>
-<p><img alt="BinderHub workflow" src="https://binderhub.readthedocs.io/en/latest/_images/architecture.png" />
-By Project Jupyter Contributors, <a class="reference external" href="https://github.com/jupyterhub/binderhub/blob/main/LICENSE">BSD-3-Clause license</a></p>
+<section id="jupyter-book">
+<h2><a class="reference external" href="https://jupyterbook.org/">Jupyter Book</a><a class="headerlink" href="#jupyter-book" title="Permalink to this heading">#</a></h2>
+<p><img alt="Jupyter Book" src="https://jupyterbook.org/en/stable/_static/logo-wide.svg" /></p>
+<p>The <a class="reference external" href="https://jupyterbook.org/">Jupyter Book</a> package coordinates several tools in the Python ecosystem for publishing science and technical writing pieces. Some of the most relevant tools include</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/content/myst.html">MyST Markdown</a>: a derivative of Markdown, a <a class="reference external" href="https://en.wikipedia.org/wiki/Markup_language">markup language</a> allowing users to create rich and formatted text for their documents using a simple text editor.</p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a>: a Python-based engine to read and parse markup-formatted source files and build beautiful documents in various formats, including HTML, PDF, and EPUB.</p></li>
+<li><p>Jupyter Book is also capable of parse source files provided as Jupyter Notebooks, making it powerful to complie research workflows for publication.</p></li>
+</ul>
 </section>
 <section id="goal-1-procedure">
 <h2>Goal 1 procedure<a class="headerlink" href="#goal-1-procedure" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://hub.callysto.ca/">Callysto Hub portal</a></p>
-<p>Go to the test repositry you created in the <a class="reference internal" href="H2-FAIRdata.html"><span class="doc std std-doc">previous session</span></a>. Create a new file named <code class="docutils literal notranslate"><span class="pre">scipy_test.py</span></code> with the following content:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#### This sample code was auto-generated using Bing&#39;s ChatGPT AI (GPT-4).</span>
+<p>Go to the test repositry you created in the <a class="reference internal" href="H2-FAIRdata.html"><span class="doc std std-doc">previous session</span></a>. Create a folder named <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> and a new Jupyter Notebook file named <code class="docutils literal notranslate"><span class="pre">test.ipynb</span></code>.</p>
+<p>Open <code class="docutils literal notranslate"><span class="pre">test.ipynb</span></code> and change the type of the first cell from code to markdown. Copy and paste the following content into that cell:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a title</span>
+
+<span class="c1">## Section 1</span>
+
+<span class="c1">## Section 2</span>
+
+<span class="c1">### Section 2.1</span>
+</pre></div>
+</div>
+<p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl+Enter</span></code> or <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code> to render this cell as Markdown. On Jupyter Lab, the markdown cells are rendered using the <a class="reference external" href="https://jupyterbook.org/en/stable/file-types/notebooks.html">Jupyter Notebook Markdown</a>, an extension of CommonMark Markdown.</p>
+<p>MyST Markdown (which Jupyter Book uses to render the markdown content) is a <a class="reference external" href="https://jupyterbook.org/en/stable/file-types/markdown.html#extended-markdown-with-myst-markdown">superset of CommonMark Markdown</a>, meaning it fully supports Notebook-flavored markdown and provides more functionaility for narrative science.</p>
+<p>Now I have a few tasks for you for expanding <code class="docutils literal notranslate"><span class="pre">index.ipynb</span></code>: let’s see if you can figure this out by searching in the <a class="reference external" href="https://jupyterbook.org/en/stable/content/index.html">Jupyter Book documentation</a>!</p>
+<section id="tasks">
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Display <a class="reference external" href="https://whyjz.github.io/ncu-open-science/_static/csrsr_logo.png">the following figure</a> in Section 1:</p></li>
+</ol>
+<p><img alt="CSRSR" src="https://whyjz.github.io/ncu-open-science/_static/csrsr_logo.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Display the following equation (<a class="reference external" href="https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law">Stefan–Boltzmann law</a>) in Section 2:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(
+P = \epsilon \sigma AT^4
+\)</span></p>
+<ol class="arabic simple" start="3">
+<li><p>Display this code snippet in Section 2.1 (do not use another cell!)</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#### This sample code was auto-generated using Bing&#39;s ChatGPT AI (GPT-4).</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span>
@@ -375,62 +414,106 @@ By Project Jupyter Contributors, <a class="reference external" href="https://git
 <span class="nb">print</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<p>You can try to execute the file using the terminal by typing <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">scipt_test.py</span></code> and see how it goes. When this script runs, Python will try to load the numpy and scipy libraries, which are already installed on Callysto. You should see a successful re result printed on the screen.</p>
-<p>Now create a new Jupyter Notebook file named <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code> with the following content:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#### This sample code was modified from ipyleaflet&#39;s demo examples.</span>
-<span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">basemap_to_tiles</span><span class="p">,</span> <span class="n">Marker</span>
-
-<span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">24.9677</span><span class="p">,</span> <span class="mf">121.1870</span><span class="p">)</span>
-
-<span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span>
-    <span class="n">basemap</span><span class="o">=</span><span class="n">basemap_to_tiles</span><span class="p">(</span><span class="n">basemaps</span><span class="o">.</span><span class="n">OpenStreetMap</span><span class="o">.</span><span class="n">Mapnik</span><span class="p">),</span>
-    <span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span>
-    <span class="n">zoom</span><span class="o">=</span><span class="mi">15</span>
-    <span class="p">)</span>
-<span class="n">marker</span> <span class="o">=</span> <span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">draggable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">marker</span><span class="p">);</span>
-<span class="n">m</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>You can try to run this Notebook, but it will most likely report an error because the <code class="docutils literal notranslate"><span class="pre">ipyleaflet</span></code> package is not pre-installed on Callysto. We have to install it manually, and here’s one of the many methods:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>ipyleaflet
-</pre></div>
-</div>
-</div>
-</div>
-<p>Now you can restart the kernel and run the Notebook again to see the correct output. (<em>Note: you will need to install ipyleaflet every time when you start a Callysto Hub session.</em>)</p>
-<p>When you are done adding these files, you can commit the changes and push them to Github.</p>
+<ol class="arabic simple" start="4">
+<li><p>Add text linking to Section 1. An example is <a class="reference internal" href="#narrative-science"><span class="std std-ref">shown here</span></a> (linking to the beginning section of this document).</p></li>
+</ol>
+<p>You might not be able to see some of the rendering on the JupyterLab/Notebook GUI; you’ll need Jupyter Book to render the MyST markdown correctly. See the next section for details.</p>
+</section>
 </section>
 <section id="goal-2-procedure">
 <h2>Goal 2 procedure<a class="headerlink" href="#goal-2-procedure" title="Permalink to this heading">#</a></h2>
-<p>To binderize the repository, you need to add another file called <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> with the following content:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="p">:</span> <span class="n">binder</span><span class="o">-</span><span class="n">test</span>
-
-<span class="n">channels</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
-  <span class="o">-</span> <span class="n">defaults</span>
-<span class="n">dependencies</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">numpy</span>
-  <span class="o">-</span> <span class="n">scipy</span>
-  <span class="o">-</span> <span class="n">ipyleaflet</span>
+<p>Now let’s install Jupyter Book on Callysto Hub:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>jupyter-book
 </pre></div>
 </div>
-<p>This file follows the <a class="reference external" href="https://en.wikipedia.org/wiki/YAML"><strong>YAML</strong></a> format and tells <strong>conda</strong> (one of the package managers Binder supports) what packages to be installed. Based on the code we added above, we will need <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy</span></code>, and <code class="docutils literal notranslate"><span class="pre">ipyleaflet</span></code>. We will also need Python to execute the code, but it is optional to list Python here because it will be installed as a dependency of all three packages.</p>
-<p>Commit the change and push them to Github. Now you can go to <a class="reference external" href="https://mybinder.org/">MyBinder.org</a> and enter the repository URL to initialize the server with all the reproducible content from your repository:</p>
-<p><img alt="Binder" src="../_images/Binder-scr1.png" /></p>
-<p>MyBinder will take some time building the Docker image based on <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> and the other files in the repository. When it is finished, you should be able to see a JupyterLab (or Jupyter Notebook tree view) GUI with all the content (specifically <code class="docutils literal notranslate"><span class="pre">scipy_test.py</span></code> and <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code>) ready to be executed!</p>
+</div>
+</div>
+<p>In the <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> folder, create two files called <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> with the following content:</p>
+<p><strong>_toc.yml</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
+<span class="n">root</span><span class="p">:</span> <span class="n">index</span>
+<span class="n">chapters</span><span class="p">:</span>
+<span class="c1"># - file: markdown</span>
+<span class="c1"># - file: notebooks</span>
+</pre></div>
+</div>
+<p><strong>_config.yml</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Book settings</span>
+<span class="n">title</span>                       <span class="p">:</span> <span class="p">[</span><span class="n">a</span> <span class="n">project</span> <span class="n">name</span> <span class="n">you</span> <span class="n">like</span><span class="p">]</span>
+<span class="n">author</span>                      <span class="p">:</span> <span class="p">[</span><span class="n">your</span> <span class="n">name</span><span class="p">]</span>
+<span class="n">copyright</span>                   <span class="p">:</span> <span class="s2">&quot;2023&quot;</span>
+<span class="n">logo</span>                        <span class="p">:</span> 
+
+<span class="c1"># Execution settings</span>
+<span class="n">execute</span><span class="p">:</span>
+  <span class="n">execute_notebooks</span>         <span class="p">:</span> <span class="n">off</span>  <span class="c1"># Whether to execute notebooks at build time. Must be one of (&quot;auto&quot;, &quot;force&quot;, &quot;cache&quot;, &quot;off&quot;)</span>
+</pre></div>
+</div>
+<p>Now you should be ready to run compile <code class="docutils literal notranslate"><span class="pre">index,ipynb</span></code> as a Book. Open the terminal, go to where these two files are located, and enter the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
+</pre></div>
+</div>
+<p>And this will generate an HTML site at <code class="docutils literal notranslate"><span class="pre">_build/html</span></code>. Check it out!</p>
+<section id="publish-to-github-pages">
+<h3>Publish to GitHub Pages<a class="headerlink" href="#publish-to-github-pages" title="Permalink to this heading">#</a></h3>
+<p>We can create an automatic workflow on GitHub to run Jupyter Book and publish the HTMLs to GitHub pages every time you push any new content.</p>
+<p>First commit and push all the changes above. Now go back to the repository folder on Callysto Hub. Create a file named <code class="docutils literal notranslate"><span class="pre">build.yml</span></code> in
+<code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> (you might need to create this folder too). Add the following content to <code class="docutils literal notranslate"><span class="pre">build.yml</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>name: build-docs
+
+on:
+  push:
+    branches:
+    - main
+    
+jobs:
+  build-docs:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: &#39;3.10&#39;
+        
+    - name: Install dependencies
+      run: |
+        pip install jupyter-book
+    - name: Build book
+      run: |
+        jupyter book build ./jupyter-book
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./jupyter-book/_build/html
+</pre></div>
+</div>
+<p>Commit and push the change above. On the GitHub repository page, go to settings -&gt; Page. Make sure to the settings like this figure shows:</p>
+<p>(a figure pages)</p>
+<p>Wait a moment until the yellow dot turns green:</p>
+<p>(a figure green dot)</p>
+<p>Now you should be able to see the Notebook published on your GitHub pages!</p>
+</section>
 </section>
 <section id="more-resources">
 <h2>More resources<a class="headerlink" href="#more-resources" title="Permalink to this heading">#</a></h2>
-<p>If you want to learn Python, there are tons of websites with a cloud executable environment so that you can code on your browser. In addition to <a class="reference external" href="https://www.callysto.ca/learning-modules/">Callysto’s learning modules</a>, some of the executable-in-situ Python tutorials (free+paid plans) include but not limited to <a class="reference external" href="https://brilliant.org/">Brilliant</a>, <a class="reference external" href="https://www.codecademy.com/">Codecademy</a>, and <a class="reference external" href="https://www.datacamp.com/">DataCamp</a>. You might also want to check out the unfinished <em>Learning Python with Jupyter</em> book at <a class="reference external" href="https://learnpythonwithjupyter.com/">https://learnpythonwithjupyter.com/</a> with downloadable Jupyter Notebook exercises. (<em>Disclaimer: I have no conflict of interest with any of the companies/organiztions mentioned here.</em>)</p>
+<p>This website is also built using Jupyter Book, and its source files are hosted at <a class="reference external" href="https://github.com/whyjz/ncu-open-science">here</a>. You can use it as a template for MyST formats and publishing notebooks.</p>
+<p>For how to configure Jupyter Book settings, see <a class="reference external" href="https://jupyterbook.org/en/stable/customize/config.html">this page</a>. (I always use this configuration template as a good start.)</p>
+<div class="docutils container" id="id2">
+<div class="citation" id="id3" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Dah14</a><span class="fn-bracket">]</span></span>
+<p>Michael F Dahlstrom. Using narratives and storytelling to communicate science with nonexpert audiences. <em>Proceedings of the National Academy of Sciences</em>, 111(supplement_4):13614–13620, sep 2014. URL: <a class="reference external" href="https://www.pnas.org/doi/abs/10.1073/pnas.1320645111 https://pnas.org/doi/full/10.1073/pnas.1320645111">https://www.pnas.org/doi/abs/10.1073/pnas.1320645111 https://pnas.org/doi/full/10.1073/pnas.1320645111</a>, <a class="reference external" href="https://doi.org/10.1073/pnas.1320645111">doi:10.1073/pnas.1320645111</a>.</p>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -466,22 +549,13 @@ By Project Jupyter Contributors, <a class="reference external" href="https://git
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="H2-FAIRdata.html"
+       href="H3-Reproducibility.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">FAIRly share your data and code</p>
+        <p class="prev-next-title">Achieving 100% reproducibility</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="H4-Narrative.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Writing narrative science</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -501,10 +575,17 @@ By Project Jupyter Contributors, <a class="reference external" href="https://git
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-narrative-science">What is narrative science?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mybinder-org">MyBinder.org</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-1-procedure">Goal 1 procedure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-2-procedure">Goal 2 procedure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book">Jupyter Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-1-procedure">Goal 1 procedure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-2-procedure">Goal 2 procedure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-to-github-pages">Publish to GitHub Pages</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-resources">More resources</a></li>
 </ul>
   </nav></div>
