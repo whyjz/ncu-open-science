@@ -59,7 +59,7 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 3/23: Path to open academic publishing (3): Predatory journals and preprints
 - Week 7
   - 3/28: ⌨️ Achieving 100% reproducibility (2)
-  - 3/30: Reproducing and reusing academic work
+  - 3/30: Reproducing and reusing academic work (1): Questionable research practices
 - Week 8
   - 4/4: NO CLASS
   - 4/6: NO CLASS
@@ -68,13 +68,13 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 4/13: **Project progress presentation**
 - Week 10
   - 4/18: ⌨️ Writing narrative science (1)
-  - 4/20: Communicating science (1): Scientific writing
+  - 4/20: Reproducing and reusing academic work (2): Code sharing
 - Week 11
   - 4/25: ⌨️ Writing narrative science (2)
-  - 4/27: Communicating science (2): Data visualization, local community and indigenous people
+  - 4/27: Communicating science (1): Scientific writing, Data visualization, local community and indigenous people
 - Week 12
   - 5/2: ⌨️ Data visualization (1)
-  - 5/4: Communicating science (3): community collaboration, outreach, and civil science
+  - 5/4: Communicating science (2): community collaboration, outreach, and civil science
 - Week 13
   - 5/9: ⌨️ Data visualization (2)
   - 5/11: Open data sets in remote sensing, Earth & environmental sciences (1)
