@@ -5,6 +5,7 @@ parts:
     chapters:
     - file: syllabus
     - file: project
+    - file: template
     
   - caption: Lectures
     chapters:

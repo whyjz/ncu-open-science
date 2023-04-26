@@ -24,6 +24,7 @@ It is great that you align this class project with your research goals since I b
 - Translate documentation of a scientific tool into a new language
 - Create a public dashboard showing real-time thermal data for a certain volcano
 
+(components)=
 ## Components of the class project
 
 Your class project must contain the following components:
@@ -67,13 +68,26 @@ Each person will spend ten minutes talking about the project, followed by a 5-10
 
 Presentation with slides and/or demos. Detailed format TBD.
 
-#### Write-up (due 6/8)
+**Rubrics (30 points in total):**
 
-Abstract plus the main text should be ideally less than 3000 words (excluding figures, code, and metadata). Will need to be published online for public access, so please do not include any sensitive information such as your student ID. Treat it as a mini-paper; it should have a proper structure as a piece of scientific writing. Abstract, introduction and conclusion are mandatory, and other common sections such as methods, data, and results are highly recommended. We will show you how to submit the written report in the next few weeks (forget about your Microsoft Word!)
+- Slide (and other presentation material) design: 10 points
+- Communication (e.g., explaining things in detail and answering questions): 10 points
+- Time management: 10 points
 
-In addition to the required [components of the class project](project.html#components-of-the-class-project), consider addressing these key questions in the report as well:
+#### Write-up (due 6/8; grading period: 1-3 pm UTC+8)
+
+The final term paper should be built and published using Jupyter Book on your personal GitHub Pages. You can find a template [here](template.html). You can update the published HTML as many time as you wish before the grading period; in fact, I recommend that you build your final report ahead of time so we'll not be desperately rushing through debugging. After the grading period, it will be your choice to let the report settle online or remove it from the public view. 
+
+Treat it as a mini-paper; it should have a proper structure and all necessary elements (figures, references, etc.) as a piece of scientific writing. In addition to the required [components of the class project](components), consider addressing these key questions in the report as well:
 
 - How do the chosen open science practices help improve your research project?
 - How do the chosen open science practices help other people understand your work or collaborate with you?
 - What are the future goals of this research project after the semester ends?
 - Will you continue to use the chosen open science practices in the future? Why?
+
+**Rubrics (40 points in total):**
+
+- Content, with a focus on open science practices: 10 points
+- Structure: 10 points
+- Clarity: 10 points
+- Conciseness: 10 points
