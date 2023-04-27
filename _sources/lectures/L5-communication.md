@@ -6,8 +6,16 @@
 
 [Lecture slides - 1](https://docs.google.com/presentation/d/1TwSgc6WRQjO0s9hf8b9FDxFv_J1AFpQaMM0MdZPgG9w/edit?usp=sharing)
 
+[Lecture slides - 2](https://docs.google.com/presentation/d/1IMRRIP5okYWdbdc2fEKTp7WvFZUqOTJ6xofoolWmQ2w/edit?usp=sharing)
+
 ## References and further readings
 
 1. Dahlstrom, M. F. (2014). Using narratives and storytelling to communicate science with nonexpert audiences. Proceedings of the National Academy of Sciences, 111(supplement_4), 13614–13620. https://doi.org/10.1073/pnas.1320645111
 
-2. European Space Agency (2016). The amazing adventures of Rosetta and Philae. https://www.youtube.com/watch?v=HD2zrF3I_II  (accessed on April 20, 2023)
+2. European Space Agency (2016). The amazing adventures of Rosetta and Philae. https://www.youtube.com/watch?v=HD2zrF3I_II (accessed on April 20, 2023)
+
+3. Rose, B. (2023). The Climate Laboratory. https://brian-rose.github.io/ClimateLaboratoryBook (accessed on April 28, 2023). Version 0.3 is archived on Zenodo: https://doi.org/10.5281/zenodo.4750706
+
+4. Görtler, et al. (2019). A Visual Exploration of Gaussian Processes. Distill. https://doi.org/10.23915/distill.00017
+
+5. Hassol, S. J. (2023). The Right Words Are Crucial to Solving Climate Change. Scientific American. (Original title: Changing the Language of Climate Change). https://www.scientificamerican.com/article/the-right-words-are-crucial-to-solving-climate-change/ (accessed on April 28, 2023).
