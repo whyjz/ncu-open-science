@@ -73,10 +73,10 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 4/25: ⌨️ Writing narrative science (2)
   - 4/27: Communicating science (1): Scientific writing, Data visualization, local community and indigenous people
 - Week 12
-  - 5/2: ⌨️ Data visualization (1)
+  - 5/2: ⌨️ Explorative data visualization (1)
   - 5/4: Communicating science (2): community collaboration, outreach, and civil science
 - Week 13
-  - 5/9: ⌨️ Data visualization (2)
+  - 5/9: ⌨️ Explorative data visualization (2)
   - 5/11: Open data sets in remote sensing, Earth & environmental sciences (1)
 - Week 14
   - 5/16: ⌨️ Getting and analyzing open data in remote sensing (1)

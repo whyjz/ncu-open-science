@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Communicating science &#8212; Open Science Practices in Remote Sensing</title>
+    <title>Explorative data visualization &#8212; Open Science Practices in Remote Sensing</title>
   
   
   
@@ -61,11 +61,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lectures/L5-communication';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H5-Visualization';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Our working environment: Jupyter" href="../handson/H1-Jupyter.html" />
-    <link rel="prev" title="Reproducing and reusing academic work" href="L4-reproducibility.html" />
+    <link rel="prev" title="Writing narrative science" href="H4-Narrative.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,20 +154,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../template.html">Template for the term paper</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="L1-intro.html">What is open science?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="L2-opendata.html">Open data and beyond</a></li>
-<li class="toctree-l1"><a class="reference internal" href="L3-openaccess.html">Path to open academic publishing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="L4-reproducibility.html">Reproducing and reusing academic work</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Communicating science</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L1-intro.html">What is open science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L2-opendata.html">Open data and beyond</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L3-openaccess.html">Path to open academic publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L4-reproducibility.html">Reproducing and reusing academic work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L5-communication.html">Communicating science</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">⌨️ Hands-on sessions</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../handson/H1-Jupyter.html">Our working environment: Jupyter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../handson/H2-FAIRdata.html">FAIRly share your data and code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../handson/H3-Reproducibility.html">Achieving 100% reproducibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../handson/H4-Narrative.html">Writing narrative science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../handson/H5-Visualization.html">Explorative data visualization</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="H1-Jupyter.html">Our working environment: Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H2-FAIRdata.html">FAIRly share your data and code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H3-Reproducibility.html">Achieving 100% reproducibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H4-Narrative.html">Writing narrative science</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Explorative data visualization</a></li>
 </ul>
 
     </div>
@@ -223,7 +222,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/lectures/L5-communication.md" target="_blank"
+      <li><a href="../_sources/handson/H5-Visualization.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -233,7 +232,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -292,9 +291,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -305,20 +302,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Communicating science</h1>
+    <h1>Explorative data visualization</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slides">Slides</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references-and-further-readings">References and further readings</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -328,24 +316,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="communicating-science">
-<h1>Communicating science<a class="headerlink" href="#communicating-science" title="Permalink to this heading">#</a></h1>
-<p><strong>2023.04.20, 2023.04.27, 2023.05.04</strong></p>
-<section id="slides">
-<h2>Slides<a class="headerlink" href="#slides" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://docs.google.com/presentation/d/1TwSgc6WRQjO0s9hf8b9FDxFv_J1AFpQaMM0MdZPgG9w/edit?usp=sharing">Lecture slides - 1</a></p>
-<p><a class="reference external" href="https://docs.google.com/presentation/d/1IMRRIP5okYWdbdc2fEKTp7WvFZUqOTJ6xofoolWmQ2w/edit?usp=sharing">Lecture slides - 2</a></p>
-</section>
-<section id="references-and-further-readings">
-<h2>References and further readings<a class="headerlink" href="#references-and-further-readings" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Dahlstrom, M. F. (2014). Using narratives and storytelling to communicate science with nonexpert audiences. Proceedings of the National Academy of Sciences, 111(supplement_4), 13614–13620. <a class="reference external" href="https://doi.org/10.1073/pnas.1320645111">https://doi.org/10.1073/pnas.1320645111</a></p></li>
-<li><p>European Space Agency (2016). The amazing adventures of Rosetta and Philae. <a class="reference external" href="https://www.youtube.com/watch?v=HD2zrF3I_II">https://www.youtube.com/watch?v=HD2zrF3I_II</a> (accessed on April 20, 2023)</p></li>
-<li><p>Rose, B. (2023). The Climate Laboratory. <a class="reference external" href="https://brian-rose.github.io/ClimateLaboratoryBook">https://brian-rose.github.io/ClimateLaboratoryBook</a> (accessed on April 28, 2023). Version 0.3 is archived on Zenodo: <a class="reference external" href="https://doi.org/10.5281/zenodo.4750706">https://doi.org/10.5281/zenodo.4750706</a></p></li>
-<li><p>Görtler, et al. (2019). A Visual Exploration of Gaussian Processes. Distill. <a class="reference external" href="https://doi.org/10.23915/distill.00017">https://doi.org/10.23915/distill.00017</a></p></li>
-<li><p>Hassol, S. J. (2023). The Right Words Are Crucial to Solving Climate Change. Scientific American. (Original title: Changing the Language of Climate Change). <a class="reference external" href="https://www.scientificamerican.com/article/the-right-words-are-crucial-to-solving-climate-change/">https://www.scientificamerican.com/article/the-right-words-are-crucial-to-solving-climate-change/</a> (accessed on April 28, 2023).</p></li>
-</ol>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="explorative-data-visualization">
+<h1>Explorative data visualization<a class="headerlink" href="#explorative-data-visualization" title="Permalink to this heading">#</a></h1>
+<p><strong>2023.05.02, 2023.05.07</strong></p>
+<p>This tutorial provides steps for explorative data visualization – some tricks for readers to explore data presented here with minimum confusion.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -361,7 +335,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./lectures"
+            path: "./handson"
         },
         predefinedOutput: true
     }
@@ -380,22 +354,13 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="L4-reproducibility.html"
+       href="H4-Narrative.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Reproducing and reusing academic work</p>
+        <p class="prev-next-title">Writing narrative science</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="../handson/H1-Jupyter.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Our working environment: Jupyter</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -406,21 +371,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slides">Slides</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references-and-further-readings">References and further readings</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
