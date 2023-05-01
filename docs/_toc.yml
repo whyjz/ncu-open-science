@@ -21,3 +21,4 @@ parts:
     - file: handson/H2-FAIRdata
     - file: handson/H3-Reproducibility
     - file: handson/H4-Narrative
+    - file: handson/H5-Visualization
