@@ -463,7 +463,9 @@ P = \epsilon \sigma AT^4
 <section id="publish-to-github-pages">
 <h3>Publish to GitHub Pages<a class="headerlink" href="#publish-to-github-pages" title="Permalink to this heading">#</a></h3>
 <p>We can create an automatic workflow on GitHub to run Jupyter Book and publish the HTMLs to GitHub pages every time you push any new content.</p>
-<p>First commit and push all the changes above. Now go back to the repository folder on Callysto Hub. Create a file named <code class="docutils literal notranslate"><span class="pre">build.yml</span></code> in
+<p>First commit and push all the changes above. On the Github repository site, make sure you have the GitHub workflow permission set to both read and write by going to Settings -&gt; Actions -&gt; Workflow permissions, as this figure shows:</p>
+<p><img alt="Github-scr4" src="../_images/Github-scr5.png" /></p>
+<p>Now go back to the repository folder on Callysto Hub. Create a file named <code class="docutils literal notranslate"><span class="pre">build.yml</span></code> in
 <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> (you might need to create this folder too). Add the following content to <code class="docutils literal notranslate"><span class="pre">build.yml</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>name: build-docs
 
