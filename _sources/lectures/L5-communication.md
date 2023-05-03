@@ -19,3 +19,9 @@
 4. Görtler, et al. (2019). A Visual Exploration of Gaussian Processes. Distill. https://doi.org/10.23915/distill.00017
 
 5. Hassol, S. J. (2023). The Right Words Are Crucial to Solving Climate Change. Scientific American. (Original title: Changing the Language of Climate Change). https://www.scientificamerican.com/article/the-right-words-are-crucial-to-solving-climate-change/ (accessed on April 28, 2023).
+
+6. Crameri, F., Shephard, G. E., & Heron, P. J. (2020). The misuse of colour in science communication. *Nature Communications* *11*(1), 5444. https://doi.org/10.1038/s41467-020-19160-7
+
+7. Rougier, N. P. (2021). Scientific Visualization: Python + Matplotlib. Bordeaux. https://www.labri.fr/perso/nrougier/scientific-visualization.html (accessed on May 3, 2023)
+
+8. Sarabipour, S., et al. (2021). Changing scientific meetings for the better. *Nature Human Behaviour*, *5*(3), 296–300. https://doi.org/10.1038/s41562-021-01067-y
