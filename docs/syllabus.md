@@ -71,19 +71,19 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 4/20: Reproducing and reusing academic work (2): Code sharing
 - Week 11
   - 4/25: ⌨️ Writing narrative science (2)
-  - 4/27: Communicating science (1): Scientific writing, Data visualization, local community and indigenous people
+  - 4/27: Communicating science (1): Scientific writing
 - Week 12
-  - 5/2: ⌨️ Explorative data visualization (1)
-  - 5/4: Communicating science (2): community collaboration, outreach, and civil science
+  - 5/2: ⌨️ Writing narrative science (3)
+  - 5/4: Communicating science (2): Data visualization
 - Week 13
-  - 5/9: ⌨️ Explorative data visualization (2)
-  - 5/11: Open data sets in remote sensing, Earth & environmental sciences (1)
+  - 5/9: ⌨️ Explorative data visualization
+  - 5/11: Communicating science (3): Community and collaboration
 - Week 14
   - 5/16: ⌨️ Getting and analyzing open data in remote sensing (1)
-  - 5/18: Open data sets in remote sensing, Earth & environmental sciences (2)
+  - 5/18: Open data sets in remote sensing, Earth & environmental sciences (1)
 - Week 15
   - 5/23: ⌨️ Getting and analyzing open data in remote sensing (2)
-  - 5/25: Financial support and career plans
+  - 5/25: Open data sets in remote sensing, Earth & environmental sciences (2) + Career plans
 - Week 16
   - 5/30: NO CLASS
   - 6/1: **Project final presentation**
