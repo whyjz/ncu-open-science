@@ -1,12 +1,14 @@
 # Communicating science
 
-**2023.04.20, 2023.04.27, 2023.05.04**
+**2023.04.20, 2023.04.27, 2023.05.04, 2023.05.11**
 
 ## Slides
 
 [Lecture slides - 1](https://docs.google.com/presentation/d/1TwSgc6WRQjO0s9hf8b9FDxFv_J1AFpQaMM0MdZPgG9w/edit?usp=sharing)
 
 [Lecture slides - 2](https://docs.google.com/presentation/d/1IMRRIP5okYWdbdc2fEKTp7WvFZUqOTJ6xofoolWmQ2w/edit?usp=sharing)
+
+[Lecture slides - 3](https://docs.google.com/presentation/d/1Sfy-ORlNX4vdrKQxM4B9Jg7V21WmqHxOcvQ2AigZLKw/edit?usp=sharing)
 
 ## References and further readings
 
