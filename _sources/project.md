@@ -64,9 +64,18 @@ Each person will spend ten minutes talking about the project, followed by a 5-10
 
 ### Final report
 
-#### Oral presentation (6/1)
+#### Oral presentation (6/1 1-2:30 pm during the class time)
 
-Presentation with slides and/or demos. Detailed format TBD.
+Each person will spend fifteen (15) minutes presenting their work, followed by a five-minute discussion. We will determine the presentation order when the class starts.
+
+**Format requirements**
+
+- In addition to the oral component, visual material such as slides, real-time demos, or videos are required. You have several ways to present your work:
+  - Send the files or links to me (whyjz@csrsr.ncu.edu.tw) before the class starts. Note that my laptop runs Ubuntu only with Libre office installed, so PDF or cloud-based material (e.g. google slides) are the preferred formats.
+  - Bring and use your own laptop (with an HDMI output) to present your work.
+  - Publish material on your GitHub pages and showcase them during the talk.
+- I have pulled some resources [here (short video)](https://youtu.be/SFxVihJ1KSo) and [here (long video)](https://youtu.be/zXg70U2sNLM?t=660) for mastering your academic presentation skills.
+- Ideally the talk should be between 13 and 15 minutes long. It is presenter's responsibility to manage the talk length as we will *not* set up a public timer. I will time the talks privately for grading purpose.  
 
 **Rubrics (30 points in total):**
 
