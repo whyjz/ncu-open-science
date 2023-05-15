@@ -14,6 +14,7 @@ parts:
     - file: lectures/L3-openaccess
     - file: lectures/L4-reproducibility
     - file: lectures/L5-communication
+    - file: lectures/L6-wheresdata
     
   - caption: ⌨️ Hands-on sessions
     chapters:
@@ -22,3 +23,4 @@ parts:
     - file: handson/H3-Reproducibility
     - file: handson/H4-Narrative
     - file: handson/H5-Visualization
+    - file: handson/H6-DataAccess

@@ -10,6 +10,8 @@
 
 [Lecture slides - 3](https://docs.google.com/presentation/d/1Sfy-ORlNX4vdrKQxM4B9Jg7V21WmqHxOcvQ2AigZLKw/edit?usp=sharing)
 
+[Lecture slides - 4](https://docs.google.com/presentation/d/1nqMA0BJwtg0p5GOFKmDRbCiTrc5bEE5_nmsWZJ9_VJQ/edit?usp=sharing)
+
 ## References and further readings
 
 1. Dahlstrom, M. F. (2014). Using narratives and storytelling to communicate science with nonexpert audiences. Proceedings of the National Academy of Sciences, 111(supplement_4), 13614–13620. https://doi.org/10.1073/pnas.1320645111
@@ -27,3 +29,5 @@
 7. Rougier, N. P. (2021). Scientific Visualization: Python + Matplotlib. Bordeaux. https://www.labri.fr/perso/nrougier/scientific-visualization.html (accessed on May 3, 2023)
 
 8. Sarabipour, S., et al. (2021). Changing scientific meetings for the better. *Nature Human Behaviour*, *5*(3), 296–300. https://doi.org/10.1038/s41562-021-01067-y
+
+9. Watson, C. (2021). Parachute science falls to earth. Nature Index News. https://www.nature.com/nature-index/news-blog/parachute-science-falls-to-earth (accessed on May 10, 2023).
