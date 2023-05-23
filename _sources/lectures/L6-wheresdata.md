@@ -4,7 +4,7 @@
 
 ## Slides
 
-TBD
+[Lecture slides - 1](https://docs.google.com/presentation/d/1LxJ76-DYbYCnXRkzhyjxhiNMvLp1vPnxmpGOn7fvxm4/edit?usp=sharing)
 
 ## References and further readings
 
