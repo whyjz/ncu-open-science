@@ -12,8 +12,8 @@ Whyjay Zheng (鄭懷傑), whyjz@csrsr.ncu.edu.tw
 
 ## Format
 
-1. Tuesday 12:00 pm - 12:50 pm at R2-115 (mostly hands-on sessions)
-2. Thursday 1:00 pm - 2:50 pm at **R2-223-2 (Updated!)** for lectures and discussion
+1. Tuesday 11:00 pm - 11:50 pm at R2-115 (mostly hands-on sessions)
+2. Thursday 1:00 pm - 2:50 pm at R2-223-1 (for lectures and discussion)
 
 The hands-on sessions (labeled ⌨️ in [Weekly topics](syllabus.html#weekly-topics)) are on Tuesday and **require access to a computer**. You are welcome to use the computers available in R2-115 or bring your own.
 
@@ -40,59 +40,59 @@ As a class for open science, all written material presented in this class, inclu
 This is a tentative schedule; the actual content is subject to change depending on our progress and participants' needs.
 
 - Week 1
-  - 2/14: Checking in & course introduction
-  - 2/16: What is open science?
+  - 9/10: Checking in & course introduction
+  - 9/12: What is open science?
 - Week 2
-  - 2/21: ⌨️ Our working environment: Jupyter
-  - 2/23: Open data and beyond (1): Background
+  - 9/17: *NO CLASS*
+  - 9/19: Open data and beyond (1): Background
 - Week 3
-  - 2/28: NO CLASS
-  - 3/2: Open data and beyond (2): Licenses & The FAIR policy
+  - 9/24: ⌨️ Our working environment: Jupyter
+  - 9/26: *NO CLASS*                              
 - Week 4
-  - 3/7: ⌨️ FAIRly share your data and code (1)
-  - 3/9: Path to open academic publishing (1): Background
+  - 10/1: ⌨️ FAIRly share your data and code (1)
+  - 10/3: Open data and beyond (2): Licenses & The FAIR policy     
 - Week 5
-  - 3/14: ⌨️ FAIRly share your data and code (2)
-  - 3/16: Path to open academic publishing (2): Open access
+  - 10/8:  *NO CLASS*  
+  - 10/10: *NO CLASS*  
 - Week 6
-  - 3/21: ⌨️ Achieving 100% reproducibility (1)
-  - 3/23: Path to open academic publishing (3): Predatory journals and preprints
+  - 10/15: ⌨️ FAIRly share your data and code (2)
+  - 10/17: Path to open academic publishing (1): Background and the emerge of Open Access  
 - Week 7
-  - 3/28: ⌨️ Achieving 100% reproducibility (2)
-  - 3/30: Reproducing and reusing academic work (1): Questionable research practices
+  - 10/22: ⌨️ Achieving 100% reproducibility (1)
+  - 10/24: Path to open academic publishing (2): Predatory journals and preprints    
 - Week 8
-  - 4/4: NO CLASS
-  - 4/6: NO CLASS
+  - 10/29: ⌨️ Achieving 100% reproducibility (2)
+  - 10/31: Reproducing and reusing academic work (1): Questionable research practices
 - Week 9
-  - 4/11: Q&A; **Project progress report write-up due**
-  - 4/13: **Project progress presentation**
+  - 11/5: **Term project: progress write-up due**; ⌨️ Writing narrative science (1)
+  - 11/7: **Term project: progress presentation**; Reproducing and reusing academic work (2): Code sharing 
 - Week 10
-  - 4/18: ⌨️ Writing narrative science (1)
-  - 4/20: Reproducing and reusing academic work (2): Code sharing
+  - 11/12: ⌨️ Writing narrative science (2)
+  - 11/14: Communicating science (1): Scientific writing and data visualization
 - Week 11
-  - 4/25: ⌨️ Writing narrative science (2)
-  - 4/27: Communicating science (1): Scientific writing
+  - 11/19: ⌨️ Explorative data visualization (1)
+  - 11/21: *NO CLASS* 
 - Week 12
-  - 5/2: ⌨️ Writing narrative science (3)
-  - 5/4: Communicating science (2): Data visualization
+  - 11/26: ⌨️ Explorative data visualization (2)
+  - 11/28: Communicating science (2): Community and collaboration
 - Week 13
-  - 5/9: ⌨️ Explorative data visualization (1)
-  - 5/11: Communicating science (3): Community and collaboration
+  - 12/3: *TBD* (NCU RUN)
+  - 12/5: Open data sets in remote sensing, Earth & environmental sciences (1): Data structure
 - Week 14
-  - 5/16: ⌨️ Explorative data visualization (2)
-  - 5/18: Open data sets in remote sensing, Earth & environmental sciences (1)
+  - 12/10: *NO CLASS*
+  - 12/12: *NO CLASS*             
 - Week 15
-  - 5/23: ⌨️ Getting and analyzing remotely sensed open data
-  - 5/25: Open data sets in remote sensing, Earth & environmental sciences (2) + Career plans
+  - 12/17: ⌨️ Getting and analyzing remotely sensed open data (1)
+  - 12/19: Open data sets in remote sensing, Earth & environmental sciences (2): Infrastructure
 - Week 16
-  - 5/30: NO CLASS
-  - 6/1: **Project final presentation**
+  - 12/24: ⌨️ Getting and analyzing remotely sensed open data (2)
+  - 12/26: **Term project: final presentation**
 - Week 17
-  - 6/6: Wrap-up: the future of open science
-  - 6/8: NO CLASS; **Project final report write-up due**
+  - 12/31: Wrap-up: the future of open science
+  - 1/2: *NO CLASS*; **Term project: final write-up due**
 - Week 18
-  - 6/13: NO CLASS
-  - 6/15: NO CLASS
+  - 1/7: *NO CLASS*
+  - 1/9: *NO CLASS*
   
 ## Grading
 
@@ -103,7 +103,7 @@ Your grade is entirely based on the class project and is divided into four compo
 - final report (oral presentation): 30%
 - final report (write-up): 40%
 
-The class attendance won't affect your final grade expect for two oral presentation sessions (**4/13** and **6/1**; see [Late work policy](late-work-policy)).
+The class attendance won't affect your final grade expect for two oral presentation sessions (**11/7** and **12/26**; see [Late work policy](late-work-policy)).
 
 (late-work-policy)=
 ### Late work policy
@@ -116,7 +116,7 @@ The class attendance won't affect your final grade expect for two oral presentat
 
 ### Office hours
 
-Tuesday 2-3 pm or by appointment, in my office (R3-230).
+By appointment, in my office (R3-230).
 
 ### Textbooks and other resources 
 
