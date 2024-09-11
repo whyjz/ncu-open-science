@@ -1,12 +1,10 @@
 # What is open science?
 
-**2023.02.16, 2023.02.23**
+**2024.09.12**
 
 ## Slides
 
-[Lecture slides - 1](https://docs.google.com/presentation/d/18tOn5ZYuYF-5qO6ZExW7LrcLa7nLKSkDPAOM1EqPKm0/edit?usp=sharing)
-
-[Lecture slides - 2](https://docs.google.com/presentation/d/1Mh2WYh_GNBAiqmDvcRcRvQ7xphawVWTNtZ-_8CumzkY/edit?usp=sharing)
+[Lecture slides](https://docs.google.com/presentation/d/14mNyn_aooZMOXhWSLocNkK2iZ1Ck-MQD_bniQdl2RNM/edit?usp=sharing)
 
 ## References and further readings
 
