@@ -70,7 +70,7 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 11/12: ⌨️ Writing narrative science (2)
   - 11/14: Communicating science (1): Scientific writing and data visualization
 - Week 11
-  - 11/19: ⌨️ Explorative data visualization (1)
+  - 11/19: *NO CLASS* (ACRS) TBD: ⌨️ Explorative data visualization (1)
   - 11/21: *NO CLASS* 
 - Week 12
   - 11/26: ⌨️ Explorative data visualization (2)
@@ -83,10 +83,10 @@ This is a tentative schedule; the actual content is subject to change depending 
   - 12/12: *NO CLASS*             
 - Week 15
   - 12/17: ⌨️ Getting and analyzing remotely sensed open data (1)
-  - 12/19: Open data sets in remote sensing, Earth & environmental sciences (2): Infrastructure
+  - 12/19: *NO CLASS* 
 - Week 16
   - 12/24: ⌨️ Getting and analyzing remotely sensed open data (2)
-  - 12/26: **Term project: final presentation**
+  - 12/26: **Term project: final presentation**, Open data sets in remote sensing, Earth & environmental sciences (2): Infrastructure
 - Week 17
   - 12/31: Wrap-up: the future of open science
   - 1/2: *NO CLASS*; **Term project: final write-up due**
