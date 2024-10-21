@@ -37,62 +37,62 @@ As a class for open science, all written material presented in this class, inclu
 
 ## Weekly topics
 
-This is a tentative schedule; the actual content is subject to change depending on our progress and participants' needs.
+This is a tentative schedule; the actual content may change depending on our progress and participants' needs.
 
 - Week 1
   - 9/10: Checking in & course introduction
   - 9/12: What is open science?
 - Week 2
-  - 9/17: *NO CLASS*
+  - 9/17: *NO CLASS* (Mid-Autumn)
   - 9/19: Open data and beyond (1): Background
 - Week 3
   - 9/24: ⌨️ Our working environment: Jupyter
-  - 9/26: *NO CLASS*                              
+  - 9/26: *NO CLASS* (Out of town)
 - Week 4
   - 10/1: ⌨️ FAIRly share your data and code (1)
-  - 10/3: Open data and beyond (2): Licenses & The FAIR policy     
+  - 10/3: *NO CLASS* (Krathon)  
 - Week 5
-  - 10/8:  *NO CLASS*  
-  - 10/10: *NO CLASS*  
+  - 10/8:  *NO CLASS* (Out of town)
+  - 10/10: *NO CLASS* (Double-10) 
 - Week 6
   - 10/15: ⌨️ FAIRly share your data and code (2)
-  - 10/17: Path to open academic publishing (1): Background and the emerge of Open Access  
+  - 10/17: Open data and beyond (2): Licenses & The FAIR policy     
 - Week 7
   - 10/22: ⌨️ Achieving 100% reproducibility (1)
-  - 10/24: Path to open academic publishing (2): Predatory journals and preprints    
+  - 10/24: Path to open academic publishing (1): Background and the emergence of Open Access      
 - Week 8
   - 10/29: ⌨️ Achieving 100% reproducibility (2)
-  - 10/31: Reproducing and reusing academic work (1): Questionable research practices
+  - 10/31: Path to open academic publishing (2): Predatory journals and preprints    
 - Week 9
   - 11/5: **Term project: progress write-up due**; ⌨️ Writing narrative science (1)
-  - 11/7: **Term project: progress presentation**; Reproducing and reusing academic work (2): Code sharing 
+  - 11/7: **Term project: progress presentation**; Reproducing and reusing academic work (1): Questionable research practices 
 - Week 10
   - 11/12: ⌨️ Writing narrative science (2)
-  - 11/14: Communicating science (1): Scientific writing and data visualization
+  - 11/14: Reproducing and reusing academic work (2): Code sharing 
 - Week 11
-  - 11/19: *NO CLASS* (ACRS) TBD: ⌨️ Explorative data visualization (1)
-  - 11/21: *NO CLASS* 
+  - 11/19: *NO CLASS* (ACRS)
+  - 11/21: *NO CLASS* (ACRS)
 - Week 12
-  - 11/26: ⌨️ Explorative data visualization (2)
-  - 11/28: Communicating science (2): Community and collaboration
+  - 11/26: ⌨️ Explorative data visualization (1)
+  - 11/28: Communicating science (1): Scientific writing and data visualization  
 - Week 13
-  - 12/3: *TBD* (NCU RUN)
-  - 12/5: Open data sets in remote sensing, Earth & environmental sciences (1): Data structure
+  - 12/3: ⌨️ Explorative data visualization (2)  *(NCU RUN?)*
+  - 12/5: Communicating science (2): Community and collaboration   
 - Week 14
-  - 12/10: *NO CLASS*
-  - 12/12: *NO CLASS*             
+  - 12/10: *NO CLASS* (AGU)
+  - 12/12: *NO CLASS* (AGU)       
 - Week 15
   - 12/17: ⌨️ Getting and analyzing remotely sensed open data (1)
-  - 12/19: *NO CLASS* 
+  - 12/19: *NO CLASS* (Out of town)
 - Week 16
   - 12/24: ⌨️ Getting and analyzing remotely sensed open data (2)
-  - 12/26: **Term project: final presentation**, Open data sets in remote sensing, Earth & environmental sciences (2): Infrastructure
+  - 12/26: **Term project: final presentation**, Open data sets in remote sensing, Earth & environmental sciences (1): Data structure   
 - Week 17
   - 12/31: Wrap-up: the future of open science
-  - 1/2: *NO CLASS*; **Term project: final write-up due**
+  - 1/2: Open data sets in remote sensing, Earth & environmental sciences (2): Infrastructure; **Term project: final write-up due**
 - Week 18
-  - 1/7: *NO CLASS*
-  - 1/9: *NO CLASS*
+  - 1/7: *NO CLASS* (Reserved)
+  - 1/9: *NO CLASS* (Reserved)
   
 ## Grading
 
