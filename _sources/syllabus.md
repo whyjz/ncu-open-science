@@ -47,12 +47,12 @@ This is a tentative schedule; the actual content may change depending on our pro
   - 9/19: Open data and beyond (1): Background
 - Week 3
   - 9/24: ⌨️ Our working environment: Jupyter
-  - 9/26: *NO CLASS* (Out of town)
+  - 9/26: *NO CLASS* (Whyjay out of town)
 - Week 4
   - 10/1: ⌨️ FAIRly share your data and code (1)
   - 10/3: *NO CLASS* (Krathon)  
 - Week 5
-  - 10/8:  *NO CLASS* (Out of town)
+  - 10/8:  *NO CLASS* (Whyjay out of town)
   - 10/10: *NO CLASS* (Double-10) 
 - Week 6
   - 10/15: ⌨️ FAIRly share your data and code (2)
@@ -83,7 +83,7 @@ This is a tentative schedule; the actual content may change depending on our pro
   - 12/12: *NO CLASS* (AGU)       
 - Week 15
   - 12/17: ⌨️ Getting and analyzing remotely sensed open data (1)
-  - 12/19: *NO CLASS* (Out of town)
+  - 12/19: *NO CLASS* (CSRSR field trip)
 - Week 16
   - 12/24: ⌨️ Getting and analyzing remotely sensed open data (2)
   - 12/26: **Term project: final presentation**, Open data sets in remote sensing, Earth & environmental sciences (1): Data structure   
