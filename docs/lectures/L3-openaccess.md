@@ -1,14 +1,11 @@
 # Path to open academic publishing
 
-**2023.03.09, 2023.03.16, 2023.03.23**
+**2024.10.24**
 
 ## Slides
 
-[Lecture slides - 1](https://docs.google.com/presentation/d/1TjHWSZZO_QkOkY0tiRz7jF8a3vhS2bIiG5f47oAvbwo/edit?usp=sharing)
+[Lecture slides](https://docs.google.com/presentation/d/19k-dvOg4fyVKXpBXqz6NMPfm3oMcLY47I18oMzHjJI0/edit?usp=sharing)
 
-[Lecture slides - 2](https://docs.google.com/presentation/d/1tR6bmN4mswOENwA-tabbSbNtzbytF1AJG_0UvYjKjyc/edit?usp=sharing)
-
-[Lecture slides - 3](https://docs.google.com/presentation/d/12Y2Pp6vv3kzHabgIqEf35dhrKe8Xus0CdHkXUFCaTQY/edit?usp=sharing)
 
 ## References and further readings
 
