@@ -1,6 +1,6 @@
 # Path to open academic publishing
 
-**2024.10.24**
+**2024.11.07, 2024.11.14**
 
 ## Slides
 
