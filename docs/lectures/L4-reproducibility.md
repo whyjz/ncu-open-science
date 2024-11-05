@@ -1,6 +1,6 @@
 # Reproducing and reusing academic work
 
-**2023.03.30, 2023.04.20**
+**2024.11.28, 2024.12.05**
 
 ## Slides
 
