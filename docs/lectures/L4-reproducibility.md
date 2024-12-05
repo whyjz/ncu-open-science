@@ -1,12 +1,10 @@
 # Reproducing and reusing academic work
 
-**2024.11.28, 2024.12.05**
+**2024.12.05**
 
 ## Slides
 
-[Lecture slides - 1](https://docs.google.com/presentation/d/17VB5raAQOEs46w3I-xNyoggmROmgDhl0lrD0hHohGvs/edit?usp=sharing)
-
-[Lecture slides - 2](https://docs.google.com/presentation/d/1TwSgc6WRQjO0s9hf8b9FDxFv_J1AFpQaMM0MdZPgG9w/edit?usp=sharing)
+[Lecture slides](https://docs.google.com/presentation/d/1uxMJ_Ag_PlP1duM5Wb0wAkboi0e4d5dq3mMOLKDqYNk/edit?usp=sharing)
 
 ## References and further readings
 
