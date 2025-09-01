@@ -1,10 +1,8 @@
 # What is open science?
 
-**2024.09.12, 2024.09.19**
-
 ## Slides
 
-[Lecture slides](https://docs.google.com/presentation/d/14mNyn_aooZMOXhWSLocNkK2iZ1Ck-MQD_bniQdl2RNM/edit?usp=sharing)
+[Lecture slides](https://docs.google.com/presentation/d/1Rh_173i7-PphE_UdcyvCnVsNYdpTXhHR1UPsx_qUP0Q/edit?usp=sharing)
 
 ## References and further readings
 

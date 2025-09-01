@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -67,7 +64,6 @@
     <link rel="prev" title="RS6026: Open Science Practices in Remote Sensing (遙測開放科學實踐)" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -83,8 +79,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -92,6 +99,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -99,8 +107,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -116,8 +124,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -147,17 +154,21 @@
     
     
     <img src="_static/csrsr_logo.png" class="logo__image only-light" alt="Open Science Practices in Remote Sensing - Home"/>
-    <img src="_static/csrsr_logo.png" class="logo__image only-dark pst-js-only" alt="Open Science Practices in Remote Sensing - Home"/>
+    <script>document.write(`<img src="_static/csrsr_logo.png" class="logo__image only-dark" alt="Open Science Practices in Remote Sensing - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
@@ -169,21 +180,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="lectures/L1-intro.html">What is open science?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/L2-opendata.html">Open data and beyond</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/L3-openaccess.html">Path to open academic publishing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/L4-reproducibility.html">Reproducing and reusing academic work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/L5-communication.html">Communicating science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/L6-wheresdata.html">Open data sets in remote sensing, Earth &amp; environmental sciences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/L7-future.html">The future of open science</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">⌨️ Hands-on sessions</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="handson/H1-Jupyter.html">Our working environment: Jupyter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handson/H2-FAIRdata.html">FAIRly share your data and code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handson/H3-Reproducibility.html">Achieving 100% reproducibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handson/H4-Narrative.html">Writing narrative science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handson/H5-Visualization.html">Explorative data visualization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handson/H6-DataAccess.html">Getting and analyzing remotely sensed open data</a></li>
 </ul>
 
     </div>
@@ -291,16 +287,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -369,10 +373,10 @@
 <section id="format">
 <h2>Format<a class="headerlink" href="#format" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Tuesday 11:00 pm - 11:50 pm at R2-115 (mostly hands-on sessions)</p></li>
-<li><p>Thursday 1:00 pm - 2:50 pm at R2-223-1 (for lectures and discussion)</p></li>
+<li><p>Tuesday 10:00 am - 11:50 am at R2-223-1 (for lectures and discussion)</p></li>
+<li><p>Thursday 1:00 pm - 1:50 pm at R2-115  (mostly hands-on sessions)</p></li>
 </ol>
-<p>The hands-on sessions (labeled ⌨️ in <a class="reference internal" href="#syllabus.html#weekly-topics"><span class="xref myst">Weekly topics</span></a>) are on Tuesday and <strong>require access to a computer</strong>. You are welcome to use the computers available in R2-115 or bring your own.</p>
+<p>The hands-on sessions (labeled ⌨️ in <a class="reference internal" href="#syllabus.html#weekly-topics"><span class="xref myst">Weekly topics</span></a>) are on Thursday and <strong>require access to a computer</strong>. You are welcome to use the computers available in R2-115 or bring your own.</p>
 <p>As a class for open science, all written material presented in this class, including handouts, slides, and student term papers, will be available or posted online for public access. Your grade and all the sensitive information will remain private.</p>
 <section id="code-of-conduct">
 <h3>Code of conduct<a class="headerlink" href="#code-of-conduct" title="Link to this heading">#</a></h3>
@@ -399,110 +403,98 @@
 <ul class="simple">
 <li><p>Week 1</p>
 <ul>
-<li><p>9/10: Checking in &amp; course introduction</p></li>
-<li><p>9/12: What is open science? (1)</p></li>
+<li><p>9/2: Checking in; course introduction; What is open science? (1)</p></li>
+<li><p>9/4: ⌨️ Our working environment: Jupyter</p></li>
 </ul>
 </li>
 <li><p>Week 2</p>
 <ul>
-<li><p>9/17: <em>NO CLASS</em> (Mid-Autumn)</p></li>
-<li><p>9/19: What is open science? (2)</p></li>
+<li><p>9/9: What is open science? (2); Open data and beyond (1)</p></li>
+<li><p>9/11: ⌨️ Achieving 100% reproducibility (1)</p></li>
 </ul>
 </li>
 <li><p>Week 3</p>
 <ul>
-<li><p>9/24: ⌨️ Our working environment: Jupyter</p></li>
-<li><p>9/26: <em>NO CLASS</em> (Whyjay out of town)</p></li>
+<li><p>9/16: <em>NO CLASS</em> (Whyjay out of town)</p></li>
+<li><p>9/18: <em>NO CLASS</em> (Whyjay out of town)  |  <strong>Self hands-on:</strong> ⌨️ Achieving 100% reproducibility</p></li>
 </ul>
 </li>
 <li><p>Week 4</p>
 <ul>
-<li><p>10/1: ⌨️ FAIRly share your data and code (1)</p></li>
-<li><p>10/3: <em>NO CLASS</em> (Krathon)</p></li>
+<li><p>9/23: Open data and beyond (2)</p></li>
+<li><p>9/25: ⌨️ Achieving 100% reproducibility (2)</p></li>
 </ul>
 </li>
 <li><p>Week 5</p>
 <ul>
-<li><p>10/8:  <em>NO CLASS</em> (Whyjay out of town)</p></li>
-<li><p>10/10: <em>NO CLASS</em> (Double-10)</p></li>
+<li><p>9/30: Path to open academic publishing (1)</p></li>
+<li><p>10/2: ⌨️ FAIRly share your data and code (1)</p></li>
 </ul>
 </li>
 <li><p>Week 6</p>
 <ul>
-<li><p>10/15: ⌨️ FAIRly share your data and code (2)</p></li>
-<li><p>10/17: Open data and beyond (1): Background</p></li>
+<li><p>10/7: Path to open academic publishing (2)</p></li>
+<li><p>10/9: ⌨️ FAIRly share your data and code (2)</p></li>
 </ul>
 </li>
 <li><p>Week 7</p>
 <ul>
-<li><p>10/22: ⌨️ FAIRly share your data and code (3)</p></li>
-<li><p>10/24: Open data and beyond (2): Licenses &amp; The FAIR policy</p></li>
+<li><p>10/14: Communicating science (1)</p></li>
+<li><p>10/16: ⌨️ Writing narrative science</p></li>
 </ul>
 </li>
 <li><p>Week 8</p>
 <ul>
-<li><p>10/29: ⌨️ Achieving 100% reproducibility (1)</p></li>
-<li><p>10/31: <em>NO CLASS</em> (Kong-rey)</p></li>
+<li><p>10/21: <em>NO CLASS</em> (Whyjay out of town)</p></li>
+<li><p>10/23: <em>NO CLASS</em> (Whyjay out of town)  |  <strong>Self hands-on:</strong> Self hands-on: ⌨️ Writing narrative science</p></li>
 </ul>
 </li>
 <li><p>Week 9</p>
 <ul>
-<li><p>11/5: <strong>Term project: progress write-up due</strong>; ⌨️ Achieving 100% reproducibility (2)</p></li>
-<li><p>11/7: <strong>Term project: progress presentation</strong>; Path to open academic publishing (1): Background and the emergence of Open Access</p></li>
+<li><p>10/28: <em>NO CLASS</em> (Whyjay out of town)  |  <strong>Term project: progress write-up due</strong></p></li>
+<li><p>10/30: <em>NO CLASS</em> (Whyjay out of town)</p></li>
 </ul>
 </li>
 <li><p>Week 10</p>
 <ul>
-<li><p>11/12: ⌨️ Achieving 100% reproducibility (3)</p></li>
-<li><p>11/14: Path to open academic publishing (2): Predatory journals and preprints</p></li>
+<li><p>11/4: <strong>Term project: progress presentation</strong>; Communicating science (2)</p></li>
+<li><p>11/6: <em>NO CLASS</em> (NCU Sports Day)</p></li>
 </ul>
 </li>
 <li><p>Week 11</p>
 <ul>
-<li><p>11/19: <em>NO CLASS</em> (ACRS)</p></li>
-<li><p>11/21: <em>NO CLASS</em> (ACRS)</p></li>
+<li><p>11/11: Reproducing and reusing academic work (1)</p></li>
+<li><p>11/13: ⌨️ Explorative data visualization (1)</p></li>
 </ul>
 </li>
 <li><p>Week 12</p>
 <ul>
-<li><p>11/26: ⌨️ Writing narrative science (1)</p></li>
-<li><p>11/28: <em>Review of the progress report</em></p></li>
+<li><p>11/18: Reproducing and reusing academic work (2)</p></li>
+<li><p>11/20: ⌨️ Explorative data visualization (2)</p></li>
 </ul>
 </li>
 <li><p>Week 13</p>
 <ul>
-<li><p>12/3: ⌨️ Writing narrative science (2)</p></li>
-<li><p>12/5: Reproducing and reusing academic work (1+2): Questionable research practices + Code sharing</p></li>
+<li><p>11/25: Open data sets in remote sensing, Earth &amp; environmental sciences</p></li>
+<li><p>11/27: ⌨️ Getting and analyzing remotely sensed open data (1)</p></li>
 </ul>
 </li>
 <li><p>Week 14</p>
 <ul>
-<li><p>12/10: <em>NO CLASS</em> (AGU)</p></li>
-<li><p>12/12: <em>NO CLASS</em> (AGU)</p></li>
+<li><p>12/2: The future of open science?</p></li>
+<li><p>12/4: ⌨️ Getting and analyzing remotely sensed open data (2)</p></li>
 </ul>
 </li>
 <li><p>Week 15</p>
 <ul>
-<li><p>12/17: ⌨️ Writing narrative science (3)</p></li>
-<li><p>12/19: <em>NO CLASS</em> (CSRSR field trip)</p></li>
+<li><p>12/9: <strong>Term project: final presentation</strong></p></li>
+<li><p>12/11: <em>Reserved for CSRSR field trip</em></p></li>
 </ul>
 </li>
 <li><p>Week 16</p>
 <ul>
-<li><p>12/24: ⌨️ Explorative data visualization</p></li>
-<li><p>12/26: <strong>Term project: final presentation</strong>, Communicating science (1+2): Scientific writing and data visualization + Community and collaboration</p></li>
-</ul>
-</li>
-<li><p>Week 17</p>
-<ul>
-<li><p>12/31: ⌨️ Getting and analyzing remotely sensed open data</p></li>
-<li><p>1/2: Open data sets in remote sensing, Earth &amp; environmental sciences (1+2): Data structure + Infrastructure; <strong>Term project: final write-up due</strong></p></li>
-</ul>
-</li>
-<li><p>Week 18</p>
-<ul>
-<li><p>1/7: <em>NO CLASS</em> (Reserved)  Wrap-up: the future of open science?</p></li>
-<li><p>1/9: <em>NO CLASS</em> (Reserved)</p></li>
+<li><p>12/16: <em>NO CLASS</em> (Whyjay out of town)  |  <strong>Term project: final write-up due</strong></p></li>
+<li><p>12/18: <em>NO CLASS</em> (Whyjay out of town)</p></li>
 </ul>
 </li>
 </ul>
@@ -516,7 +508,7 @@
 <li><p>final report (oral presentation): 30%</p></li>
 <li><p>final report (write-up): 40%</p></li>
 </ul>
-<p>The class attendance won’t affect your final grade expect for two oral presentation sessions (<strong>11/7</strong> and <strong>12/26</strong>; see <a class="reference internal" href="#late-work-policy"><span class="std std-ref">Late work policy</span></a>).</p>
+<p>The class attendance won’t affect your final grade except for two oral presentation sessions (<strong>11/4</strong> and <strong>12/9</strong>; see <a class="reference internal" href="#late-work-policy"><span class="std std-ref">Late work policy</span></a>).</p>
 <section id="late-work-policy">
 <span id="id1"></span><h3>Late work policy<a class="headerlink" href="#late-work-policy" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -597,8 +589,7 @@
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -650,7 +641,7 @@ By Whyjay Zheng (鄭懷傑)
 
   <p class="copyright">
     
-      © Copyright 2023-2024.
+      © Copyright 2023-2025.
       <br/>
     
   </p>
@@ -674,8 +665,8 @@ By Whyjay Zheng (鄭懷傑)
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
