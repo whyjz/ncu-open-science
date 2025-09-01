@@ -40,7 +40,7 @@ For written reports, You are welcome to use any languages that I understand (中
 
 The progress report serves as a checkpoint for the term project. 
 
-#### Write-up (due Nov 5th, 23:59 pm UTC+8)
+#### Write-up (due Oct 28th, 23:59 pm UTC+8)
 
 A short one-pager describing the research topic and the anticipated open science highlights.
 
@@ -53,7 +53,7 @@ A short one-pager describing the research topic and the anticipated open science
 
 You need to export the report to PDF and send the file to me (whyjz@csrsr.ncu.edu.tw). The progress report will *not* be published for public access. Check out the [late policy](late-work-policy) should you find yourself unable to complete the assignment on time. 
 
-#### Oral presentation (Nov 7th, 1-2:30 pm during the class time)
+#### Oral presentation (Nov 4th, 10-11:30 am during the class)
 
 Each person will spend ten minutes talking about the project, followed by a 5-10 minute discussion. We will determine the presentation order when the class starts. 
 
@@ -64,7 +64,7 @@ Each person will spend ten minutes talking about the project, followed by a 5-10
 
 ### Final report
 
-#### Oral presentation (Dec 26th, 1-2:30 pm during the class time)
+#### Oral presentation (Dec 9th, 10-11:30 am during the class)
 
 Each person will spend fifteen (15) minutes presenting their work, followed by a five-minute discussion. We will determine the presentation order when the class starts.
 
@@ -83,7 +83,7 @@ Each person will spend fifteen (15) minutes presenting their work, followed by a
 - Communication (e.g., explaining things in detail and answering questions): 10 points
 - Time management: 10 points
 
-#### Write-up (due Jan 2nd; grading period: 1-3 pm UTC+8)
+#### Write-up (due Dec 16th; grading period: TBD)
 
 The final term paper should be built and published using Jupyter Book on your personal GitHub Pages. You can find a template [here](template.html). You can update the published HTML as many time as you wish before the grading period; in fact, I recommend that you build your final report ahead of time so we'll not be desperately rushing through debugging. After the grading period, it will be your choice to let the report settle online or remove it from the public view. 
 

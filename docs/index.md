@@ -6,7 +6,7 @@ Center for Space and Remote Sensing Research, National Central University
 
 **Time and place**: 
 
-1. Tuesday 11:00 pm - 11:50 pm at R2-115 
-2. Thursday 1:00 pm - 2:50 pm at R2-223-1
+1. Tuesday 10:00 am - 11:50 am at R2-223-1 
+2. Thursday 1:00 pm - 1:50 pm at R2-115 
 
 Welcome to *RS6026: Open Science Practices in Remote Sensing*! This course aims to provide opportunities for exploring the concepts of open science and the relevant practices that are already or will be highlighted in our community. See [Syllabus](syllabus) for more information. This is a **highly interactive class** as we have to learn open science through lots of communication. I hope you will enjoy it, and let me know if you have any feedback or questions at any time!
