@@ -17,9 +17,9 @@ parts:
     # - file: lectures/L6-wheresdata
     # - file: lectures/L7-future
     
-  # - caption: ⌨️ Hands-on sessions
-  #   chapters:
-    # - file: handson/H1-Jupyter
+  - caption: 🛠️ Hands-on sessions
+    chapters:
+    - file: handson/H1-Jupyter
     # - file: handson/H2-FAIRdata
     # - file: handson/H3-Reproducibility
     # - file: handson/H4-Narrative
