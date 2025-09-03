@@ -15,7 +15,7 @@ Whyjay Zheng (鄭懷傑), whyjz@csrsr.ncu.edu.tw
 1. Tuesday 10:00 am - 11:50 am at R2-223-1 (for lectures and discussion)
 2. Thursday 1:00 pm - 1:50 pm at R2-115  (mostly hands-on sessions)
 
-The hands-on sessions (labeled ⌨️ in [Weekly topics](syllabus.html#weekly-topics)) are on Thursday and **require access to a computer**. You are welcome to use the computers available in R2-115 or bring your own.
+The hands-on sessions (labeled 🛠️ in [Weekly topics](syllabus.html#weekly-topics)) are on Thursday and **require access to a computer**. You are welcome to use the computers available in R2-115 or bring your own.
 
 As a class for open science, all written material presented in this class, including handouts, slides, and student term papers, will be available or posted online for public access. Your grade and all the sensitive information will remain private.
 
@@ -41,28 +41,28 @@ This is a tentative schedule; the actual content may change depending on our pro
 
 - Week 1
   - 9/2: Checking in; course introduction; What is open science? (1)
-  - 9/4: ⌨️ Our working environment: Jupyter
+  - 9/4: 🛠️ Our working environment: Jupyter
 - Week 2
   - 9/9: What is open science? (2); Open data and beyond (1)
-  - 9/11: ⌨️ Achieving 100% reproducibility (1)     
+  - 9/11: 🛠️ Achieving 100% reproducibility (1)     
 - Week 3
   - 9/16: *NO CLASS* (Whyjay out of town)          
-  - 9/18: *NO CLASS* (Whyjay out of town)  |  **Self hands-on:** ⌨️ Achieving 100% reproducibility
+  - 9/18: *NO CLASS* (Whyjay out of town)  |  **Self hands-on:** 🛠️ Achieving 100% reproducibility
 - Week 4
   - 9/23: Open data and beyond (2)
-  - 9/25: ⌨️ Achieving 100% reproducibility (2)    
+  - 9/25: 🛠️ Achieving 100% reproducibility (2)    
 - Week 5
   - 9/30: Path to open academic publishing (1)
-  - 10/2: ⌨️ FAIRly share your data and code (1)
+  - 10/2: 🛠️ FAIRly share your data and code (1)
 - Week 6
   - 10/7: Path to open academic publishing (2)
-  - 10/9: ⌨️ FAIRly share your data and code (2)
+  - 10/9: 🛠️ FAIRly share your data and code (2)
 - Week 7
   - 10/14: Communicating science (1)
-  - 10/16: ⌨️ Writing narrative science
+  - 10/16: 🛠️ Writing narrative science
 - Week 8
   - 10/21: *NO CLASS* (Whyjay out of town)    
-  - 10/23: *NO CLASS* (Whyjay out of town)  |  **Self hands-on:** Self hands-on: ⌨️ Writing narrative science
+  - 10/23: *NO CLASS* (Whyjay out of town)  |  **Self hands-on:** Self hands-on: 🛠️ Writing narrative science
 - Week 9
   - 10/28: *NO CLASS* (Whyjay out of town)  |  **Term project: progress write-up due**
   - 10/30: *NO CLASS* (Whyjay out of town)   
@@ -71,16 +71,16 @@ This is a tentative schedule; the actual content may change depending on our pro
   - 11/6: *NO CLASS* (NCU Sports Day)                     
 - Week 11
   - 11/11: Reproducing and reusing academic work (1)
-  - 11/13: ⌨️ Explorative data visualization (1)
+  - 11/13: 🛠️ Explorative data visualization (1)
 - Week 12
   - 11/18: Reproducing and reusing academic work (2)
-  - 11/20: ⌨️ Explorative data visualization (2)       
+  - 11/20: 🛠️ Explorative data visualization (2)       
 - Week 13
   - 11/25: Open data sets in remote sensing, Earth & environmental sciences
-  - 11/27: ⌨️ Getting and analyzing remotely sensed open data (1)             
+  - 11/27: 🛠️ Getting and analyzing remotely sensed open data (1)             
 - Week 14
   - 12/2: The future of open science?
-  - 12/4: ⌨️ Getting and analyzing remotely sensed open data (2)
+  - 12/4: 🛠️ Getting and analyzing remotely sensed open data (2)
 - Week 15
   - 12/9: **Term project: final presentation**
   - 12/11: *Reserved for CSRSR field trip*
