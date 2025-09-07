@@ -10,7 +10,7 @@ parts:
   - caption: Lectures
     chapters:
     - file: lectures/L1-intro
-    # - file: lectures/L2-opendata
+    - file: lectures/L2-opendata
     # - file: lectures/L3-openaccess
     # - file: lectures/L4-reproducibility
     # - file: lectures/L5-communication

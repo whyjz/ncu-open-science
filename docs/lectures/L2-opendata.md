@@ -1,10 +1,8 @@
 # Open data and beyond
 
-**2024.10.17, 2024.10.24**
-
 ## Slides
 
-[Lecture slides](https://docs.google.com/presentation/d/14-6-7tQTcUE3-jp636JwaPM9ev0ZKnGHxIzckVfIDIM/edit?usp=sharing)
+[Lecture slides](https://docs.google.com/presentation/d/1-y5lvS14SfZXZQGXP24o5qT-fC_Ml3awpL1fjnWIzkU/edit?usp=sharing)
 
 ## References and further readings
 
