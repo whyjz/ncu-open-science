@@ -1,10 +1,8 @@
 # Path to open academic publishing
 
-**2024.11.07, 2024.11.14, 2024.12.05**
-
 ## Slides
 
-[Lecture slides](https://docs.google.com/presentation/d/19k-dvOg4fyVKXpBXqz6NMPfm3oMcLY47I18oMzHjJI0/edit?usp=sharing)
+[Lecture slides](https://docs.google.com/presentation/d/1FBPQPqnmWH1AVhaOExWO_YEXVDqcnJ0vzQAZhv_YXXc/edit?usp=sharing)
 
 
 ## References and further readings
