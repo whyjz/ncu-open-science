@@ -21,7 +21,7 @@ parts:
     chapters:
     - file: handson/H1-Jupyter
     - file: handson/H2-Reproducibility
-    # - file: handson/H2-FAIRdata
+    - file: handson/H3-FAIRdata
     # - file: handson/H4-Narrative
     # - file: handson/H5-Visualization
     # - file: handson/H6-DataAccess
