@@ -12,8 +12,8 @@ parts:
     - file: lectures/L1-intro
     - file: lectures/L2-opendata
     - file: lectures/L3-openaccess
-    # - file: lectures/L4-reproducibility
-    # - file: lectures/L5-communication
+    - file: lectures/L4-communication
+    # - file: lectures/L5-reproducibility
     # - file: lectures/L6-wheresdata
     # - file: lectures/L7-future
     
