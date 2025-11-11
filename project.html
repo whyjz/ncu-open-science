@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Class project &#8212; Open Science Practices in Remote Sensing</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'project';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Template for the term paper" href="template.html" />
+    <link rel="prev" title="Syllabus" href="syllabus.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/csrsr_logo.png" class="logo__image only-light" alt="Open Science Practices in Remote Sensing - Home"/>
+    <script>document.write(`<img src="_static/csrsr_logo.png" class="logo__image only-dark" alt="Open Science Practices in Remote Sensing - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Class project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="template.html">Template for the term paper</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="lectures/L1-intro.html">What is open science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/L2-opendata.html">Open data and beyond</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/L3-openaccess.html">Path to open academic publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/L4-communication.html">Communicating science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/L5-reproducibility.html">Reproducing and reusing academic work</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🛠️ Hands-on sessions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="handson/H1-Jupyter.html">Our working environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handson/H2-Reproducibility.html">Achieving 100% reproducibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handson/H3-FAIRdata.html">FAIRly share your data and code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handson/H4-Narrative.html">Writing narrative science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handson/H5-Visualization.html">Exploratory data visualization</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/project.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Class project</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#components-of-the-class-project">Components of the class project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#progress-report">Progress report</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#write-up-due-oct-28th-23-59-pm-utc-8">Write-up (due Oct 28th, 23:59 pm UTC+8)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-presentation-nov-4th-10-11-30-am-during-the-class">Oral presentation (Nov 4th, 10-11:30 am during the class)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-report">Final report</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-presentation-dec-9th-10-11-30-am-during-the-class">Oral presentation (Dec 9th, 10-11:30 am during the class)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#write-up-due-dec-16th-grading-period-tbd">Write-up (due Dec 16th; grading period: TBD)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="class-project">
+<h1>Class project<a class="headerlink" href="#class-project" title="Link to this heading">#</a></h1>
+<p><strong>Transform your own research project with open science</strong></p>
+<p>Each student <strong>must</strong> design and execute the class project on their own. Ideally, we presume each of you have a research project for your degree program. This project is an excellent place to start. Think about how you can apply the open science practices to your project, then actually do it – this is what we want to see in the class project.</p>
+<p>Some possible action items include:</p>
+<ul class="simple">
+<li><p>Publish your data in a FAIR-compatible repository</p></li>
+<li><p>Write documentation for your code, and publish them altogether</p></li>
+<li><p>Make your data analysis workflow fully redistributable and reproducible on the cloud</p></li>
+<li><p>Design an easy and inclusive method for scientific data exploration and visualization</p></li>
+<li><p>Submit your paper draft to a preprint server</p></li>
+<li><p>Maximize the chance for other people to see your work</p></li>
+<li><p>Reach out to people and explain your science</p></li>
+</ul>
+<p><strong>No idea?</strong></p>
+<p>It is great that you align this class project with your research goals since I believe this is an effecient way to boost the progress in the graduate school. But no worries if you don’t have any research projects or want to start fresh! Here are some topics to help you kickstart things. And you are always more than welcome to talk about any ideas with me.</p>
+<ul class="simple">
+<li><p>Design a scientific (perceptually uniform) colormap that also looks beautiful</p></li>
+<li><p>Build a GUI for showing glacier velocity on demand</p></li>
+<li><p>Publish a workflow that gets all information about a certain earthquake in one place</p></li>
+<li><p>Translate documentation of a scientific tool into a new language</p></li>
+<li><p>Create a public dashboard showing real-time thermal data for a certain volcano</p></li>
+</ul>
+<section id="components-of-the-class-project">
+<span id="components"></span><h2>Components of the class project<a class="headerlink" href="#components-of-the-class-project" title="Link to this heading">#</a></h2>
+<p>Your class project must contain the following components:</p>
+<ol class="arabic simple">
+<li><p>A research topic. Can be scientific or technical, but it must be something new.</p></li>
+<li><p>Highlights of its open science practices. Each project needs at least <strong>two</strong> highlight items.</p></li>
+<li><p>Code or detailed description about achieving these highlights.</p></li>
+<li><p>Results or final products at the end of the term.</p></li>
+</ol>
+<p>For written reports, You are welcome to use any languages that I understand (中文, English, 台文, &amp; Español). On the other hand, we will stick to English for oral presentations.</p>
+<section id="progress-report">
+<h3>Progress report<a class="headerlink" href="#progress-report" title="Link to this heading">#</a></h3>
+<p>The progress report serves as a checkpoint for the term project.</p>
+<section id="write-up-due-oct-28th-23-59-pm-utc-8">
+<h4>Write-up (due Oct 28th, 23:59 pm UTC+8)<a class="headerlink" href="#write-up-due-oct-28th-23-59-pm-utc-8" title="Link to this heading">#</a></h4>
+<p>A short one-pager describing the research topic and the anticipated open science highlights.</p>
+<p><strong>Format requirements:</strong></p>
+<ul class="simple">
+<li><p>Ideally less than 500 words, including two highlight items.</p></li>
+<li><p>Showing just your name with the report will do just fine.</p></li>
+</ul>
+<p><strong>How to submit the report?</strong></p>
+<p>You need to export the report to PDF and send the file to me (<a class="reference external" href="mailto:whyjz&#37;&#52;&#48;csrsr&#46;ncu&#46;edu&#46;tw">whyjz<span>&#64;</span>csrsr<span>&#46;</span>ncu<span>&#46;</span>edu<span>&#46;</span>tw</a>). The progress report will <em>not</em> be published for public access. Check out the <a class="reference internal" href="syllabus.html#late-work-policy"><span class="std std-ref">late policy</span></a> should you find yourself unable to complete the assignment on time.</p>
+</section>
+<section id="oral-presentation-nov-4th-10-11-30-am-during-the-class">
+<h4>Oral presentation (Nov 4th, 10-11:30 am during the class)<a class="headerlink" href="#oral-presentation-nov-4th-10-11-30-am-during-the-class" title="Link to this heading">#</a></h4>
+<p>Each person will spend ten minutes talking about the project, followed by a 5-10 minute discussion. We will determine the presentation order when the class starts.</p>
+<p><strong>Format requirements</strong></p>
+<ul class="simple">
+<li><p>Presentation slides or demos are optional. If you need to present with them, bring your own laptop (with an HDMI output) or send the files or links to me (<a class="reference external" href="mailto:whyjz&#37;&#52;&#48;csrsr&#46;ncu&#46;edu&#46;tw">whyjz<span>&#64;</span>csrsr<span>&#46;</span>ncu<span>&#46;</span>edu<span>&#46;</span>tw</a>) before the class starts so we can show your material on the big screen.</p></li>
+<li><p>Presentation should include why you choose this topic, what you will achieve, and what the open science highlights are.</p></li>
+</ul>
+</section>
+</section>
+<section id="final-report">
+<h3>Final report<a class="headerlink" href="#final-report" title="Link to this heading">#</a></h3>
+<section id="oral-presentation-dec-9th-10-11-30-am-during-the-class">
+<h4>Oral presentation (Dec 9th, 10-11:30 am during the class)<a class="headerlink" href="#oral-presentation-dec-9th-10-11-30-am-during-the-class" title="Link to this heading">#</a></h4>
+<p>Each person will spend fifteen (15) minutes presenting their work, followed by a five-minute discussion. We will determine the presentation order when the class starts.</p>
+<p><strong>Format requirements</strong></p>
+<ul class="simple">
+<li><p>In addition to the oral component, visual material such as slides, real-time demos, or videos are required. You have several ways to present your work:</p>
+<ul>
+<li><p>Send the files or links to me (<a class="reference external" href="mailto:whyjz&#37;&#52;&#48;csrsr&#46;ncu&#46;edu&#46;tw">whyjz<span>&#64;</span>csrsr<span>&#46;</span>ncu<span>&#46;</span>edu<span>&#46;</span>tw</a>) before the class starts. Note that my laptop runs Ubuntu only with Libre office installed, so PDF or cloud-based material (e.g. google slides) are the preferred formats.</p></li>
+<li><p>Bring and use your own laptop (with an HDMI output) to present your work.</p></li>
+<li><p>Publish material on your GitHub pages and showcase them during the talk.</p></li>
+</ul>
+</li>
+<li><p>I have pulled some resources <a class="reference external" href="https://youtu.be/SFxVihJ1KSo">here (short video)</a> and <a class="reference external" href="https://youtu.be/zXg70U2sNLM?t=660">here (long video)</a> for mastering your academic presentation skills.</p></li>
+<li><p>Ideally the talk should be between 13 and 15 minutes long. It is presenter’s responsibility to manage the talk length as we will <em>not</em> set up a public timer. I will time the talks privately for grading purpose.</p></li>
+</ul>
+<p><strong>Rubrics (30 points in total):</strong></p>
+<ul class="simple">
+<li><p>Slide (and other presentation material) design: 10 points</p></li>
+<li><p>Communication (e.g., explaining things in detail and answering questions): 10 points</p></li>
+<li><p>Time management: 10 points</p></li>
+</ul>
+</section>
+<section id="write-up-due-dec-16th-grading-period-tbd">
+<h4>Write-up (due Dec 16th; grading period: TBD)<a class="headerlink" href="#write-up-due-dec-16th-grading-period-tbd" title="Link to this heading">#</a></h4>
+<p>The final term paper should be built and published using Jupyter Book on your personal GitHub Pages. You can find a template <a class="reference internal" href="#template.html"><span class="xref myst">here</span></a>. You can update the published HTML as many time as you wish before the grading period; in fact, I recommend that you build your final report ahead of time so we’ll not be desperately rushing through debugging. After the grading period, it will be your choice to let the report settle online or remove it from the public view.</p>
+<p>Treat it as a mini-paper; it should have a proper structure and all necessary elements (figures, references, etc.) as a piece of scientific writing. In addition to the required <a class="reference internal" href="#components"><span class="std std-ref">components of the class project</span></a>, consider addressing these key questions in the report as well:</p>
+<ul class="simple">
+<li><p>How do the chosen open science practices help improve your research project?</p></li>
+<li><p>How do the chosen open science practices help other people understand your work or collaborate with you?</p></li>
+<li><p>What are the future goals of this research project after the semester ends?</p></li>
+<li><p>Will you continue to use the chosen open science practices in the future? Why?</p></li>
+</ul>
+<p><strong>Rubrics (40 points in total):</strong></p>
+<ul class="simple">
+<li><p>Content, with a focus on open science practices: 10 points</p></li>
+<li><p>Structure: 10 points</p></li>
+<li><p>Clarity: 10 points</p></li>
+<li><p>Conciseness: 10 points</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="syllabus.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Syllabus</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="template.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Template for the term paper</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#components-of-the-class-project">Components of the class project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#progress-report">Progress report</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#write-up-due-oct-28th-23-59-pm-utc-8">Write-up (due Oct 28th, 23:59 pm UTC+8)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-presentation-nov-4th-10-11-30-am-during-the-class">Oral presentation (Nov 4th, 10-11:30 am during the class)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-report">Final report</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#oral-presentation-dec-9th-10-11-30-am-during-the-class">Oral presentation (Dec 9th, 10-11:30 am during the class)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#write-up-due-dec-16th-grading-period-tbd">Write-up (due Dec 16th; grading period: TBD)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Whyjay Zheng (鄭懷傑)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023-2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

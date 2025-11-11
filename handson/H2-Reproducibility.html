@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Achieving 100% reproducibility &#8212; Open Science Practices in Remote Sensing</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H2-Reproducibility';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FAIRly share your data and code" href="H3-FAIRdata.html" />
+    <link rel="prev" title="Our working environment" href="H1-Jupyter.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/csrsr_logo.png" class="logo__image only-light" alt="Open Science Practices in Remote Sensing - Home"/>
+    <script>document.write(`<img src="../_static/csrsr_logo.png" class="logo__image only-dark" alt="Open Science Practices in Remote Sensing - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Class project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../template.html">Template for the term paper</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L1-intro.html">What is open science?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L2-opendata.html">Open data and beyond</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L3-openaccess.html">Path to open academic publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L4-communication.html">Communicating science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lectures/L5-reproducibility.html">Reproducing and reusing academic work</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🛠️ Hands-on sessions</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="H1-Jupyter.html">Our working environment</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Achieving 100% reproducibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H3-FAIRdata.html">FAIRly share your data and code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H4-Narrative.html">Writing narrative science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="H5-Visualization.html">Exploratory data visualization</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/handson/H2-Reproducibility.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Achieving 100% reproducibility</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">1 | Jupyter Notebook</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-cells-in-jupyter-notebook">🛠️ Markdown cells in Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-cells-in-jupyter-notebook">🛠️ Code cells in Jupyter Notebook</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">2 | GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-repository">🛠️ GitHub repository</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-sample-code-scripts">🛠️ Generate sample code scripts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binder">3 | Binder</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mybinder-org">mybinder.org</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binderize-your-repository">🛠️ Binderize your repository</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-resources">4 | More resources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="achieving-100-reproducibility">
+<h1>Achieving 100% reproducibility<a class="headerlink" href="#achieving-100-reproducibility" title="Link to this heading">#</a></h1>
+<p>Here, we will explore various tools to execute your code on the cloud. This is an important step for your results to be 100% reproducible.</p>
+<section id="jupyter-notebook">
+<h2>1 | Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading">#</a></h2>
+<p>It is always essential to add an explanation to your code. Indeed, some code can be self-explanatory, but readers can quickly get the ideas through a spoken language than through code that is interpreted by machines.</p>
+<p><strong>Jupyter Notebook</strong> is a tool (a file format) that lets you write narratives together with code, in your preferred order. A Notebook file typically has <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> extension. We have already seen some on the Callysto Hub; in fact, the webpage you are watching right now is also converted from a Notebook. (We’ll show how to do this later during this semester.)</p>
+<section id="markdown-cells-in-jupyter-notebook">
+<h3>🛠️ Markdown cells in Jupyter Notebook<a class="headerlink" href="#markdown-cells-in-jupyter-notebook" title="Link to this heading">#</a></h3>
+<p>Initiate a new Jupyter Notebook. You can do this on a JupyterLab UI by using the blue “+” button at the upper left corner. Select the first cell and change its type to Markdown.</p>
+<p><img alt="Markdown" src="../_images/markdown.png" /></p>
+<p>🚩 <strong>Task:</strong> Copy the following text and paste it into a Markdown cell. Then execute the cell and see how different levels of heading and text styles are rendered by the Notebook.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Title </span>
+
+<span class="c1">## Abstract</span>
+<span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">text</span><span class="o">.</span>
+
+<span class="c1">## Introduction</span>
+<span class="n">My</span> <span class="o">**</span><span class="n">Jupyter</span><span class="o">**</span> <span class="n">introduction</span><span class="o">.</span>
+
+<span class="c1">## Methods</span>
+<span class="c1">### Method A</span>
+<span class="n">It</span> <span class="n">takes</span> <span class="o">*</span><span class="mi">10</span> <span class="n">minutes</span><span class="o">*.</span>
+
+<span class="c1">### Method B</span>
+<span class="n">It</span> <span class="n">takes</span> <span class="o">*</span><span class="mi">30</span> <span class="n">minutes</span><span class="o">*.</span> 
+</pre></div>
+</div>
+<p>🚩 <strong>Task:</strong> Copy the following text and paste it into a Markdown cell. Then execute the cell and see how ordered or unordered lists are rendered by the Notebook.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#### Ordered list</span>
+<span class="mf">1.</span> <span class="n">Alpha</span>
+<span class="mf">2.</span> <span class="n">Beta</span>
+<span class="mf">3.</span> <span class="n">Gamma</span>
+
+<span class="c1">#### Unordered list</span>
+<span class="o">-</span> <span class="n">Apple</span>
+  <span class="o">-</span> <span class="n">Choose</span> <span class="n">green</span>
+  <span class="o">-</span> <span class="n">Buy</span> <span class="mi">2</span>
+<span class="o">-</span> <span class="n">Banana</span>
+  <span class="o">-</span> <span class="n">Buy</span> <span class="mi">5</span>
+<span class="o">-</span> <span class="n">Carrot</span>
+
+</pre></div>
+</div>
+<p>🚩 <strong>Task:</strong> The way to create a hyperlink is <code class="docutils literal notranslate"><span class="pre">[Text</span> <span class="pre">to</span> <span class="pre">show](URL)</span></code>. Now, try to create a hyperlink that is identical to this one: <a class="reference external" href="https://whyjz.github.io/ncu-open-science">RS6026: Open Science</a>.</p>
+<p>🚩 <strong>Task:</strong> The way to show an image is <code class="docutils literal notranslate"><span class="pre">![Alternative</span> <span class="pre">text](local</span> <span class="pre">path</span> <span class="pre">or</span> <span class="pre">URL</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">image)</span></code>. Now try to show CSRSR’s logo (available at <a class="reference external" href="https://www.csrsr.ncu.edu.tw/img/csrsr_logo.png">https://www.csrsr.ncu.edu.tw/img/csrsr_logo.png</a>) when you execute a text cell.</p>
+<p>❓ <strong>Question:</strong> Here’s the <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html">documentation for the Markdown in Jupyter Notebook</a>. Can you show the following content in your Markdown cell?</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion">Kepler’s third law of planetary motion</a> can be expressed as:</p>
+<div class="math notranslate nohighlight">
+\[
+k = \frac{a^3}{T^2},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is a constant, <span class="math notranslate nohighlight">\(a\)</span> is the object’s semi-major axis of its orbit, and <span class="math notranslate nohighlight">\(T\)</span> is the orbital period.</p>
+</section>
+<section id="code-cells-in-jupyter-notebook">
+<h3>🛠️ Code cells in Jupyter Notebook<a class="headerlink" href="#code-cells-in-jupyter-notebook" title="Link to this heading">#</a></h3>
+<p>Check the upper right corner of your notebook. You should be able to see a text cell indicating your Notebook’s processing kernel. The word “kernel” in Jupyter Notebook refers to the environment that executes the code cell. For example, if it shows Python, a code cell will be interpreted and executed using Python.</p>
+<p><img alt="Kernel" src="../_images/kernel.png" /></p>
+<p>🚩 <strong>Task:</strong> Confirm that your Notebook has a Python kernel. Copy the following text and paste it into a Code cell. Then execute the cell and see how it is executed by Python.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Enter number </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">))</span>
+    <span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="n">maximum</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sum: </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s2">, Average: </span><span class="si">{</span><span class="n">average</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, Max: </span><span class="si">{</span><span class="n">maximum</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>🚩 <strong>Task:</strong> After you complete the task above, check the content of <code class="docutils literal notranslate"><span class="pre">numbers</span></code> by typing <code class="docutils literal notranslate"><span class="pre">numbers</span></code> in a new code cell.</p>
+<p>🚩 <strong>Task:</strong> A simple shell command can also be executed by adding a <code class="docutils literal notranslate"><span class="pre">!</span></code> at the beginning of the line. Execute this and see what happens:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!ls -al
+</pre></div>
+</div>
+<p>❓ <strong>Question:</strong> Suppose you have a long output from <code class="docutils literal notranslate"><span class="pre">!ls</span> <span class="pre">-al</span></code> and you want to hide it. How to do this?</p>
+</section>
+</section>
+<section id="github">
+<h2>2 | <a class="reference external" href="https://github.com/">GitHub</a><a class="headerlink" href="#github" title="Link to this heading">#</a></h2>
+<p>GitHub is an online hosting service for software, code, and documentation using Git as the tool of version control. Here we will create a code repository with some sample code scripts for your later use.</p>
+<section id="github-repository">
+<h3>🛠️ GitHub repository<a class="headerlink" href="#github-repository" title="Link to this heading">#</a></h3>
+<p>🚩 <strong>Task:</strong> Register a <a class="reference external" href="https://github.com/">GitHub</a> account. 🙂</p>
+<p>🚩 <strong>Task:</strong> Create a repository by the following steps:</p>
+<ol class="arabic simple">
+<li><p>On Github, go to “Your repositories” and you’ll see the page as below. Click the green button saying “New.”
+<img alt="Github-scr1" src="../_images/Github-scr1.png" /></p></li>
+<li><p>Follow the instructions. I recommend MIT as the license for this repository, but please feel free to choose whatever you like. You can also specify the license later. Any material without a given license is completely copyrighted.</p></li>
+<li><p>If you are new to Git/GitHub, you can also skip the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">.gitignore</span></code> section.</p></li>
+<li><p>After you create a new repository, you can try to add any content using the interface provided by GitHub (e.g., the “Add file” button).</p></li>
+</ol>
+</section>
+<section id="generate-sample-code-scripts">
+<h3>🛠️ Generate sample code scripts<a class="headerlink" href="#generate-sample-code-scripts" title="Link to this heading">#</a></h3>
+<p>🚩 <strong>Task:</strong> Create a new Notebook named <code class="docutils literal notranslate"><span class="pre">scipy_test.ipynb</span></code> with the following content:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#### This sample code was auto-generated using Bing&#39;s ChatGPT AI (GPT-4).</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">optimize</span>
+
+<span class="c1"># Define the function that we want to fit</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">test_func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Generate some data with noise to fit</span>
+<span class="n">x_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">y_data</span> <span class="o">=</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">1.5</span> <span class="o">*</span> <span class="n">x_data</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Fit the data with the function</span>
+<span class="n">params</span><span class="p">,</span> <span class="n">params_covariance</span> <span class="o">=</span> <span class="n">optimize</span><span class="o">.</span><span class="n">curve_fit</span><span class="p">(</span><span class="n">test_func</span><span class="p">,</span> <span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">,</span> <span class="n">p0</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># Print the results</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>I suppose you are creating this on Callysto. Next, try to execute this cell. Python will then try to load the numpy and scipy libraries, which are <strong>already installed on Callysto</strong>. You should see a successful result (coefficients of a linear regression) printed on the screen.</p>
+<p>🚩 <strong>Task:</strong> Create a new Notebook file named <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code> with the following content:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#### This sample code was modified from ipyleaflet&#39;s demo examples.</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ipyleaflet</span><span class="w"> </span><span class="kn">import</span> <span class="n">Map</span><span class="p">,</span> <span class="n">basemaps</span><span class="p">,</span> <span class="n">basemap_to_tiles</span><span class="p">,</span> <span class="n">Marker</span>
+
+<span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="mf">24.9677</span><span class="p">,</span> <span class="mf">121.1870</span><span class="p">)</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span>
+    <span class="n">basemap</span><span class="o">=</span><span class="n">basemap_to_tiles</span><span class="p">(</span><span class="n">basemaps</span><span class="o">.</span><span class="n">OpenStreetMap</span><span class="o">.</span><span class="n">Mapnik</span><span class="p">),</span>
+    <span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span>
+    <span class="n">zoom</span><span class="o">=</span><span class="mi">15</span>
+    <span class="p">)</span>
+<span class="n">marker</span> <span class="o">=</span> <span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">draggable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">marker</span><span class="p">);</span>
+<span class="n">m</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you are on Callysto and try to run this Notebook, you will see an error complaining <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">'ipyleaflet'</span></code> because the <strong>ipyleaflet package is not pre-installed on Callysto</strong>. We have to install it manually. You can use this command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install ipyleaflet
+</pre></div>
+</div>
+<p>Once you have installed ipyleaflet, <strong>restart</strong> the kernel and <strong>refresh</strong> your Jupyter Notebook / JupyterLab page and re-execute the code cell again. Now it should nicely show a marker somewhere on a map…!</p>
+<p>❓ <strong>Question:</strong> If you quit the Callysto Hub and restart it next time, you will have to reinstall ipyleaflet to successfully run the code. Why does the previous installation disappear?</p>
+<p>🚩 <strong>Task:</strong> Download <code class="docutils literal notranslate"><span class="pre">scipy_test.ipynb</span></code> and <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code> and upload them onto your new GitHub repository.</p>
+</section>
+</section>
+<section id="binder">
+<h2>3 | Binder<a class="headerlink" href="#binder" title="Link to this heading">#</a></h2>
+<p><img alt="myBinder" src="https://mybinder.org/static/logo.svg" /></p>
+<p><strong>Binder</strong> is one of Jupyter’s projects that aims to set up an “easy place to share computing environments.” This project involves several software tools, such as <strong>BinderHub</strong> and <strong>repo2docker</strong>.</p>
+<section id="mybinder-org">
+<h3><a class="reference external" href="https://mybinder.org/">mybinder.org</a><a class="headerlink" href="#mybinder-org" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://mybinder.org/">mybinder.org</a> is an online realization of the Binder service. As long as a supported repository (e.g., GitHub) contains information for the computing environment, mybinder can initialize a server with the necessary packages installed. Finally, users can access the fully executable <em>in-situ</em> content through the Jupyter-based GUI without installing anything.</p>
+</section>
+<section id="binderize-your-repository">
+<h3>🛠️ Binderize your repository<a class="headerlink" href="#binderize-your-repository" title="Link to this heading">#</a></h3>
+<p>🚩 <strong>Task:</strong> To “binderize” a repository, we have to supply the information about the computing environment. Create a file called <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> with the following content:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="p">:</span> <span class="n">binder</span><span class="o">-</span><span class="n">test</span>
+
+<span class="n">channels</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+<span class="n">dependencies</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">numpy</span>
+  <span class="o">-</span> <span class="n">scipy</span>
+  <span class="o">-</span> <span class="n">ipyleaflet</span>
+</pre></div>
+</div>
+<p>This file follows the <a class="reference external" href="https://en.wikipedia.org/wiki/YAML"><strong>YAML</strong></a> format and tells <strong>conda</strong> (one of the package managers Binder supports) what packages to install. Based on the code from <code class="docutils literal notranslate"><span class="pre">scipy_test.ipynb</span></code> and <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code>, we will need <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy</span></code>, and <code class="docutils literal notranslate"><span class="pre">ipyleaflet</span></code> packages. Lastly, upload this file onto the same GitHub repository.</p>
+<!-- We will also need Python to execute the code, but it is optional to list Python here because it will be installed as a dependency of all three packages. -->
+<p>🚩 <strong>Task:</strong> Confirm that your repository contains <strong>three files</strong>: <code class="docutils literal notranslate"><span class="pre">scipy_test.ipynb</span></code>, <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code>, and <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>, all with corresponding content.</p>
+<p>🚩 <strong>Task:</strong> After you confirm the repository content, go to <a class="reference external" href="https://mybinder.org/">mybinder.org</a> and enter the repository URL to initialize the server with all the reproducible content from your repository:</p>
+<p><img alt="Binder" src="../_images/Binder-scr1.png" /></p>
+<p>Mybinder will take some time building a Docker image based on <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>. When it is finished, you should be able to see a JupyterLab (or Jupyter Notebook tree view) GUI with all the content of the repository. Navigate to <code class="docutils literal notranslate"><span class="pre">scipy_test.ipynb</span></code> and <code class="docutils literal notranslate"><span class="pre">ipyleaflet.ipynb</span></code>, run the cells, and see how they are conveniently showing results!</p>
+<p>❓ <strong>Question:</strong> What does “<strong>Badges for your README</strong>” on the <a class="reference external" href="http://mybinder.org">mybinder.org</a> page do?</p>
+</section>
+</section>
+<section id="more-resources">
+<h2>4 | More resources<a class="headerlink" href="#more-resources" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Git:</p>
+<ul>
+<li><p><a class="reference external" href="https://nulab.com/zh-tw/learn/software-development/git-tutorial/">適合初學者的簡單 Git 教程 (中文)</a></p></li>
+<li><p><a class="reference external" href="https://nulab.com/learn/software-development/git-tutorial/">Simple Git tutorial for beginners (English)</a></p></li>
+</ul>
+</li>
+<li><p>Python: there are tons of online resources, but here I can recommend some. (<em>Disclaimer: I have no conflict of interest with any of the companies/organizations mentioned here.</em>)</p>
+<ul>
+<li><p><a class="reference external" href="https://www.callysto.ca/learning-modules/">Callysto’s learning modules</a></p></li>
+<li><p><a class="reference external" href="https://brilliant.org/">Brilliant</a></p></li>
+<li><p><a class="reference external" href="https://www.codecademy.com/">Codecademy</a></p></li>
+<li><p><a class="reference external" href="https://www.datacamp.com/">DataCamp</a></p></li>
+<li><p><em>Learning Python with Jupyter</em> book at <a class="reference external" href="https://learnpythonwithjupyter.com/">https://learnpythonwithjupyter.com/</a> with downloadable Jupyter Notebook exercises.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://mybinder.readthedocs.io/en/latest/introduction.html">Mybinder’s documentation</a> contains information about BinderHub and the Docker technique for your reference.</p></li>
+</ul>
+<!-- The technology behind MyBinder.org is called the **BinderHub**. You can find more details about it . Using the same technology, it is possible to create many independent online services that are similar to MyBinder.org. -->
+<!-- ![BinderHub workflow](https://binderhub.readthedocs.io/en/latest/_images/architecture.png) 
+By Project Jupyter Contributors, [BSD-3-Clause license](https://github.com/jupyterhub/binderhub/blob/main/LICENSE) -->
+<!-- 
+BinderHub (e.g., MyBinder.org) itself focuses on building a [Docker image](https://jfrog.com/knowledge-base/a-beginners-guide-to-understanding-and-building-docker-images/) from a repository. BinderHub relies on JupyterHub (e.g., Callysto Hub) to create the pod instance that serves the Docker image. 
+ -->
+<!-- ### Clone this Github repository to your local machine
+
+Remember that we will use the [Callysto Hub](https://hub.callysto.ca/) as the local machine, although it's technically on the cloud. 
+
+Once you log into the Callysto Hub, change the URL from https://hub-xx.callysto.ca/jupyter/user/xxx..../tree to https://hub-xx.callysto.ca/jupyter/user/xxx..../lab for the JupyterLab GUI. Click the blue buttom with a plus sign on it to open the launcher page.
+
+![CallystoHub-scr1](figs/CallystoHub-scr1.png)
+
+Initiate a terminal session by clicking the terminal icon on the launcher page. New you can clone the repository we just created on Callysto using the following command-line prompt:
+
+`git clone https://github.com/YOUR-ID/YOUR-REPO-NAME.git`
+
+**You have to change** `YOUR-ID` **to your Github user name and** `YOUR-REPO-NAME` **to the repositry name you want to be cloned.** Once done, you should see a new folder in the left sidebar (file browser) that shows the repository name. Now you have copied the content from Github to Callysto and can continue to add new content on Callysto.
+
+### Make commits and push them to Github
+
+Once you have new content in the repository, it is time to tell Git to track the change. This is an action called a "commit." 
+
+To commit the first time on a machine, you'll need to configure the following information: 
+
+When you are done adding these files, you can commit the changes and push them to Github. --></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./handson"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="H1-Jupyter.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Our working environment</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="H3-FAIRdata.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">FAIRly share your data and code</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook">1 | Jupyter Notebook</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-cells-in-jupyter-notebook">🛠️ Markdown cells in Jupyter Notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-cells-in-jupyter-notebook">🛠️ Code cells in Jupyter Notebook</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">2 | GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-repository">🛠️ GitHub repository</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-sample-code-scripts">🛠️ Generate sample code scripts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binder">3 | Binder</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mybinder-org">mybinder.org</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binderize-your-repository">🛠️ Binderize your repository</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-resources">4 | More resources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Whyjay Zheng (鄭懷傑)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023-2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
