@@ -13,7 +13,7 @@ parts:
     - file: lectures/L2-opendata
     - file: lectures/L3-openaccess
     - file: lectures/L4-communication
-    # - file: lectures/L5-reproducibility
+    - file: lectures/L5-reproducibility
     # - file: lectures/L6-wheresdata
     # - file: lectures/L7-future
     
@@ -23,5 +23,5 @@ parts:
     - file: handson/H2-Reproducibility
     - file: handson/H3-FAIRdata
     - file: handson/H4-Narrative
-    # - file: handson/H5-Visualization
+    - file: handson/H5-Visualization
     # - file: handson/H6-DataAccess
