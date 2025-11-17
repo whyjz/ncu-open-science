@@ -70,20 +70,20 @@ This is a tentative schedule; the actual content may change depending on our pro
   - 11/4: **Term project: progress presentation**; Communicating science (2)
   - 11/6: *NO CLASS* (NCU Sports Day)                     
 - Week 11
-  - 11/11: Reproducing and reusing academic work (1)
-  - 11/13: 🛠️ Explorative data visualization (1)
+  - 11/11: <font color='red'>*NO CLASS* (Typhoon)</font>
+  - 11/13: *NO CLASS* (CSRSR field trip)
 - Week 12
-  - 11/18: Reproducing and reusing academic work (2)
-  - 11/20: 🛠️ Explorative data visualization (2)       
+  - 11/18: Reproducing and reusing academic work
+  - 11/20: 🛠️ Explorative data visualization (1)
 - Week 13
   - 11/25: Open data sets in remote sensing, Earth & environmental sciences
-  - 11/27: 🛠️ Getting and analyzing remotely sensed open data (1)             
+  - 11/27: 🛠️ Explorative data visualization (2)       
 - Week 14
   - 12/2: The future of open science?
-  - 12/4: 🛠️ Getting and analyzing remotely sensed open data (2)
+  - 12/4: 🛠️ Getting and analyzing remotely sensed open data (1)
 - Week 15
   - 12/9: **Term project: final presentation**
-  - 12/11: *Reserved for CSRSR field trip*
+  - 12/11: 🛠️ Getting and analyzing remotely sensed open data (2)
 - Week 16
   - 12/16: *NO CLASS* (Whyjay out of town)  |  **Term project: final write-up due**
   - 12/18: *NO CLASS* (Whyjay out of town) 
