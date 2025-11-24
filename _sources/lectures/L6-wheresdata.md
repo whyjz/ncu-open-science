@@ -1,12 +1,8 @@
 # Open data sets in remote sensing, Earth & environmental sciences
 
-**2023.05.18, 2023.05.25**
-
 ## Slides
 
-[Lecture slides - 1](https://docs.google.com/presentation/d/1LxJ76-DYbYCnXRkzhyjxhiNMvLp1vPnxmpGOn7fvxm4/edit?usp=sharing)
-
-[Lecture slides - 2](https://docs.google.com/presentation/d/1LNXiXMIDxfQWl7dHrg59Z9MdqadP22ChRxGRRJ62S20/edit?usp=sharing)
+[Lecture slides](https://docs.google.com/presentation/d/1hzeAhXEGd6Itv9YYKkuABZgcegPQ-rZFORxW58byuaY/edit?usp=sharing)
 
 ## References and further readings
 
