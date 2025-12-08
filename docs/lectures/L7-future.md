@@ -1,11 +1,8 @@
 # The future of open science
 
-**2023.06.06**
-
 ## Slides
 
-[Lecture slides - 1](https://docs.google.com/presentation/d/1Wj7TB_7SrlJBeoUY_9or8kPxDi1j5JPIbX-GZRKZ8gg/edit?usp=sharing)
-
+[Lecture slides](https://docs.google.com/presentation/d/1F8LduT039u1vxq3F2Kb-9_7kx-PLI2ADiSfccHe2dzw/edit?usp=sharing)
 
 ## References and further readings
 

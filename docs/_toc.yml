@@ -15,7 +15,7 @@ parts:
     - file: lectures/L4-communication
     - file: lectures/L5-reproducibility
     - file: lectures/L6-wheresdata
-    # - file: lectures/L7-future
+    - file: lectures/L7-future
     
   - caption: 🛠️ Hands-on sessions
     chapters:
