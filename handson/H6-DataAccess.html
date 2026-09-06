@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -50,7 +50,7 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -60,7 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H6-DataAccess';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Exploratory data visualization" href="H5-Visualization.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,21 +180,10 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../lectures/L1-intro.html">What is open science?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L2-opendata.html">Open data and beyond</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L3-openaccess.html">Path to open academic publishing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L4-communication.html">Communicating science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L5-reproducibility.html">Reproducing and reusing academic work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L6-wheresdata.html">Open data sets in remote sensing, Earth &amp; environmental sciences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L7-future.html">The future of open science</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">🛠️ Hands-on sessions</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="H1-Jupyter.html">Our working environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H2-Reproducibility.html">Achieving 100% reproducibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H3-FAIRdata.html">FAIRly share your data and code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H4-Narrative.html">Writing narrative science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H5-Visualization.html">Exploratory data visualization</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting and analyzing remotely sensed open data</a></li>
 </ul>
 
     </div>
@@ -1015,7 +1005,7 @@ if (window.Jupyter !== undefined) {
 <p>🚩 <strong>Task:</strong> Use Intake to open the Planet disaster STAC catalog:</p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">catalog_url</span> <span class="o">=</span> <span class="s2">&quot;https://www.planet.com/data/stac/catalog.json&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">catalog_url</span> <span class="o">=</span> <span class="s2">"https://www.planet.com/data/stac/catalog.json"</span>
 <span class="n">catalog</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">open_stac_catalog</span><span class="p">(</span><span class="n">catalog_url</span><span class="p">)</span>
 <span class="n">catalog</span>
 </pre></div>
@@ -1030,7 +1020,7 @@ if (window.Jupyter !== undefined) {
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>planet:
   args:
     stac_obj: https://www.planet.com/data/stac/catalog.json
-  description: &#39;&#39;
+  description: ''
   driver: intake_stac.catalog.StacCatalog
   metadata:
     description: This catalog serves as the STAC Catalog for data licensed under Creative
@@ -1097,7 +1087,7 @@ if (window.Jupyter !== undefined) {
 <p>🚩 <strong>Task:</strong> To access the Planet disaster data, go into one layer deep and get the corresponding STAC collection:</p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">collection</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="s1">&#39;planet-disaster-data&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">collection</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="s1">'planet-disaster-data'</span><span class="p">]</span>
 <span class="n">collection</span>
 </pre></div>
 </div>
@@ -1111,17 +1101,17 @@ if (window.Jupyter !== undefined) {
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>planet-disaster-data:
   args:
     stac_obj: https://www.planet.com/data/stac/disasters/collection.json
-  description: &#39;[Planet Disaster Data](https://www.planet.com/disasterdata/) makes
+  description: '[Planet Disaster Data](https://www.planet.com/disasterdata/) makes
     imagery available directly to the public, volunteers, humanitarian organizations,
     and other coordinating bodies in support of the International Charter for Space
     and Major Disasters. Data is released for individual disaster events, providing
     a 30 day window pre- and post-disaster. Imagery is provided under Creative Commons
     licenses, free of charge, with either CC-BY-SA or CC-BY-NC. This STAC catalog
     provides fully public access of a very small subset of the imagery, as a proof
-    of concept.&#39;
+    of concept.'
   driver: intake_stac.catalog.StacCollection
   metadata:
-    catalog_dir: &#39;&#39;
+    catalog_dir: ''
 </pre></div>
 </div>
 </div>
@@ -1135,7 +1125,7 @@ if (window.Jupyter !== undefined) {
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">item</span> <span class="o">=</span> <span class="n">collection</span><span class="p">[</span><span class="s1">&#39;hurricane-harvey&#39;</span><span class="p">][</span><span class="s1">&#39;hurricane-harvey-0831&#39;</span><span class="p">][</span><span class="s1">&#39;Houston-East-20170831-103f-100d-0f4f-RGB&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">item</span> <span class="o">=</span> <span class="n">collection</span><span class="p">[</span><span class="s1">'hurricane-harvey'</span><span class="p">][</span><span class="s1">'hurricane-harvey-0831'</span><span class="p">][</span><span class="s1">'Houston-East-20170831-103f-100d-0f4f-RGB'</span><span class="p">]</span>
 <span class="n">item</span>
 </pre></div>
 </div>
@@ -1194,7 +1184,7 @@ thumbnail:
 <p>You can see this asset has two different scenes: <code class="docutils literal notranslate"><span class="pre">mosaic</span></code> and <code class="docutils literal notranslate"><span class="pre">thumbnail</span></code>. The thumbnail is also known as the browse image. Its purpose is to provide a low-resolution overview of the image so users can explore as much as possible without downloading large files.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">thumbnail</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;thumbnail&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">thumbnail</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">'thumbnail'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1211,7 +1201,7 @@ thumbnail:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/Houston-East-20170831-103f-100d-0f4f-3-band.png&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>'https://storage.googleapis.com/pdd-stac/disasters/hurricane-harvey/0831/Houston-East-20170831-103f-100d-0f4f-3-band.png'
 </pre></div>
 </div>
 </div>
@@ -1226,7 +1216,7 @@ thumbnail:
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/whyjz278/.local/lib/python3.10/site-packages/intake_xarray/image.py:474: FutureWarning: The return type of `Dataset.dims` will be changed to return a set of dimension names in future, in order to be more consistent with `DataArray.dims`. To access a mapping from dimension names to lengths, please use `Dataset.sizes`.
-  &#39;dims&#39;: dict(ds2.dims),
+  'dims': dict(ds2.dims),
 </pre></div>
 </div>
 <div class="output text_html"><div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
@@ -1695,7 +1685,7 @@ Coordinates:
 <p>🚩 <strong>Task:</strong> Load the full-resolution, mosaicked image (<code class="docutils literal notranslate"><span class="pre">item[mosaic]</span></code>) to dask and visualize it using true-color band combination:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mosaic</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;mosaic&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mosaic</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">'mosaic'</span><span class="p">]</span>
 <span class="n">da_mosaic</span> <span class="o">=</span> <span class="n">mosaic</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>
 <span class="n">da_mosaic</span>
 </pre></div>
@@ -1703,7 +1693,7 @@ Coordinates:
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/whyjz278/.local/lib/python3.10/site-packages/intake_xarray/raster.py:107: FutureWarning: The return type of `Dataset.dims` will be changed to return a set of dimension names in future, in order to be more consistent with `DataArray.dims`. To access a mapping from dimension names to lengths, please use `Dataset.sizes`.
-  &#39;dims&#39;: dict(ds2.dims),
+  'dims': dict(ds2.dims),
 </pre></div>
 </div>
 <div class="output text_html"><div><svg style="position: absolute; width: 0; height: 0; overflow: hidden">
@@ -2188,7 +2178,7 @@ Attributes:
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Slice a portion of the image and plot a RGB image of that slice.</span>
 <span class="n">da_mosaic_subset</span> <span class="o">=</span> <span class="n">da_mosaic</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">10641000</span><span class="p">,</span> <span class="o">-</span><span class="mi">10638000</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">3474000</span><span class="p">,</span> <span class="mi">3471000</span><span class="p">))</span>
-<span class="n">da_mosaic_subset</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">rgb</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">da_mosaic_subset</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">rgb</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2294,14 +2284,14 @@ Attributes:
 <p>🚩 <strong>Task:</strong> The STAC entry point for the Sentinel-2 Cloud-Optimized GeoTIFFs is <a class="reference external" href="https://earth-search.aws.element84.com/v1">https://earth-search.aws.element84.com/v1</a>. Perform the query using PySTAC-Client as follows:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you are curious about the content of this STAC catalog, don&#39;t forget the STAC browser!</span>
-<span class="n">catalog_url</span> <span class="o">=</span> <span class="s2">&quot;https://earth-search.aws.element84.com/v1&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you are curious about the content of this STAC catalog, don't forget the STAC browser!</span>
+<span class="n">catalog_url</span> <span class="o">=</span> <span class="s2">"https://earth-search.aws.element84.com/v1"</span>
 <span class="n">catalog</span> <span class="o">=</span> <span class="n">pystac_client</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">catalog_url</span><span class="p">)</span>
 
 <span class="n">results</span> <span class="o">=</span> <span class="n">catalog</span><span class="o">.</span><span class="n">search</span><span class="p">(</span>
-    <span class="n">collections</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;sentinel-2-l2a&quot;</span><span class="p">],</span>              <span class="c1"># Search within the sentinel-2-l2a collection</span>
+    <span class="n">collections</span><span class="o">=</span><span class="p">[</span><span class="s2">"sentinel-2-l2a"</span><span class="p">],</span>              <span class="c1"># Search within the sentinel-2-l2a collection</span>
     <span class="n">bbox</span> <span class="o">=</span> <span class="p">[</span><span class="mf">121.21</span><span class="p">,</span> <span class="mf">25.06</span><span class="p">,</span> <span class="mf">121.26</span><span class="p">,</span> <span class="mf">25.09</span><span class="p">],</span>       <span class="c1"># Bounding box; [lon-left, lat-bottom, lon-right, lat-top]. Roughly focused on the Taoyuan International Airport.</span>
-    <span class="n">datetime</span><span class="o">=</span><span class="s2">&quot;2021-09-26/2023-03-31&quot;</span><span class="p">)</span>            <span class="c1"># Search within this time span.</span>
+    <span class="n">datetime</span><span class="o">=</span><span class="s2">"2021-09-26/2023-03-31"</span><span class="p">)</span>            <span class="c1"># Search within this time span.</span>
 
 <span class="n">items</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">item_collection</span><span class="p">()</span>
 
@@ -2321,8 +2311,8 @@ Attributes:
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">items_intake</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">open_stac_item_collection</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
 <span class="c1"># list(items_intake)                                       # Try this!</span>
-<span class="c1"># items_intake[&#39;S2B_51RUH_20230311_0_L2A&#39;]                 # Try this!</span>
-<span class="c1"># items_intake[&#39;S2B_51RUH_20230311_0_L2A&#39;].metadata        # Try this!</span>
+<span class="c1"># items_intake['S2B_51RUH_20230311_0_L2A']                 # Try this!</span>
+<span class="c1"># items_intake['S2B_51RUH_20230311_0_L2A'].metadata        # Try this!</span>
 </pre></div>
 </div>
 </div>
@@ -2330,7 +2320,7 @@ Attributes:
 <p>🚩 <strong>Task:</strong> Each Sentinel-2 item comes with many images, such as thumbnail, blue band, red band, NIR band, etc. Take <code class="docutils literal notranslate"><span class="pre">S2B_51RUH_20230311_0_L2A</span></code> (the image we used in the previous tutorial) as an example, check what images are there by:</p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">item</span> <span class="o">=</span> <span class="n">items_intake</span><span class="p">[</span><span class="s1">&#39;S2B_51RUH_20230311_0_L2A&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">item</span> <span class="o">=</span> <span class="n">items_intake</span><span class="p">[</span><span class="s1">'S2B_51RUH_20230311_0_L2A'</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">item</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 </pre></div>
@@ -2397,8 +2387,8 @@ wvp-jp2
 
 <span class="c1"># Loop over each queried image</span>
 <span class="k">for</span> <span class="n">scene</span> <span class="ow">in</span> <span class="n">items_intake</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
-    <span class="n">timestamp</span> <span class="o">=</span> <span class="n">scene</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;s2:generation_time&#39;</span><span class="p">]</span>                          <span class="c1"># get time stame of each image</span>
-    <span class="n">da</span> <span class="o">=</span> <span class="n">scene</span><span class="p">[</span><span class="s1">&#39;visual&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>                                            <span class="c1"># lazily load the data as Dask array</span>
+    <span class="n">timestamp</span> <span class="o">=</span> <span class="n">scene</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">'s2:generation_time'</span><span class="p">]</span>                          <span class="c1"># get time stame of each image</span>
+    <span class="n">da</span> <span class="o">=</span> <span class="n">scene</span><span class="p">[</span><span class="s1">'visual'</span><span class="p">]</span><span class="o">.</span><span class="n">to_dask</span><span class="p">()</span>                                            <span class="c1"># lazily load the data as Dask array</span>
     <span class="n">da_subset</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">320000</span><span class="p">,</span> <span class="mi">325000</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">2777000</span><span class="p">,</span> <span class="mi">2772000</span><span class="p">))</span>    <span class="c1"># Slice the image near the airport</span>
     <span class="c1"># Now we apply a simple filter to mask our images with cloud cover &gt; 10%. </span>
     <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">da_subset</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">&lt;</span> <span class="mi">255</span><span class="p">)</span> <span class="o">/</span> <span class="mi">250000</span> <span class="o">&gt;</span> <span class="mf">0.9</span><span class="p">:</span>                <span class="c1"># 250000 stands for the total number of the pixels in the sliced data. 255 is a saturated band color.</span>
@@ -2411,8 +2401,8 @@ wvp-jp2
 <p>Now we can merge all the data into a giant 4-D data cube!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datacube</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">data_list</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Index</span><span class="p">(</span><span class="n">timestamp_list</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">))</span>
-<span class="n">datacube</span> <span class="o">=</span> <span class="n">datacube</span><span class="o">.</span><span class="n">sortby</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>    <span class="c1"># Sort the image, ordered by the acquisition time</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datacube</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">data_list</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Index</span><span class="p">(</span><span class="n">timestamp_list</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"t"</span><span class="p">))</span>
+<span class="n">datacube</span> <span class="o">=</span> <span class="n">datacube</span><span class="o">.</span><span class="n">sortby</span><span class="p">(</span><span class="s1">'t'</span><span class="p">)</span>    <span class="c1"># Sort the image, ordered by the acquisition time</span>
 <span class="n">datacube</span>
 </pre></div>
 </div>
@@ -2949,10 +2939,10 @@ Attributes:
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datacube</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">rgb</span><span class="p">(</span>
-    <span class="n">groupby</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">,</span>  <span class="c1"># adds a widget that switches the view along the t axis.</span>
+    <span class="n">groupby</span><span class="o">=</span><span class="s2">"t"</span><span class="p">,</span>  <span class="c1"># adds a widget that switches the view along the t axis.</span>
     <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">widget_type</span><span class="o">=</span><span class="s2">&quot;scrubber&quot;</span><span class="p">,</span>
-    <span class="n">widget_location</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+    <span class="n">widget_type</span><span class="o">=</span><span class="s2">"scrubber"</span><span class="p">,</span>
+    <span class="n">widget_location</span><span class="o">=</span><span class="s2">"bottom"</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -3059,15 +3049,6 @@ Attributes:
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="H5-Visualization.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Exploratory data visualization</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
@@ -3125,7 +3106,7 @@ By Whyjay Zheng (鄭懷傑)
 
   <p class="copyright">
     
-      © Copyright 2023-2025.
+      © Copyright 2023-2026.
       <br/>
     
   </p>

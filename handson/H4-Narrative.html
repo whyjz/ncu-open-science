@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -50,7 +50,7 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -60,8 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H4-Narrative';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Exploratory data visualization" href="H5-Visualization.html" />
-    <link rel="prev" title="FAIRly share your data and code" href="H3-FAIRdata.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -180,21 +180,10 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../lectures/L1-intro.html">What is open science?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L2-opendata.html">Open data and beyond</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L3-openaccess.html">Path to open academic publishing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L4-communication.html">Communicating science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L5-reproducibility.html">Reproducing and reusing academic work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L6-wheresdata.html">Open data sets in remote sensing, Earth &amp; environmental sciences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L7-future.html">The future of open science</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">🛠️ Hands-on sessions</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="H1-Jupyter.html">Our working environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H2-Reproducibility.html">Achieving 100% reproducibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H3-FAIRdata.html">FAIRly share your data and code</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Writing narrative science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H5-Visualization.html">Exploratory data visualization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H6-DataAccess.html">Getting and analyzing remotely sensed open data</a></li>
 </ul>
 
     </div>
@@ -405,7 +394,7 @@ Narrative science is a concept of writing a piece that provides scientific and t
 bla bla...
 
 ```{note}
-Hey where&#39;s the content?
+Hey where's the content?
 ```
 
 ### Task 1
@@ -434,12 +423,12 @@ Hey where&#39;s the content?
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Book settings</span>
 <span class="n">title</span>                       <span class="p">:</span> <span class="p">[</span><span class="n">a</span> <span class="n">project</span> <span class="n">name</span> <span class="n">you</span> <span class="n">like</span><span class="p">]</span>
 <span class="n">author</span>                      <span class="p">:</span> <span class="p">[</span><span class="n">your</span> <span class="n">name</span><span class="p">]</span>
-<span class="n">copyright</span>                   <span class="p">:</span> <span class="s2">&quot;2025&quot;</span>
+<span class="n">copyright</span>                   <span class="p">:</span> <span class="s2">"2025"</span>
 <span class="n">logo</span>                        <span class="p">:</span> 
 
 <span class="c1"># Execution settings</span>
 <span class="n">execute</span><span class="p">:</span>
-  <span class="n">execute_notebooks</span>         <span class="p">:</span> <span class="n">off</span>  <span class="c1"># Whether to execute notebooks at build time. Must be one of (&quot;auto&quot;, &quot;force&quot;, &quot;cache&quot;, &quot;off&quot;)</span>
+  <span class="n">execute_notebooks</span>         <span class="p">:</span> <span class="n">off</span>  <span class="c1"># Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")</span>
 </pre></div>
 </div>
 <p>🚩 <strong>Task:</strong> Confirm that you have the following file structure in the repository:</p>
@@ -488,10 +477,10 @@ Hey where&#39;s the content?
 <figure class="align-default" id="csrsr-logo">
 <img alt="../_images/csrsr_logo.png" src="../_images/csrsr_logo.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The Logo of CSRSR.</span><a class="headerlink" href="#csrsr-logo" title="Link to this image">#</a></p>
+<p><span class="caption-text">The Logo of CSRSR.</span><a class="headerlink" href="#csrsr-logo" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>This statement says that <a class="reference internal" href="#csrsr-logo"><span class="std std-numref">Fig. 1</span></a> is the logo of CSRSR.</p>
+<p>This statement says that <code class="xref std std-numref docutils literal notranslate"><span class="pre">csrsr_logo</span></code> is the logo of CSRSR.</p>
 <p>🚩 <strong>Task:</strong> Create a text file called <code class="docutils literal notranslate"><span class="pre">references.bib</span></code> inside the <code class="docutils literal notranslate"><span class="pre">jbook</span></code> folder with the following content:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@article</span><span class="p">{</span><span class="n">Baldacchino2025</span><span class="p">,</span>
 <span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Baldacchino</span><span class="p">,</span> <span class="n">Francesca</span> <span class="ow">and</span> <span class="n">Zheng</span><span class="p">,</span> <span class="n">Whyjay</span> <span class="ow">and</span> <span class="n">Wu</span><span class="p">,</span> <span class="n">Kunpeng</span> <span class="ow">and</span> <span class="n">Kapitsa</span><span class="p">,</span> <span class="n">Vassiliy</span> <span class="ow">and</span> <span class="n">Yegorov</span><span class="p">,</span> <span class="n">Alexandr</span> <span class="ow">and</span> <span class="n">Bolch</span><span class="p">,</span> <span class="n">Tobias</span><span class="p">},</span>
@@ -509,7 +498,7 @@ Hey where&#39;s the content?
 </pre></div>
 </div>
 <p>Now, try to cite this reference in <code class="docutils literal notranslate"><span class="pre">Task</span> <span class="pre">3</span></code> section of the <code class="docutils literal notranslate"><span class="pre">index.ipynb</span></code>, like this:</p>
-<p>Glaciers in the High Mountain Asia can speed up in the summer and slow down in the winter <span id="id1">[<a class="reference internal" href="#id4" title="Francesca Baldacchino, Whyjay Zheng, Kunpeng Wu, Vassiliy Kapitsa, Alexandr Yegorov, and Tobias Bolch. Investigating seasonal velocity variations of selected glaciers in high mountain asia. Science of Remote Sensing, 12(July):100266, dec 2025. doi:10.1016/j.srs.2025.100266.">Baldacchino <em>et al.</em>, 2025</a>]</span>.</p>
+<p>Glaciers in the High Mountain Asia can speed up in the summer and slow down in the winter <span class="bibtex-citation" id="id1">[<a class="reference internal" href="#id4" title="Francesca Baldacchino, Whyjay Zheng, Kunpeng Wu, Vassiliy Kapitsa, Alexandr Yegorov, and Tobias Bolch. Investigating seasonal velocity variations of selected glaciers in high mountain asia. Science of Remote Sensing, 12(July):100266, dec 2025. doi:10.1016/j.srs.2025.100266.">Baldacchino <em>et al.</em>, 2025</a>]</span>.</p>
 <p>❓ <strong>Question:</strong> Where does the bibliography show for the lask task?</p>
 </section>
 <section id="commit-changes-to-github">
@@ -552,7 +541,7 @@ jobs:
     - name: Set up Python 3.10
       uses: actions/setup-python@v4
       with:
-        python-version: &#39;3.10&#39;
+        python-version: '3.10'
         
     - name: Install dependencies
       run: |
@@ -639,24 +628,6 @@ jobs:
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="H3-FAIRdata.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">FAIRly share your data and code</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="H5-Visualization.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Exploratory data visualization</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -708,7 +679,7 @@ By Whyjay Zheng (鄭懷傑)
 
   <p class="copyright">
     
-      © Copyright 2023-2025.
+      © Copyright 2023-2026.
       <br/>
     
   </p>

@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -50,7 +50,7 @@
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -62,8 +62,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'handson/H5-Visualization';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Getting and analyzing remotely sensed open data" href="H6-DataAccess.html" />
-    <link rel="prev" title="Writing narrative science" href="H4-Narrative.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -126,6 +124,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -182,21 +182,10 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lectures</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../lectures/L1-intro.html">What is open science?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L2-opendata.html">Open data and beyond</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L3-openaccess.html">Path to open academic publishing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L4-communication.html">Communicating science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L5-reproducibility.html">Reproducing and reusing academic work</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L6-wheresdata.html">Open data sets in remote sensing, Earth &amp; environmental sciences</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lectures/L7-future.html">The future of open science</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">🛠️ Hands-on sessions</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="H1-Jupyter.html">Our working environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H2-Reproducibility.html">Achieving 100% reproducibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H3-FAIRdata.html">FAIRly share your data and code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H4-Narrative.html">Writing narrative science</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Exploratory data visualization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="H6-DataAccess.html">Getting and analyzing remotely sensed open data</a></li>
 </ul>
 
     </div>
@@ -1000,7 +989,7 @@ if (window.Jupyter !== undefined) {
 <p>The Amazon Web Services (AWS) <a class="reference external" href="https://registry.opendata.aws/">registry of open data</a> has a great open data set called “Sentinel-2 Cloud-Optimized GeoTIFFs” at <a class="reference external" href="https://registry.opendata.aws/sentinel-2-l2a-cogs/">https://registry.opendata.aws/sentinel-2-l2a-cogs/</a>. We will use one image file from this data set. Specify the image URL:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image_url</span> <span class="o">=</span> <span class="s1">&#39;https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/51/R/UH/2023/3/S2B_51RUH_20230311_0_L2A/TCI.tif&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image_url</span> <span class="o">=</span> <span class="s1">'https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/51/R/UH/2023/3/S2B_51RUH_20230311_0_L2A/TCI.tif'</span>
 </pre></div>
 </div>
 </div>
@@ -1417,9 +1406,9 @@ Attributes:
 <p>🚩 <strong>Task:</strong> Use the rasterio accessor to get specific geospatial information as a variable. Try to get the size of the image and the geospatial transformation (as an <a class="reference external" href="https://en.wikipedia.org/wiki/Affine_transformation">Affine transformation</a> matrix):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Grid width: </span><span class="si">{</span><span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">width</span><span class="si">}</span><span class="s2"> pixels&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Grid height: </span><span class="si">{</span><span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">height</span><span class="si">}</span><span class="s2"> pixels&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Geospatial transformation (m): </span><span class="se">\n</span><span class="si">{</span><span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">transform</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grid width: </span><span class="si">{</span><span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">width</span><span class="si">}</span><span class="s2"> pixels"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grid height: </span><span class="si">{</span><span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">height</span><span class="si">}</span><span class="s2"> pixels"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Geospatial transformation (m): </span><span class="se">\n</span><span class="si">{</span><span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">transform</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1442,7 +1431,7 @@ Geospatial transformation (m):
 <p>This raster image has ~120 million pixels (10980<span class="math notranslate nohighlight">\(\times\)</span>10980), so it would take a lot of time for any visualization tools to read all pixels and render them on your screen. I have commented out this line, but feel free to try it if you don’t mind waiting:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># da.hvplot.image(x=&#39;x&#39;, y=&#39;y&#39;, data_aspect=1)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># da.hvplot.image(x='x', y='y', data_aspect=1)</span>
 </pre></div>
 </div>
 </div>
@@ -1459,7 +1448,7 @@ Geospatial transformation (m):
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">da_subset</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">da_subset</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1542,7 +1531,7 @@ Geospatial transformation (m):
 <p>🚩 <strong>Task:</strong> Instead of showing a single band one at a time, visualize the true color image by showing three bands together:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">da_subset</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">rgb</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bands</span><span class="o">=</span><span class="s1">&#39;band&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">da_subset</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">rgb</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bands</span><span class="o">=</span><span class="s1">'band'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1654,7 +1643,7 @@ Geospatial transformation (m):
 <span class="kn">from</span><span class="w"> </span><span class="nn">pyproj</span><span class="w"> </span><span class="kn">import</span> <span class="n">Transformer</span>
 
 <span class="c1"># Here we will use the same COG data set from the previous section. And we continue to use rioxarray to load it.</span>
-<span class="n">image_url</span> <span class="o">=</span> <span class="s1">&#39;https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/51/R/UH/2023/3/S2B_51RUH_20230311_0_L2A/TCI.tif&#39;</span>
+<span class="n">image_url</span> <span class="o">=</span> <span class="s1">'https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/51/R/UH/2023/3/S2B_51RUH_20230311_0_L2A/TCI.tif'</span>
 <span class="n">da</span> <span class="o">=</span> <span class="n">rioxarray</span><span class="o">.</span><span class="n">open_rasterio</span><span class="p">(</span><span class="n">image_url</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1682,8 +1671,8 @@ Geospatial transformation (m):
 <p>🚩 <strong>Task:</strong> To show the extent on a web map, we have to transform the coordinates from UTM 51N to <strong>Lat/Lon</strong> (a.k.a. <strong>EPSG 4326</strong>). Execute the code below:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Construct a coordinate transformer from dataset&#39;s CRS to 4326 (using pyproj)</span>
-<span class="n">transformer</span> <span class="o">=</span> <span class="n">Transformer</span><span class="o">.</span><span class="n">from_crs</span><span class="p">(</span><span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">crs</span><span class="p">,</span> <span class="s2">&quot;epsg:4326&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Construct a coordinate transformer from dataset's CRS to 4326 (using pyproj)</span>
+<span class="n">transformer</span> <span class="o">=</span> <span class="n">Transformer</span><span class="o">.</span><span class="n">from_crs</span><span class="p">(</span><span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">crs</span><span class="p">,</span> <span class="s2">"epsg:4326"</span><span class="p">)</span>
 <span class="c1"># Transform the corner coordinates</span>
 <span class="n">bounds</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">bounds</span><span class="p">()</span>
 <span class="n">coords</span> <span class="o">=</span> <span class="p">[</span><span class="n">transformer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="n">bounds</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span> <span class="n">bounds</span><span class="p">[</span><span class="mi">2</span><span class="p">:]]]</span>
@@ -1719,8 +1708,8 @@ Geospatial transformation (m):
 <span class="n">draw_control</span> <span class="o">=</span> <span class="n">GeomanDrawControl</span><span class="p">(</span><span class="n">polyline</span><span class="o">=</span><span class="p">{},</span> <span class="n">polygon</span><span class="o">=</span><span class="p">{},</span> <span class="n">circlemarker</span><span class="o">=</span><span class="p">{})</span>
 <span class="c1"># draw_control = DrawControl(polyline={}, polygon={}, circlemarker={})</span>
 <span class="n">draw_control</span><span class="o">.</span><span class="n">rectangle</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;shapeOptions&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;fillOpacity&quot;</span><span class="p">:</span> <span class="mf">0.5</span>
+    <span class="s2">"shapeOptions"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"fillOpacity"</span><span class="p">:</span> <span class="mf">0.5</span>
     <span class="p">}</span>
 <span class="p">}</span>
 <span class="n">m</span><span class="o">.</span><span class="n">add_control</span><span class="p">(</span><span class="n">draw_control</span><span class="p">)</span>
@@ -1744,11 +1733,11 @@ Geospatial transformation (m):
 <p>🚩 <strong>Task:</strong> Get the coordinates of this new bounding box using the following code:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rec_coords</span> <span class="o">=</span> <span class="n">draw_control</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;geometry&#39;</span><span class="p">]</span>
-<span class="n">rec_coords</span> <span class="o">=</span> <span class="n">rec_coords</span><span class="p">[</span><span class="s1">&#39;coordinates&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rec_coords</span> <span class="o">=</span> <span class="n">draw_control</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">'geometry'</span><span class="p">]</span>
+<span class="n">rec_coords</span> <span class="o">=</span> <span class="n">rec_coords</span><span class="p">[</span><span class="s1">'coordinates'</span><span class="p">]</span>
 <span class="n">xy1</span> <span class="o">=</span> <span class="n">rec_coords</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>    <span class="c1"># lower left</span>
 <span class="n">xy2</span> <span class="o">=</span> <span class="n">rec_coords</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>    <span class="c1"># upper right</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Lower left:  </span><span class="si">{</span><span class="n">xy1</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">Upper right: </span><span class="si">{</span><span class="n">xy2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lower left:  </span><span class="si">{</span><span class="n">xy1</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">Upper right: </span><span class="si">{</span><span class="n">xy2</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1762,7 +1751,7 @@ Upper right: [121.676578, 24.71939]
 <p>🚩 <strong>Task:</strong> Convert these corner coordinates back to the data CRS using the following code:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transformer2</span> <span class="o">=</span> <span class="n">Transformer</span><span class="o">.</span><span class="n">from_crs</span><span class="p">(</span><span class="s2">&quot;epsg:4326&quot;</span><span class="p">,</span> <span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transformer2</span> <span class="o">=</span> <span class="n">Transformer</span><span class="o">.</span><span class="n">from_crs</span><span class="p">(</span><span class="s2">"epsg:4326"</span><span class="p">,</span> <span class="n">da</span><span class="o">.</span><span class="n">rio</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
 <span class="n">slicing_coords</span> <span class="o">=</span> <span class="p">[</span><span class="n">transformer2</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">)</span> <span class="k">for</span> <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span> <span class="ow">in</span> <span class="p">[</span><span class="n">xy1</span><span class="p">,</span> <span class="n">xy2</span><span class="p">]]</span>
 <span class="n">slicing_coords</span>
 </pre></div>
@@ -2173,7 +2162,7 @@ Attributes:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">da_subset</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">da_subset</span><span class="o">.</span><span class="n">hvplot</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">data_aspect</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2279,24 +2268,6 @@ Attributes:
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="H4-Narrative.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Writing narrative science</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="H6-DataAccess.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Getting and analyzing remotely sensed open data</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -2350,7 +2321,7 @@ By Whyjay Zheng (鄭懷傑)
 
   <p class="copyright">
     
-      © Copyright 2023-2025.
+      © Copyright 2023-2026.
       <br/>
     
   </p>
