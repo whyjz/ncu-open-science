@@ -2,7 +2,7 @@
 
 ## Slides
 
-[Lecture slides](https://docs.google.com/presentation/d/1Rh_173i7-PphE_UdcyvCnVsNYdpTXhHR1UPsx_qUP0Q/edit?usp=sharing)
+[Lecture slides](https://docs.google.com/presentation/d/1JO6F9-mawEOxp8vc3l6x23lVA8_l7RaxRCv7O64FRaM/edit?usp=sharing)
 
 ## References and further readings
 
